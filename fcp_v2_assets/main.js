@@ -374,6 +374,9 @@ const resetToZero = () => {
 }
 
 const saveinfo = () => {
+  const confirmSave = confirm('คุณต้องการบันทึกคะแนนใช่หรือไม่?');
+  if (!confirmSave) return; // ถ้าเลือกยกเลิก ให้หยุดฟังก์ชันทันที
+
   const now = Date.now();
   const matchInfo = {
     teamA: nameA.innerText,
@@ -381,7 +384,6 @@ const saveinfo = () => {
     scoreA: parseInt(scoreA, 10),
     scoreB: parseInt(scoreB, 10),
     roundLabel: label2.innerText,
-    // ถ้าต้องการเก็บวันที่เป็น string
     date: new Date(now).toISOString().slice(0, 10) // format "YYYY-MM-DD"
   };
 
@@ -389,6 +391,7 @@ const saveinfo = () => {
     .then(() => alert('บันทึกคะแนนเรียบร้อยแล้ว'))
     .catch(err => alert('บันทึกไม่สำเร็จ: ' + err.message));
 };
+
 
 
 const openTimeSettings = () => {

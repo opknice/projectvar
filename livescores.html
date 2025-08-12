@@ -166,7 +166,6 @@
 
     }
 
-
     // 8. ฟัง event จาก Firebase แล้ว render
     todayQuery.on('value', snapshot => {
       if (!snapshot.exists()) {
@@ -184,7 +183,7 @@
         const scoreHtml = `<span class="score-highlight">${m.scoreA} - ${m.scoreB}</span>`;
 
         parts.push(`
-          ${m.roundLabel} |
+          
           ${logoA}${m.teamA} ${scoreHtml} ${m.teamB}${logoB}
         `.trim());
       });

@@ -38,15 +38,14 @@
       width: 100%;
       box-sizing: border-box;
       margin: 0 auto;
-
-      /* เปิด transition สำหรับแสดง/ซ่อน */
       transition: opacity 0.8s ease, transform 0.8s ease;
       opacity: 1;
       transform: translateY(0);
     }
 
-    /* สถานะซ่อน */
+    /* สถานะซ่อน: ใช้ display:none เพื่อไม่ให้แทรก DOM */
     #score-marquee.hidden {
+      display: none;
       opacity: 0;
       transform: translateY(0);
       pointer-events: none;
@@ -89,12 +88,18 @@
       vertical-align: middle;
       margin: 0 0.5rem;
     }
+
+    :root { --scroll-duration: 35s; }
+    .scrolling-text {
+      animation: scroll-left var(--scroll-duration) linear infinite;
+    }
+
   </style>
 </head>
 <body>
   <h1>คะแนนวันนี้ (<span id="today-label"></span>)</h1>
 
-  <div id="score-marquee">
+  <div id="score-marquee" class="hidden">
     <div class="scrolling-text" id="scrolling-content">
       กำลังโหลดข้อมูล...
     </div>
@@ -131,7 +136,7 @@
       'รวมมามั่ว': 'logos/รวมมามั่ว.png',
       'ซ้อนัท หมูพิเรน':  'logos/ซ้อนัท หมูพิเรน.png',
       'แก๊งค์4พ่อบ้าน': 'logos/แก๊งค์4พ่อบ้าน.png',
-      'ผู้ใหญ่น้อง x BBPCup': 'logos/ผู้ใหญ่น้อง x BBPCup.png',
+      'ผู้ใหญ่น้อง x BBP': 'logos/ผู้ใหญ่น้อง x BBP.png',
       'Shut Up': 'logos/Shut Up.png'
     };
     const defaultLogo = 'logos/default.png';
@@ -145,20 +150,48 @@
     const today = getTodayString();
     document.getElementById('today-label').innerText = today;
 
-    // 5. Query แมตช์วันที่วันนี้
+    // 5. จัดการ marquee และ content
+    const marquees = document.getElementById('score-marquee');
+    const marqueeContent = document.getElementById('scrolling-content');
+
+    // ซ่อน container ตั้งแต่เริ่ม
+    marquees.classList.add('hidden');
+
+    // 6. Query แมตช์วันที่วันนี้
     const todayQuery = db.ref('matches')
                          .orderByChild('date')
                          .equalTo(today);
 
-    // 6. ฟัง event แล้วสร้าง HTML วิ่ง
-    const marquee = document.getElementById('scrolling-content');
+    // 7. ตั้งค่าเวลาให้เข้าใจง่าย
+    const SHOW_MS = 40_000;           // 40 วินาที
+    const HIDE_MS = 10 * 60 * 1000;   // 10 นาที
 
+    let cycleStarted = false;
+    let timerId = null;
+
+    // ฟังก์ชันโชว์
+    function showMarquee() {
+      marquees.classList.remove('hidden');
+      clearTimeout(timerId);
+      timerId = setTimeout(hideMarquee, SHOW_MS);
+    }
+
+    // ฟังก์ชันซ่อน
+    function hideMarquee() {
+      marquees.classList.add('hidden');
+      clearTimeout(timerId);
+      timerId = setTimeout(showMarquee, HIDE_MS);
+    }
+
+    // 8. ฟัง event จาก Firebase แล้ว render
     todayQuery.on('value', snapshot => {
       if (!snapshot.exists()) {
-        marquee.innerHTML = 'ยังไม่มีคะแนนวันนี้';
+        // ถ้าไม่มีข้อมูลวันนี้ → ซ่อน container และ return
+        marquees.classList.add('hidden');
         return;
       }
 
+      // สร้าง HTML วิ่ง
       const parts = [];
       snapshot.forEach(childSnap => {
         const m = childSnap.val();
@@ -166,52 +199,20 @@
         const logoB = `<img src="${teamLogos[m.teamB]||defaultLogo}" class="team-logo" alt="${m.teamB}">`;
         const scoreHtml = `<span class="score-highlight">${m.scoreA} - ${m.scoreB}</span>`;
 
-        const html = `
+        parts.push(`
           ${m.roundLabel} |
           ${logoA}${m.teamA} ${scoreHtml} ${m.teamB}${logoB}
-        `.trim();
-
-        parts.push(html);
+        `.trim());
       });
 
-      marquee.innerHTML = parts.join('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+      marqueeContent.innerHTML = parts.join('&nbsp;'.repeat(20));
+
+      // เริ่ม cycle ครั้งแรก เมื่อมีข้อมูลแล้ว
+      if (!cycleStarted) {
+        cycleStarted = true;
+        showMarquee();
+      }
     });
-
-// แทนที่บล็อก setInterval เดิมทั้งหมดด้วยโค้ดด้านล่าง
-
-const marquees = document.getElementById('score-marquee');
-
-// ตั้งค่าเวลาให้เข้าใจง่าย
-const SHOW_MS = 40_000;           // 40 วินาที
-const HIDE_MS = 20 * 60 * 1000;   // 20 นาที
-
-let timerId = null;
-
-// ฟังก์ชันโชว์
-function showMarquee() {
-  marquees.classList.remove('hidden'); // โชว์
-  clearTimeout(timerId);
-  timerId = setTimeout(hideMarquee, SHOW_MS); // ผ่านไป 40 วินาที → ซ่อน
-}
-
-// ฟังก์ชันซ่อน
-function hideMarquee() {
-  marquees.classList.add('hidden'); // ซ่อน
-  clearTimeout(timerId);
-  timerId = setTimeout(showMarquee, HIDE_MS); // ผ่านไป 20 นาที → โชว์
-}
-
-// เริ่มรอบด้วยการโชว์ก่อน
-showMarquee();
-
-/*
-หมายเหตุ:
-- ถ้าต้องการเริ่มจาก "ซ่อนก่อน" ให้เรียก hideMarquee() แทน showMarquee()
-- ถ้ามี element อื่นที่อยากสลับด้วย (เช่น #image-container) ให้เพิ่ม:
-    document.getElementById('image-container').classList.toggle('hidden');
-  ในฟังก์ชัน showMarquee/hideMarquee ตามจังหวะที่ต้องการ
-*/
-
   </script>
 </body>
 </html>

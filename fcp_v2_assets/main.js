@@ -342,8 +342,8 @@ const halfpause = () => {
     const timeString = "HT";
     elements.timerText.textContent = timeString;
     setText('time_counter', timeString);
-    elements.halfText.textContent = timeString;
-    setText('half_text', timeString);
+    elements.halfText.textContent = "";
+    setText('half_text', "");
     stopTimer();
 };
 
@@ -351,8 +351,8 @@ const fulltime = () => {
     const timeString = "FT";
     elements.timerText.textContent = timeString;
     setText('time_counter', timeString);
-    elements.halfText.textContent = timeString;
-    setText('half_text', timeString);
+    elements.halfText.textContent = "";
+    setText('half_text', "");
     stopTimer();
 };
 
@@ -381,7 +381,6 @@ const saveinfo = () => {
     scoreA: parseInt(scoreA, 10),
     scoreB: parseInt(scoreB, 10),
     roundLabel: label2.innerText,
-    timestamp: now,
     // ถ้าต้องการเก็บวันที่เป็น string
     date: new Date(now).toISOString().slice(0, 10) // format "YYYY-MM-DD"
   };

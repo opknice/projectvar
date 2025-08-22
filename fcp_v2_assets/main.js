@@ -6,8 +6,9 @@ import { translations } from './languages.js';
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
 
-// 2. คอนฟิก Firebase
-const firebaseConfig = {
+// ---------------------------- ---------------------------- ---------------------------- ---------------------------- ---------------------------- ----------------------------
+// ---------------------------- ---------------------------- VAR CHAMPIONLEAGUE---------------------------- ---------------------------- ---------------------------- ----------------------------
+const firebaseConfigChampionLeague = {
   apiKey: "AIzaSyBCC4P4EPj1W4Gu6ubI2xDozxpsCvJksOw",
   authDomain: "realtimescore-87528.firebaseapp.com",
   databaseURL: "https://realtimescore-87528-default-rtdb.firebaseio.com",
@@ -18,9 +19,28 @@ const firebaseConfig = {
   measurementId: "G-DZ43F4V999"
 };
 
+const firebaseConfigGeneralMatch = {
+  apiKey: "AIzaSyAs_FmVsTES_W0cmqj0u5ULVFmZUM8BWQA",
+  authDomain: "general-21c81.firebaseapp.com",
+  databaseURL: "https://general-21c81-default-rtdb.firebaseio.com",
+  projectId: "general-21c81",
+  storageBucket: "general-21c81.firebasestorage.app",
+  messagingSenderId: "102914838955",
+  appId: "1:102914838955:web:18106ed3e671da395502ee",
+  measurementId: "G-6GXKY9030T"
+};
+
 // 3. เริ่มต้นแอป และดึงอ็อบเจ็กต์ Database
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
+const appChampion = initializeApp(firebaseConfigChampionLeague, "ChampionLeagueApp");
+const appGeneral = initializeApp(firebaseConfigGeneralMatch, "GeneralApp");
+
+// ✅ Get each database instance
+const database = getDatabase(appChampion);
+const database_ = getDatabase(appGeneral);
+
+// ---------------------------- ---------------------------- ---------------------------- ---------------------------- ---------------------------- ----------------------------
+// ---------------------------- ---------------------------- GENERAL ---------------------------- ---------------------------- ---------------------------- ----------------------------
+
 
 
 
@@ -40,7 +60,7 @@ const elements = [
     "startTimeMinutes", "startTimeSeconds", "saveTimeSettingsBtn", "saveAndUpdateTimeBtn", "closeTimeSettingsBtn",
     "timeSettingsError", "changelogBtn", "changelogPopup", "closeChangelogBtn",
     "logoPathBtn", "logoPathPopup", "currentLogoPath", "logoPathInput", "editLogoPathBtn", "closeLogoPathBtn",
-    "halfpauseBtn", "fullEndBtn", "MatchSave"
+    "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_"
 ].reduce((acc, id) => {
     acc[id.replace(/-(\w)/g, (m, p1) => p1.toUpperCase())] = $(id);
     return acc;
@@ -374,7 +394,7 @@ const resetToZero = () => {
 }
 
 const saveinfo = () => {
-  const confirmSave = confirm('คุณต้องการบันทึกคะแนนใช่หรือไม่?');
+  const confirmSave = confirm('บอลลีคแน่นะ ! ??');
   if (!confirmSave) return; // ถ้าเลือกยกเลิก ให้หยุดฟังก์ชันทันที
 
   const now = Date.now();
@@ -388,6 +408,25 @@ const saveinfo = () => {
   };
 
   push(ref(database, 'matches'), matchInfo)
+    .then(() => alert('บันทึกคะแนนเรียบร้อยแล้ว'))
+    .catch(err => alert('บันทึกไม่สำเร็จ: ' + err.message));
+};
+
+const saveinfo_ = () => {
+  const confirmSave = confirm('บอลทั่วไปชัวร์นะ');
+  if (!confirmSave) return; // ถ้าเลือกยกเลิก ให้หยุดฟังก์ชันทันที
+
+  const now = Date.now();
+  const matchInfo = {
+    teamA: nameA.innerText,
+    teamB: nameB.innerText,
+    scoreA: parseInt(scoreA, 10),
+    scoreB: parseInt(scoreB, 10),
+    roundLabel: label2.innerText,
+    date: new Date(now).toISOString().slice(0, 10) // format "YYYY-MM-DD"
+  };
+
+  push(ref(database_, 'matches'), matchInfo)
     .then(() => alert('บันทึกคะแนนเรียบร้อยแล้ว'))
     .catch(err => alert('บันทึกไม่สำเร็จ: ' + err.message));
 };
@@ -591,6 +630,7 @@ const setupEventListeners = () => {
     elements.halfpauseBtn.addEventListener('click', halfpause);
     elements.fullEndBtn.addEventListener('click', fulltime);
     elements.MatchSave.addEventListener('click', saveinfo);
+    elements.MatchSave_.addEventListener('click', saveinfo_);
     // elements.pauseBtn.addEventListener('click', stopTimer);
     elements.resetToStartBtn.addEventListener('click', resetToStartTime); 
     // elements.resetToZeroBtn.addEventListener('click', resetToZero);     

@@ -16,7 +16,7 @@
       margin:0;
       padding:20px;
       background: 
-        url('images/logo.png') no-repeat center 20px,
+        url('images/logovar.png') no-repeat center 20px,
         url('images/bg.png')   no-repeat center center fixed;
         
       background-size:250px auto,cover;
@@ -100,7 +100,7 @@
 
     <!-- ข้อความล่าสุด -->
   <div id="latestMessageContainer" style="text-align:center; margin-bottom:20px;">
-    <h2>VAR Champions League SS1 <span style="color: rgb(255, 255, 255);"># ตารางคะแนนสด</span></h2>
+    <h2><br><br></h2>
 
   </div>
 
@@ -155,20 +155,27 @@
   const matchesRef = ref(db, PATH_MATCHES);
 
   // แผนที่โลโก้แต่ละทีม
-  const teamLogos = {
-      'พรหมานุสรณ์ FC':  'logos/พรหมานุสรณ์ FC.png',
-      'พวกพี่เสือเก่า': 'logos/พวกพี่เสือเก่า.png',
-      'สมหวัง x พงษ์เพชรบุรี': 'logos/สมหวัง x พงษ์เพชรบุรี.png',
-      'ชมรม ฟุตบอลโพธิ์กรุ': 'logos/ชมรม ฟุตบอลโพธิ์กรุ.png',
-      'กาลาติกอส 98':  'logos/กาลาติกอส 98.png',
-      'ทนงทวยคงควรคอย x อย่าบิดนะ': 'logos/ทนงทวยคงควรคอย x อย่าบิดนะ.png',
-      'กบฏกาลาติกอส 98': 'logos/กบฏกาลาติกอส 98.png',
-      'รวมมามั่ว': 'logos/รวมมามั่ว.png',
-      'ซ้อนัท หมูพิเรน':  'logos/ซ้อนัท หมูพิเรน.png',
-      'แก๊งค์4พ่อบ้าน': 'logos/แก๊งค์4พ่อบ้าน.png',
-      'ผู้ใหญ่น้อง x BBP': 'logos/ผู้ใหญ่น้อง x BBP.png',
-      'Shut Up': 'logos/Shut Up.png'
-  };
+const teamNames = [
+  'พรหมานุสรณ์ FC',
+  'พวกพี่เสือเก่า',
+  'สมหวัง x พงษ์เพชรบุรี',
+  'ชมรม ฟุตบอลโพธิ์กรุ',
+  'กาลาติกอส 98',
+  'ทนงทวยคงควรคอย x อย่าบิดนะ',
+  'กบฏกาลาติกอส 98',
+  'รวมมามั่ว',
+  'ซ้อนัท หมูพิเรน',
+  'แก๊งค์4พ่อบ้าน',
+  'ผู้ใหญ่น้อง x BBP',
+  'Shut Up'
+];
+
+const teamLogos = teamNames.reduce((acc, name) => {
+  acc[name] = `logos/${name}.png`;
+  return acc;
+}, {});
+
+
 
   const initTeam = () => ({ P:0, W:0, D:0, L:0, GF:0, GA:0, GD:0, Pts:0 });
   const renderNoData = () => {

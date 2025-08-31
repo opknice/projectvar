@@ -17,7 +17,18 @@
       }
     });
   </script>
+    <script>
+        const btn = document.querySelector('.btn');
 
+    btn.addEventListener('mouseover', () => {
+    btn.style.transform = 'scale(1.2)';
+    });
+
+    btn.addEventListener('mouseout', () => {
+    btn.style.transform = '';
+    });
+
+</script>
     <meta charset="UTF-8">
     <title data-lang="appTitle">Football Scoreboard Controller</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -55,6 +66,8 @@
             cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
             gap: 6px; font-weight: 500; transition: background-color 0.2s ease;
         }
+
+        
         .btn-primary { background: var(--accent-color); color: #fff; }
         .btn-primary:hover { background: var(--accent-hover-color); }
         .btn-secondary { background: #4a4a4a; color: #fff; }
@@ -65,6 +78,9 @@
         .btn-warning:hover { background: var(--warning-hover-color); }
         .btn-success { background: var(--success-color); color: #fff; }
         .btn-success:hover { background: var(--success-hover-color); }
+        .btn { transition: transform 0.3s ease; }
+        .btn:hover { transform: scale(1.5); }
+
         .team-row { display: flex; align-items: center; gap: 10px; }
         .color-picker-stack { display: flex; flex-direction: column; gap: 2px; }
         .team-row .color-picker {
@@ -262,6 +278,7 @@
                     <button id="MatchSave_" class="btn btn-danger">บันทึกข้อมูลแมทต์ ทั่วไป<i class=""></i></button>
                 </div>
                 </div>
+
 
                 <div class="timer-right-controls">
                     <div class="row" id="injuryTimeContainer">

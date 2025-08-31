@@ -23,7 +23,7 @@
       color: #333;
     }
 
-    /* marquee container ปรับขนาดให้ใหญ่ขึ้นและใส่ transition */
+    /* marquee container */
     #score-marquee {
       position: relative;
       overflow: hidden;
@@ -43,11 +43,10 @@
       transform: translateY(0);
     }
 
-    /* สถานะซ่อน: ใช้ display:none เพื่อไม่ให้แทรก DOM */
+    /* ซ่อนเมื่อไม่มีข้อมูล */
     #score-marquee.hidden {
       display: none;
       opacity: 0;
-      transform: translateY(0);
       pointer-events: none;
     }
 
@@ -58,7 +57,7 @@
       animation: scroll-left 40s linear infinite;
     }
 
-    /* ห่อเฉพาะตัวเลขคะแนน */
+    /* ไฮไลต์คะแนน */
     .score-highlight {
       background: #fff;
       color: #000;
@@ -70,12 +69,11 @@
       white-space: nowrap;
     }
 
-    /* หยุดเลื่อนเมื่อ hover */
+    /* หยุดเมื่อ hover */
     #score-marquee:hover .scrolling-text {
       animation-play-state: paused;
     }
 
-    /* keyframes เลื่อนข้อความ */
     @keyframes scroll-left {
       0%   { transform: translateX(0); }
       100% { transform: translateX(-100%); }
@@ -88,7 +86,6 @@
       vertical-align: middle;
       margin: 0 0.5rem;
     }
-
   </style>
 </head>
 <body>
@@ -100,108 +97,116 @@
     </div>
   </div>
 
-  <!-- Firebase SDK -->
+  <!-- Firebase SDK (compat) -->
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
 
   <script>
-    // 1. Firebase Config ของคุณ
+    // — 1. เริ่มต้น Firebase
     const firebaseConfig = {
       apiKey: "AIzaSyAs_FmVsTES_W0cmqj0u5ULVFmZUM8BWQA",
       authDomain: "general-21c81.firebaseapp.com",
       databaseURL: "https://general-21c81-default-rtdb.firebaseio.com",
       projectId: "general-21c81",
-      storageBucket: "general-21c81.firebasestorage.app",
+      storageBucket: "general-21c81.appspot.com",
       messagingSenderId: "102914838955",
       appId: "1:102914838955:web:18106ed3e671da395502ee",
       measurementId: "G-6GXKY9030T"
-};
+    };
     firebase.initializeApp(firebaseConfig);
     const db = firebase.database();
 
-    // 2. แม็ปเก็บโลโก้ทีม
-
-const teamNames = [
-  'พรหมานุสรณ์ FC',
-  'พวกพี่เสือเก่า',
-  'สมหวัง x พงษ์เพชรบุรี',
-  'ชมรม ฟุตบอลโพธิ์กรุ',
-  'กาลาติกอส 98',
-  'ทนงทวยคงควรคอย x อย่าบิดนะ',
-  'กบฏกาลาติกอส 98',
-  'รวมมามั่ว',
-  'ซ้อนัท หมูพิเรน',
-  'แก๊งค์4พ่อบ้าน',
-  'ผู้ใหญ่น้อง x BBP',
-  'Shut Up'
-];
-
-const teamLogos = teamNames.reduce((acc, name) => {
-  acc[name] = `logos/${name}.png`;
-  return acc;
-}, {});
+    // — 2. ตัวแปรโลโก้ + ค่า default
     const defaultLogo = 'logos/default.png';
+    let teamLogos = {};   // จะเก็บ mapping ชื่อทีม → path โลโก้
 
-    // 3. คืนค่าวันที่ "YYYY-MM-DD"
+    // — 3. คืนค่าวันที่ในรูป YYYY-MM-DD
     function getTodayString() {
       return new Date().toISOString().slice(0,10);
     }
 
-    // 4. แสดงวันที่
+    // — 4. เตรียม Marquee container
+    const marqueeEl = document.getElementById('score-marquee');
+    const contentEl = document.getElementById('scrolling-content');
+    marqueeEl.classList.add('hidden');
+
+    function showMarquee() {
+      marqueeEl.classList.remove('hidden');
+    }
+
+    // — 5. แสดงวันที่หน้า UI
     const today = getTodayString();
     document.getElementById('today-label').innerText = today;
 
-    // 5. จัดการ marquee และ content
-    const marquees = document.getElementById('score-marquee');
-    const marqueeContent = document.getElementById('scrolling-content');
-
-    // ซ่อน container ตั้งแต่เริ่ม
-    marquees.classList.add('hidden');
-
-    // 6. Query แมตช์วันที่วันนี้
+    // — 6. สร้าง Query ของแมตช์วันนี้
     const todayQuery = db.ref('matches')
                          .orderByChild('date')
                          .equalTo(today);
 
     let cycleStarted = false;
 
+    // — 7. ฟังก์ชันเริ่มต้น: ดึงชื่อทีมทั้งหมด แล้วเริ่มฟัง event แมตช์วันนี้
+    async function init() {
+      try {
+        // ดึง matches ทั้งหมดเพื่อเก็บชื่อทีม
+        const allSnap = await db.ref('matches').once('value');
+        const allData = allSnap.val() || {};
 
-    // ฟังก์ชันโชว์
-    function showMarquee() {
-      marquees.classList.remove('hidden');
+        // กรองชื่อทีมไม่ซ้ำ
+        const set = new Set();
+        Object.values(allData).forEach(m => {
+          if (m.teamA) set.add(m.teamA);
+          if (m.teamB) set.add(m.teamB);
+        });
 
+        // สร้าง mapping ชื่อ → path โลโก้
+        teamLogos = Array.from(set).reduce((acc, name) => {
+          acc[name] = `logos/${name}.png`;
+          return acc;
+        }, {});
+
+        // ฟังอีเวนต์แมตช์วันนี้
+        todayQuery.on('value', renderMatches);
+      }
+      catch (err) {
+        console.error('Init error:', err);
+      }
     }
 
-    // 8. ฟัง event จาก Firebase แล้ว render
-    todayQuery.on('value', snapshot => {
+    // — 8. ฟังก์ชัน render แมตช์วันนี้
+    function renderMatches(snapshot) {
       if (!snapshot.exists()) {
-        // ถ้าไม่มีข้อมูลวันนี้ → ซ่อน container และ return
-        marquees.classList.add('hidden');
+        marqueeEl.classList.add('hidden');
         return;
       }
 
-      // สร้าง HTML วิ่ง
       const parts = [];
       snapshot.forEach(childSnap => {
         const m = childSnap.val();
-        const logoA = `<img src="${teamLogos[m.teamA]||defaultLogo}" class="team-logo" alt="${m.teamA}">`;
-        const logoB = `<img src="${teamLogos[m.teamB]||defaultLogo}" class="team-logo" alt="${m.teamB}">`;
-        const scoreHtml = `<span class="score-highlight">${m.scoreA} - ${m.scoreB}</span>`;
+        const logoA = `<img src="${teamLogos[m.teamA]||defaultLogo}"
+                          class="team-logo"
+                          alt="${m.teamA}"
+                          onerror="this.src='${defaultLogo}'">`;
+        const logoB = `<img src="${teamLogos[m.teamB]||defaultLogo}"
+                          class="team-logo"
+                          alt="${m.teamB}"
+                          onerror="this.src='${defaultLogo}'">`;
+        const score = `<span class="score-highlight">${m.scoreA} - ${m.scoreB}</span>`;
 
-        parts.push(`
-          
-          ${logoA}${m.teamA} ${scoreHtml} ${m.teamB}${logoB}
-        `.trim());
+        parts.push(`${logoA}${m.teamA} ${score} ${m.teamB}${logoB}`);
       });
 
-      marqueeContent.innerHTML = parts.join('&nbsp;'.repeat(20));
+      // เว้นวรรคระหว่าง item หลายๆ ชุด
+      contentEl.innerHTML = parts.join('&nbsp;'.repeat(20));
 
-      // เริ่ม cycle ครั้งแรก เมื่อมีข้อมูลแล้ว
       if (!cycleStarted) {
         cycleStarted = true;
         showMarquee();
       }
-    });
+    }
+
+    // — 9. เริ่มทำงานเมื่อ DOM โหลดเสร็จ
+    document.addEventListener('DOMContentLoaded', init);
   </script>
 </body>
 </html>

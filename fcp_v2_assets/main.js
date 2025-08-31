@@ -520,12 +520,28 @@ const handleExcel = () => {
     input.click();
 };
 
+// คืนค่าวันที่ในรูปแบบ "วัน<ชื่อวัน>ที่ <วัน> <ชื่อเดือน> <พ.ศ.>"
+const getThaiDateString = () => {
+  const now = new Date();
+  // ใช้ Intl กับ Buddhist calendar เพื่อได้ปีเป็น พ.ศ.
+  const dateStr = now.toLocaleDateString('th-TH-u-ca-buddhist', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
+  // ใส่คำว่า "ที่" ระหว่างชื่อวันกับเลขวัน
+  return dateStr.replace(' ', ' ');
+};
+
+
 const copyDetails = () => {
     const template = localStorage.getItem('detailsText') || '';
     if (!template.trim()) return showToast(translations[currentLang].toastNoTextToCopy, 'error');
 
     let teamAName = elements.nameA.innerHTML.replace(/<br\s*\/?>/gi, ' ');
     let teamBName = elements.nameB.innerHTML.replace(/<br\s*\/?>/gi, ' ');
+    const thaiDate = getThaiDateString();
 
     const filled = template
         .replace(/<TeamA>/gi, teamAName)
@@ -535,11 +551,13 @@ const copyDetails = () => {
         .replace(/<label3>/gi, elements.label3.textContent)
         .replace(/<score_team_a>/gi, scoreA)
         .replace(/<score_team_b>/gi, scoreB)
+        .replace(/<thai_date>/gi, thaiDate)
         .replace(/<time_counter>/gi, elements.timerText.textContent)
         .replace(/<half_text>/gi, elements.halfText.textContent);
         
     navigator.clipboard.writeText(filled).then(()=>showToast(translations[currentLang].toastCopied,'info')).catch(err=>showToast(translations[currentLang].toastCopyFailed,'error'));
 };
+
 
 const enterEditMode = (team) => {
     const isA = team === 'A';

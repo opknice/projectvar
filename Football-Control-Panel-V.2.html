@@ -9,6 +9,8 @@
             document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+"statcounter.com/counter/counter.js'></"+"script>");
     </script>
 
+    
+
   <script>
     document.addEventListener('keydown', function(event) {
       // ตรวจสอบว่าเป็น Space Bar หรือไม่
@@ -245,11 +247,46 @@
             <div class="score-control">
                 <div class="score-buttons"><button id="scoreAPlusBtn" class="plus">+</button><button id="scoreAMinusBtn" class="minus">-</button></div>
                 <div class="score-display" id="scoreA">0</div>
+                <!-- ตรงที่ต้องการแสดงชื่อทีมซ้ำ -->
+                <div id="nameACopy"></div>
                 <button id="resetScoreBtn" class="btn-secondary" style="flex-shrink: 0;"><i class="fas fa-sync-alt"></i> <span data-lang="reset"></span></button>
+                <!-- ตรงที่ต้องการแสดงชื่อทีมซ้ำ -->
+                <div id="nameBCopy"></div>
                 <div class="score-display" id="scoreB">0</div>
                 <div class="score-buttons"><button id="scoreBPlusBtn" class="plus">+</button><button id="scoreBMinusBtn" class="minus">-</button></div>
             </div>
         </div>
+
+        <script>
+            // เจนเนอริก loop หา .name ทุกตัว
+            document.querySelectorAll('.name').forEach(sourceNode => {
+                // สร้าง targetId ตาม pattern "sourceId" + "Copy"
+                const targetId = `${sourceNode.id}Copy`;
+                const targetNode = document.getElementById(targetId);
+                if (!targetNode) return; // ข้ามถ้าไม่เจอ target
+
+                // สำเนาข้อความครั้งแรก
+                targetNode.textContent = sourceNode.textContent;
+
+                // สร้าง observer คอยฟังการเปลี่ยนแปลง
+                const observer = new MutationObserver(() => {
+                targetNode.textContent = sourceNode.textContent;
+                });
+
+                // เริ่ม observe เฉพาะ childList (ข้อความภายใน)  
+                observer.observe(sourceNode, {
+                childList: true,
+                subtree: false
+                });
+            });
+
+            // --- โค้ดทดสอบการเปลี่ยนแปลงข้อความ ---
+            // (เอาออกได้เมื่อ integrate กับระบบจริง)
+            document.getElementById('nameA').textContent = 'ข้อความจากทีม A';
+            document.getElementById('nameB').textContent = 'ข้อความจากทีม B';
+        </script>
+
+
         <div class="card">
             <div class="row timer-area-container">
                 <div style="flex: 0 0 70px; display: flex;">
@@ -417,6 +454,7 @@
     <script src="https://cdn.jsdelivr.net/npm/obs-websocket-js@5.0.2/dist/obs-ws.min.js"></script>
     
     <script type="module" src="fcp_v2_assets/main.js"></script>
+
 
 </body>
 </html>

@@ -394,7 +394,7 @@ const resetToZero = () => {
 }
 
 const saveinfo = () => {
-  const confirmSave = confirm('บอลลีคแน่นะ ! ??');
+  const confirmSave = confirm('Var Champion League แน่นะ !! ??');
   if (!confirmSave) return; // ถ้าเลือกยกเลิก ให้หยุดฟังก์ชันทันที
 
   const now = Date.now();
@@ -413,7 +413,7 @@ const saveinfo = () => {
 };
 
 const saveinfo_ = () => {
-  const confirmSave = confirm('บอลทั่วไปชัวร์นะ');
+  const confirmSave = confirm('Agency League แน่นะ !! ??');
   if (!confirmSave) return; // ถ้าเลือกยกเลิก ให้หยุดฟังก์ชันทันที
 
   const now = Date.now();

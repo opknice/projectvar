@@ -264,6 +264,10 @@ const applyMatch = () => {
     elements.halfText.textContent = half;
     setText('half_text', half);
 
+    const timeString = "starting soon";
+    elements.timerText.textContent = timeString;
+    setText('time_counter', timeString);
+
 };
 
 const swapTeams = () => {

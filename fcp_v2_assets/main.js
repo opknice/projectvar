@@ -264,9 +264,7 @@ const applyMatch = () => {
     elements.halfText.textContent = half;
     setText('half_text', half);
 
-    const timeString = "starting soon";
-    elements.timerText.textContent = timeString;
-    setText('time_counter', timeString);
+
 
 };
 
@@ -395,6 +393,9 @@ const resetToZero = () => {
     injuryTime = 0;
     updateTimerDisplay();
     updateInjuryTimeDisplay();
+    const timeString = "starting soon";
+    elements.timerText.textContent = timeString;
+    setText('time_counter', timeString);
 }
 
 const saveinfo = () => {

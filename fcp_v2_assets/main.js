@@ -403,7 +403,7 @@ const resetToZero = () => {
     injuryTime = 0;
     updateTimerDisplay();
     updateInjuryTimeDisplay();
-    const timeString = "starting soon";
+    const timeString = "PRE";
     elements.timerText.textContent = timeString;
     setText('time_counter', timeString);
 }
@@ -419,7 +419,8 @@ const saveinfo = () => {
     scoreA: parseInt(scoreA, 10),
     scoreB: parseInt(scoreB, 10),
     roundLabel: label2.innerText,
-    date: new Date(now).toISOString().slice(0, 10) // format "YYYY-MM-DD"
+    date: new Date(now).toISOString().slice(0, 10), // format "YYYY-MM-DD"
+    url: ""
   };
 
   push(ref(database, 'matches'), matchInfo)
@@ -438,7 +439,8 @@ const saveinfo_ = () => {
     scoreA: parseInt(scoreA, 10),
     scoreB: parseInt(scoreB, 10),
     roundLabel: label2.innerText,
-    date: new Date(now).toISOString().slice(0, 10) // format "YYYY-MM-DD"
+    date: new Date(now).toISOString().slice(0, 10), // format "YYYY-MM-DD"
+    url: ""
   };
 
   push(ref(database_, 'matches'), matchInfo)

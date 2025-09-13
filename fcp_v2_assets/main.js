@@ -269,7 +269,17 @@ const applyMatch = () => {
 };
 
 const swapTeams = () => {
-    const [nameA, nameB] = [elements.nameA.innerHTML.replace(/<br\s*\/?>/gi, '/'), elements.nameB.innerHTML.replace(/<br\s*\/?>/gi, '/')];
+    //const [nameA, nameB] = [elements.nameA.innerHTML.replace(/<br\s*\/?>/gi, '/'), elements.nameB.innerHTML.replace(/<br\s*\/?>/gi, '/')];
+    
+    function decodeEntities(html) {
+        const txt = document.createElement('textarea');
+        txt.innerHTML = html;
+        return txt.value;
+    }
+
+    const [nameA, nameB] = [elements.nameA.innerHTML, elements.nameB.innerHTML]
+    .map(html => decodeEntities(html.replace(/<br\s*\/?>/gi, '/')));
+
     [scoreA, scoreB] = [scoreB, scoreA];
     [currentLogoA, currentLogoB] = [currentLogoB, currentLogoA];
 
@@ -544,8 +554,12 @@ const copyDetails = () => {
     const template = localStorage.getItem('detailsText') || '';
     if (!template.trim()) return showToast(translations[currentLang].toastNoTextToCopy, 'error');
 
-    let teamAName = elements.nameA.innerHTML.replace(/<br\s*\/?>/gi, ' ');
-    let teamBName = elements.nameB.innerHTML.replace(/<br\s*\/?>/gi, ' ');
+    const decodeAmp = s => s.replace(/<br\s*\/?>/gi, ' ')
+                        .replace(/&amp;/g, '&');
+
+    let teamAName = decodeAmp(elements.nameA.innerHTML);
+    let teamBName = decodeAmp(elements.nameB.innerHTML);
+
     const thaiDate = getThaiDateString();
 
     const filled = template

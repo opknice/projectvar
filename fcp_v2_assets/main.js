@@ -403,7 +403,7 @@ const resetToZero = () => {
     injuryTime = 0;
     updateTimerDisplay();
     updateInjuryTimeDisplay();
-    const timeString = "PRE";
+    const timeString = "00:00";
     elements.timerText.textContent = timeString;
     setText('time_counter', timeString);
 }

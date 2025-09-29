@@ -183,7 +183,6 @@ const setLanguage = (lang) => {
 };
 
 
-
 // --- Scoreboard Logic ---
 const getTeamInitials = (name) => name ? (name.split(' ').filter(Boolean).length >= 2 ? (name.split(' ')[0][0] + name.split(' ')[1][0]) : name.substring(0, 2)).toUpperCase() : '';
 
@@ -737,7 +736,8 @@ const setupEventListeners = () => {
     }
 
     elements.colorASaveBtn.addEventListener('click', () => {
-        const teamAName = elements.nameA.innerHTML.replace(/<br\s*\/?>/gi, '/');
+        // ใช้ innerText แทน innerHTML เพื่อให้ได้ชื่อทีมที่ไม่มี tag หรือ encode
+        const teamAName = elements.nameA.innerText.trim();
         setTeamColors(teamAName, {
             color1: elements.colorA.value,
             color2: elements.colorA2.value
@@ -746,7 +746,7 @@ const setupEventListeners = () => {
     });
 
     elements.colorBSaveBtn.addEventListener('click', () => {
-        const teamBName = elements.nameB.innerHTML.replace(/<br\s*\/?>/gi, '/');
+        const teamBName = elements.nameB.innerText.trim();
         setTeamColors(teamBName, {
             color1: elements.colorB.value,
             color2: elements.colorB2.value
@@ -809,12 +809,14 @@ const TEAM_COLOR_KEY = 'teamColors';
 function getTeamColors(teamName) {
     if (!teamName) return {};
     const all = JSON.parse(localStorage.getItem(TEAM_COLOR_KEY) || '{}');
-    return all[teamName] || {};
+    // ใช้ encodeURIComponent เพื่อรองรับชื่อทีมที่มีอักขระพิเศษ
+    return all[encodeURIComponent(teamName)] || {};
 }
 function setTeamColors(teamName, colors) {
     if (!teamName) return;
     const all = JSON.parse(localStorage.getItem(TEAM_COLOR_KEY) || '{}');
-    all[teamName] = { ...all[teamName], ...colors };
+    // ใช้ encodeURIComponent เพื่อรองรับชื่อทีมที่มีอักขระพิเศษ
+    all[encodeURIComponent(teamName)] = { ...all[encodeURIComponent(teamName)], ...colors };
     localStorage.setItem(TEAM_COLOR_KEY, JSON.stringify(all));
 }
 

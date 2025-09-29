@@ -404,21 +404,30 @@ window.showVideoModal = function(url) {
   if (!url) {
     modalBody.innerHTML = `<div class="text-center py-5 text-secondary">ไม่มีคลิปสำหรับแมตช์นี้</div>`;
   } else {
-    // Extract Facebook video ID or use the URL directly
-    // Facebook embed: https://www.facebook.com/plugins/video.php?href=URL
-    const embedUrl = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(url)}&show_text=false&width=800`;
-    modalBody.innerHTML = `
+    // แปลง YouTube URL เป็น embed
+    // รองรับรูปแบบปกติและ short (เช่น https://youtu.be/xxxxxx หรือ https://www.youtube.com/watch?v=xxxxxx)
+    let videoId = "";
+    const ytMatch = url.match(/(?:youtube\.com\/.*v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+    if (ytMatch) {
+      videoId = ytMatch[1];
+    }
+    const embedUrl = videoId
+      ? `https://www.youtube.com/embed/${videoId}?autoplay=1`
+      : url; // fallback กรณีไม่ match
+
+    modalBody.innerHTML = videoId
+      ? `
       <iframe
-        src="${embedUrl}"
         width="100%"
         height="450"
-        style="border:none;overflow:hidden"
-        scrolling="no"
+        src="${embedUrl}"
+        title="YouTube video player"
         frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
       ></iframe>
-    `;
+    `
+      : `<div class="text-center py-5 text-secondary">ลิ้งค์ YouTube ไม่ถูกต้อง</div>`;
   }
   const modalEl = document.getElementById("videoModal");
   const bsModal = new bootstrap.Modal(modalEl);

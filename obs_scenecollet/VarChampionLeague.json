@@ -1,0 +1,4342 @@
+{
+    "current_scene": "Main Stream",
+    "current_program_scene": "Main Stream",
+    "scene_order": [
+        {
+            "name": "Main Stream"
+        },
+        {
+            "name": "Replay"
+        }
+    ],
+    "name": "VarChampionLeague",
+    "groups": [
+        {
+            "prev_ver": 536870913,
+            "name": "Group logo",
+            "uuid": "19aa841e-425e-406d-8408-67c28df839ce",
+            "id": "group",
+            "versioned_id": "group",
+            "settings": {
+                "id_counter": 0,
+                "custom_size": true,
+                "cx": 2138,
+                "cy": 174,
+                "items": [
+                    {
+                        "name": "logo_overall",
+                        "source_uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 182,
+                        "crop_top": 389,
+                        "crop_right": 182,
+                        "crop_bottom": 431,
+                        "id": 64,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 2.0015869140625,
+                            "y": 48.9588623046875
+                        },
+                        "pos_rel": {
+                            "x": -1.7740710973739624,
+                            "y": -0.9093354344367981
+                        },
+                        "scale": {
+                            "x": 0.4064815044403076,
+                            "y": 0.4583333432674408
+                        },
+                        "scale_rel": {
+                            "x": 0.4064815044403076,
+                            "y": 0.4583333432674408
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_B_2",
+                        "source_uuid": "1be8d73d-e864-4784-a869-1aa2b8c9fa59",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 65,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 211.0,
+                            "y": 138.9588623046875
+                        },
+                        "pos_rel": {
+                            "x": -1.3870370388031006,
+                            "y": -0.7426687479019165
+                        },
+                        "scale": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.031481482088565826
+                        },
+                        "scale_rel": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.031481482088565826
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_B",
+                        "source_uuid": "26834c51-76a4-4c89-a71b-a1a60e3ec226",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 66,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 211.0,
+                            "y": 126.45889282226562
+                        },
+                        "pos_rel": {
+                            "x": -1.3870370388031006,
+                            "y": -0.765816867351532
+                        },
+                        "scale": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.01666666753590107
+                        },
+                        "scale_rel": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.01666666753590107
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_A_2",
+                        "source_uuid": "b493636a-1e5e-48fa-949b-8c2d05e3c3f3",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 67,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 211.0,
+                            "y": 89.45889282226562
+                        },
+                        "pos_rel": {
+                            "x": -1.3870370388031006,
+                            "y": -0.8343353867530823
+                        },
+                        "scale": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.031481482088565826
+                        },
+                        "scale_rel": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.031481482088565826
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_A",
+                        "source_uuid": "3920ea41-1608-48bd-b48d-0c3f23a44238",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 68,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 211.0,
+                            "y": 72.95889282226562
+                        },
+                        "pos_rel": {
+                            "x": -1.3870370388031006,
+                            "y": -0.8648909330368042
+                        },
+                        "scale": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.01666666753590107
+                        },
+                        "scale_rel": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.01666666753590107
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_b",
+                        "source_uuid": "2731ce2a-6bf1-4d45-80f3-093cd817b85f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 69,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 605.9998168945312,
+                            "y": 136.9588623046875
+                        },
+                        "pos_rel": {
+                            "x": -0.6555559039115906,
+                            "y": -0.7463724613189697
+                        },
+                        "scale": {
+                            "x": 0.09285714477300644,
+                            "y": 0.09378299862146378
+                        },
+                        "scale_rel": {
+                            "x": 0.09285714477300644,
+                            "y": 0.09378299862146378
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_a",
+                        "source_uuid": "4d01ec6f-d572-45ce-aa67-2cc4dc7adad9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 70,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 605.9998168945312,
+                            "y": 71.95889282226562
+                        },
+                        "pos_rel": {
+                            "x": -0.6555559039115906,
+                            "y": -0.8667427897453308
+                        },
+                        "scale": {
+                            "x": 0.09285714477300644,
+                            "y": 0.09378299862146378
+                        },
+                        "scale_rel": {
+                            "x": 0.09285714477300644,
+                            "y": 0.09378299862146378
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logochampionleague",
+                        "source_uuid": "d4e3d922-78fc-49b3-a2d8-45d62a45942e",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 256,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 71,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 7.9588623046875
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -0.9852613806724548
+                        },
+                        "scale": {
+                            "x": 0.9444444179534912,
+                            "y": 0.9435185194015503
+                        },
+                        "scale_rel": {
+                            "x": 0.9444444179534912,
+                            "y": 0.9435185194015503
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_b",
+                        "source_uuid": "af845d99-2d11-4baf-8b2a-e352928d032c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 72,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 407.30987548828125,
+                            "y": 136.9588623046875
+                        },
+                        "pos_rel": {
+                            "x": -1.0235002040863037,
+                            "y": -0.7463724613189697
+                        },
+                        "scale": {
+                            "x": 0.17314814031124115,
+                            "y": 0.18148164451122284
+                        },
+                        "scale_rel": {
+                            "x": 0.17314814031124115,
+                            "y": 0.18148164451122284
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_a",
+                        "source_uuid": "1a7416b5-45e8-4bd4-afe0-085560af8bf9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 73,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 407.30987548828125,
+                            "y": 82.95889282226562
+                        },
+                        "pos_rel": {
+                            "x": -1.0235002040863037,
+                            "y": -0.8463724255561829
+                        },
+                        "scale": {
+                            "x": 0.15648153424263,
+                            "y": 0.18055546283721924
+                        },
+                        "scale_rel": {
+                            "x": 0.15648153424263,
+                            "y": 0.18055546283721924
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_b",
+                        "source_uuid": "00af54db-455e-4c4a-9b99-cb91226e3e03",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 74,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 201.999755859375,
+                            "y": 135.95883178710938
+                        },
+                        "pos_rel": {
+                            "x": -1.4037041664123535,
+                            "y": -0.7482243776321411
+                        },
+                        "scale": {
+                            "x": 0.335185170173645,
+                            "y": 0.2898147702217102
+                        },
+                        "scale_rel": {
+                            "x": 0.335185170173645,
+                            "y": 0.2898147702217102
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_a",
+                        "source_uuid": "b0275b49-e703-4271-8fe2-126795607f31",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 75,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 201.999755859375,
+                            "y": 82.82186889648438
+                        },
+                        "pos_rel": {
+                            "x": -1.4037041664123535,
+                            "y": -0.8466261625289917
+                        },
+                        "scale": {
+                            "x": 0.33796295523643494,
+                            "y": 0.2898147702217102
+                        },
+                        "scale_rel": {
+                            "x": 0.33796295523643494,
+                            "y": 0.2898147702217102
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "time_counter",
+                        "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 76,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 109.499755859375,
+                            "y": 136.95892333984375
+                        },
+                        "pos_rel": {
+                            "x": -1.5750004053115845,
+                            "y": -0.7463723421096802
+                        },
+                        "scale": {
+                            "x": 0.20277777314186096,
+                            "y": 0.22037038207054138
+                        },
+                        "scale_rel": {
+                            "x": 0.20277777314186096,
+                            "y": 0.22037038207054138
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_var",
+                        "source_uuid": "595bedb0-ba45-42e1-be11-260bd0766b95",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 19,
+                        "crop_right": 203,
+                        "crop_bottom": 14,
+                        "id": 79,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1703.575439453125,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": 1.3769915103912354,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.8528858423233032,
+                            "y": 1.8521872758865356
+                        },
+                        "scale_rel": {
+                            "x": 1.8528858423233032,
+                            "y": 1.8521872758865356
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "half_text",
+                        "source_uuid": "550ce3ab-f4f3-449d-8b7d-069e7cfca040",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 77,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 32.999755859375,
+                            "y": 137.9588623046875
+                        },
+                        "pos_rel": {
+                            "x": -1.7166671752929688,
+                            "y": -0.7445206046104431
+                        },
+                        "scale": {
+                            "x": 0.13333334028720856,
+                            "y": 0.1518518477678299
+                        },
+                        "scale_rel": {
+                            "x": 0.13333334028720856,
+                            "y": 0.1518518477678299
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.show_scene_item.64": [],
+                "libobs.hide_scene_item.64": [],
+                "libobs.show_scene_item.65": [],
+                "libobs.hide_scene_item.65": [],
+                "libobs.show_scene_item.66": [],
+                "libobs.hide_scene_item.66": [],
+                "libobs.show_scene_item.67": [],
+                "libobs.hide_scene_item.67": [],
+                "libobs.show_scene_item.68": [],
+                "libobs.hide_scene_item.68": [],
+                "libobs.show_scene_item.69": [],
+                "libobs.hide_scene_item.69": [],
+                "libobs.show_scene_item.70": [],
+                "libobs.hide_scene_item.70": [],
+                "libobs.show_scene_item.71": [],
+                "libobs.hide_scene_item.71": [],
+                "libobs.show_scene_item.72": [],
+                "libobs.hide_scene_item.72": [],
+                "libobs.show_scene_item.73": [],
+                "libobs.hide_scene_item.73": [],
+                "libobs.show_scene_item.74": [],
+                "libobs.hide_scene_item.74": [],
+                "libobs.show_scene_item.75": [],
+                "libobs.hide_scene_item.75": [],
+                "libobs.show_scene_item.76": [],
+                "libobs.hide_scene_item.76": [],
+                "libobs.show_scene_item.79": [],
+                "libobs.hide_scene_item.79": [],
+                "libobs.show_scene_item.77": [],
+                "libobs.hide_scene_item.77": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "คะแนน",
+            "uuid": "63a58e30-7fba-404c-9bbf-ca7b99f6696e",
+            "id": "group",
+            "versioned_id": "group",
+            "settings": {
+                "id_counter": 0,
+                "custom_size": true,
+                "cx": 1689,
+                "cy": 1052,
+                "items": [
+                    {
+                        "name": "livescore_",
+                        "source_uuid": "6503c9e2-5895-46f6-aa1a-ccb7a49b7af6",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 59,
+                        "crop_top": 89,
+                        "crop_right": 57,
+                        "crop_bottom": 857,
+                        "id": 44,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1.0,
+                            "y": 939.0
+                        },
+                        "pos_rel": {
+                            "x": -1.775925874710083,
+                            "y": 0.7388888597488403
+                        },
+                        "scale": {
+                            "x": 0.9351851940155029,
+                            "y": 0.8361111283302307
+                        },
+                        "scale_rel": {
+                            "x": 0.9351851940155029,
+                            "y": 0.8361111283302307
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "livescore_ Show Transition",
+                            "transition": {
+                                "luma_image": "linear-topleft.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": true
+                            },
+                            "duration": 1200
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "ตารางคะแนนสด",
+                        "source_uuid": "4ac1993f-d894-41dd-8f21-3eb633244a1b",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 213,
+                        "crop_top": 16,
+                        "crop_right": 222,
+                        "crop_bottom": 238,
+                        "id": 81,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.1370370388031006,
+                            "y": 1.1370370388031006
+                        },
+                        "scale_rel": {
+                            "x": 1.1370370388031006,
+                            "y": 1.1370370388031006
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "ตารางคะแนนสด Show Transition",
+                            "transition": {
+                                "luma_image": "linear-v.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": false
+                            },
+                            "duration": 1500
+                        },
+                        "hide_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "ตารางคะแนนสด Hide Transition",
+                            "transition": {
+                                "luma_image": "barndoor-v.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": true
+                            },
+                            "duration": 800
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.show_scene_item.44": [],
+                "libobs.hide_scene_item.44": [],
+                "libobs.show_scene_item.81": [
+                    {
+                        "key": "OBS_KEY_NUM2"
+                    }
+                ],
+                "libobs.hide_scene_item.81": [
+                    {
+                        "key": "OBS_KEY_NUM3"
+                    }
+                ]
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        }
+    ],
+    "quick_transitions": [
+        {
+            "name": "Cut",
+            "duration": 300,
+            "hotkeys": [],
+            "id": 1,
+            "fade_to_black": false
+        },
+        {
+            "name": "Fade",
+            "duration": 300,
+            "hotkeys": [],
+            "id": 2,
+            "fade_to_black": false
+        },
+        {
+            "name": "Fade",
+            "duration": 300,
+            "hotkeys": [],
+            "id": 3,
+            "fade_to_black": true
+        }
+    ],
+    "transitions": [],
+    "saved_projectors": [],
+    "canvases": [],
+    "current_transition": "Fade",
+    "transition_duration": 400,
+    "preview_locked": false,
+    "scaling_enabled": false,
+    "scaling_level": -10,
+    "scaling_off_x": 0.0,
+    "scaling_off_y": 0.0,
+    "virtual-camera": {
+        "type2": 3
+    },
+    "modules": {
+        "scripts-tool": [
+            {
+                "path": "C:/Program Files/obs-studio/data/obs-plugins/frontend-tools/scripts/instant-replay.lua",
+                "settings": {
+                    "instant_replay.trigger": []
+                }
+            }
+        ],
+        "output-timer": {
+            "streamTimerHours": 0,
+            "streamTimerMinutes": 0,
+            "streamTimerSeconds": 30,
+            "recordTimerHours": 0,
+            "recordTimerMinutes": 0,
+            "recordTimerSeconds": 30,
+            "autoStartStreamTimer": false,
+            "autoStartRecordTimer": false,
+            "pauseRecordTimer": true
+        },
+        "auto-scene-switcher": {
+            "interval": 700,
+            "non_matching_scene": "",
+            "switch_if_not_matching": false,
+            "active": false,
+            "switches": []
+        },
+        "captions": {
+            "source": "",
+            "enabled": false,
+            "lang_id": 1033,
+            "provider": "mssapi"
+        },
+        "advanced-scene-switcher": {
+            "sceneGroups": [],
+            "macros": [
+                {
+                    "name": "F6",
+                    "group": false,
+                    "pauseSaveBehavior": 0,
+                    "pause": false,
+                    "parallel": false,
+                    "checkConditionsInParallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "stopActionsIfNotDone": false,
+                    "useShortCircuitEvaluation": false,
+                    "useCustomConditionCheckInterval": false,
+                    "customConditionCheckInterval": {
+                        "value": {
+                            "value": 0.3,
+                            "type": 0
+                        },
+                        "unit": 0,
+                        "version": 1
+                    },
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false.",
+                        "dockId": "advss-macro-dock-88b4b820-9957-415a-9c94-104c062e2417",
+                        "version": 1
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 201
+                        },
+                        {
+                            "pos": 200
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 168
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "replay_buffer",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 3.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "state": 2
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "wait",
+                            "duration": {
+                                "value": {
+                                    "value": 3.5,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "duration2": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "waitType": 0,
+                            "version": 1
+                        },
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "scene_switch",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": "Replay"
+                            },
+                            "transitionType": 1,
+                            "duration": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "blockUntilTransitionDone": true,
+                            "sceneType": 0
+                        }
+                    ],
+                    "elseActions": [],
+                    "inputVariables": []
+                },
+                {
+                    "name": "autoswitchmediaend",
+                    "group": false,
+                    "pauseSaveBehavior": 0,
+                    "pause": false,
+                    "parallel": false,
+                    "checkConditionsInParallel": false,
+                    "onChange": true,
+                    "skipExecOnStart": false,
+                    "stopActionsIfNotDone": false,
+                    "useShortCircuitEvaluation": false,
+                    "useCustomConditionCheckInterval": false,
+                    "customConditionCheckInterval": {
+                        "value": {
+                            "value": 0.3,
+                            "type": 0
+                        },
+                        "unit": 0,
+                        "version": 1
+                    },
+                    "dockSettings": {
+                        "register": false,
+                        "hasRunButton": true,
+                        "hasPauseButton": true,
+                        "hasStatusLabel": false,
+                        "highlightIfConditionsTrue": false,
+                        "runButtonText": "Run",
+                        "pauseButtonText": "Pause",
+                        "unpauseButtonText": "Unpause",
+                        "conditionsTrueStatusText": "Conditions are true.",
+                        "conditionsFalseStatusText": "Conditions are false.",
+                        "dockId": "advss-macro-dock-1a727011-ccf5-4994-8cdd-aaa85350335a",
+                        "version": 1
+                    },
+                    "macroActionConditionSplitterPosition": [
+                        {
+                            "pos": 201
+                        },
+                        {
+                            "pos": 200
+                        }
+                    ],
+                    "macroElseActionSplitterPosition": [
+                        {
+                            "pos": 168
+                        },
+                        {
+                            "pos": 0
+                        }
+                    ],
+                    "registerHotkeys": false,
+                    "pauseHotkey": [],
+                    "unpauseHotkey": [],
+                    "togglePauseHotkey": [],
+                    "conditions": [
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "media",
+                            "logic": 0,
+                            "durationModifier": {
+                                "time_constraint": 0,
+                                "seconds": {
+                                    "value": {
+                                        "value": 0.0,
+                                        "type": 0
+                                    },
+                                    "unit": 0,
+                                    "version": 1
+                                }
+                            },
+                            "source": {
+                                "type": 0,
+                                "name": "Source Replay"
+                            },
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": ""
+                            },
+                            "sourceType": 0,
+                            "checkType": 0,
+                            "state": 6,
+                            "restriction": 3,
+                            "duration": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "version": 1
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "scene_switch",
+                            "sceneSelection": {
+                                "type": 0,
+                                "name": "Main Stream"
+                            },
+                            "transitionType": 0,
+                            "transition": "Fade",
+                            "duration": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "blockUntilTransitionDone": true,
+                            "sceneType": 0
+                        }
+                    ],
+                    "elseActions": [],
+                    "inputVariables": []
+                }
+            ],
+            "macroSettings": {
+                "highlightExecuted": false,
+                "highlightConditions": false,
+                "highlightActions": false,
+                "newMacroCheckInParallel": false,
+                "newMacroRegisterHotkey": false,
+                "newMacroUseShortCircuitEvaluation": false,
+                "saveSettingsOnMacroChange": true
+            },
+            "variables": [],
+            "switches": [],
+            "ignoreWindows": [],
+            "screenRegion": [],
+            "pauseEntries": [],
+            "sceneRoundTrip": [],
+            "sceneTransitions": [],
+            "defaultTransitions": [],
+            "defTransitionDelay": 0,
+            "ignoreIdleWindows": [],
+            "idleTargetType": 0,
+            "idleSceneName": "",
+            "idleTransitionName": "",
+            "idleEnable": false,
+            "idleTime": 60,
+            "executableSwitches": [],
+            "randomSwitches": [],
+            "fileSwitches": [],
+            "readEnabled": false,
+            "readPath": "",
+            "writeEnabled": false,
+            "writePath": "",
+            "mediaSwitches": [],
+            "timeSwitches": [],
+            "audioSwitches": [],
+            "audioFallbackTargetType": 0,
+            "audioFallbackScene": "",
+            "audioFallbackTransition": "",
+            "audioFallbackEnable": false,
+            "audioFallbackDuration": {
+                "value": {
+                    "value": 0.0,
+                    "type": 0
+                },
+                "unit": 0,
+                "version": 1
+            },
+            "videoSwitches": [],
+            "interval": 300,
+            "non_matching_scene": "",
+            "switch_if_not_matching": 0,
+            "noMatchDelay": {
+                "value": {
+                    "value": 0.0,
+                    "type": 0
+                },
+                "unit": 0,
+                "version": 1
+            },
+            "cooldown": {
+                "value": {
+                    "value": 0.0,
+                    "type": 0
+                },
+                "unit": 0,
+                "version": 1
+            },
+            "enableCooldown": false,
+            "active": true,
+            "startup_behavior": 0,
+            "autoStartEvent": 0,
+            "logLevel": 0,
+            "logLevelVersion": 1,
+            "showSystemTrayNotifications": false,
+            "disableHints": false,
+            "disableFilterComboboxFilter": false,
+            "disableMacroWidgetCache": false,
+            "warnPluginLoadFailure": true,
+            "hideLegacyTabs": true,
+            "priority0": 10,
+            "priority1": 0,
+            "priority2": 2,
+            "priority3": 8,
+            "priority4": 6,
+            "priority5": 9,
+            "priority6": 7,
+            "priority7": 4,
+            "priority8": 1,
+            "priority9": 5,
+            "priority10": 3,
+            "threadPriority": 3,
+            "transitionOverrideOverride": false,
+            "adjustActiveTransitionType": true,
+            "lastImportPath": "",
+            "startHotkey": [],
+            "stopHotkey": [],
+            "toggleHotkey": [],
+            "newMacroHotkey": [],
+            "upMacroSegmentHotkey": [],
+            "downMacroSegmentHotkey": [],
+            "removeMacroSegmentHotkey": [],
+            "tabWidgetOrder": [
+                {
+                    "generalTab": 0
+                },
+                {
+                    "macroTab": 1
+                },
+                {
+                    "windowTitleTab": 2
+                },
+                {
+                    "executableTab": 3
+                },
+                {
+                    "screenRegionTab": 4
+                },
+                {
+                    "mediaTab": 5
+                },
+                {
+                    "fileTab": 6
+                },
+                {
+                    "randomTab": 7
+                },
+                {
+                    "timeTab": 8
+                },
+                {
+                    "idleTab": 9
+                },
+                {
+                    "sceneSequenceTab": 10
+                },
+                {
+                    "audioTab": 11
+                },
+                {
+                    "videoTab": 12
+                },
+                {
+                    "sceneGroupTab": 13
+                },
+                {
+                    "transitionsTab": 14
+                },
+                {
+                    "pauseTab": 15
+                },
+                {
+                    "websocketConnectionTab": 16
+                },
+                {
+                    "mqttConnectionTab": 17
+                },
+                {
+                    "twitchConnectionTab": 18
+                },
+                {
+                    "variableTab": 19
+                },
+                {
+                    "actionQueueTab": 20
+                }
+            ],
+            "saveWindowGeo": false,
+            "windowPosX": 450,
+            "windowPosY": 187,
+            "windowWidth": 1000,
+            "windowHeight": 600,
+            "macroListMacroEditSplitterPosition": [
+                {
+                    "pos": 136
+                },
+                {
+                    "pos": 837
+                }
+            ],
+            "version": "20488afdd164c29a83b1a76788cde209494be1ae",
+            "websocketConnections": [],
+            "mqttConnections": [],
+            "twitchConnections": [],
+            "actionQueues": []
+        }
+    },
+    "resolution": {
+        "x": 1920,
+        "y": 1080
+    },
+    "version": 2,
+    "sources": [
+        {
+            "prev_ver": 536870913,
+            "name": "ตารางคะแนนสด",
+            "uuid": "4ac1993f-d894-41dd-8f21-3eb633244a1b",
+            "id": "browser_source",
+            "versioned_id": "browser_source",
+            "settings": {
+                "is_local_file": true,
+                "local_file": "D:/scoreboard-main/table_var.html",
+                "width": 1920,
+                "height": 1080,
+                "fps": 60,
+                "fps_custom": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "ObsBrowser.Refresh": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870913,
+                    "name": "Chroma Key",
+                    "uuid": "c3ff1027-d2a7-48b2-b647-ac608f93e83f",
+                    "id": "chroma_key_filter",
+                    "versioned_id": "chroma_key_filter_v2",
+                    "settings": {
+                        "similarity": 1,
+                        "smoothness": 553,
+                        "spill": 411
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "action",
+            "uuid": "549d8feb-fb83-431d-8443-00053ed6fac8",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "D:/scoreboard/pic scoreboard/replay_shot.mp4",
+                "speed_percent": 180
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Audio Input Capture",
+            "uuid": "c3e1ed2d-d695-49d6-aeba-66ad8cde6efe",
+            "id": "wasapi_input_capture",
+            "versioned_id": "wasapi_input_capture",
+            "settings": {
+                "device_id": "{0.0.1.00000000}.{476af322-652e-4347-be09-eaa2d7cf511b}",
+                "use_device_timing": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Color_Team_A",
+            "uuid": "3920ea41-1608-48bd-b48d-0c3f23a44238",
+            "id": "color_source",
+            "versioned_id": "color_source_v3",
+            "settings": {
+                "color": 4278250239
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Color_Team_A_2",
+            "uuid": "b493636a-1e5e-48fa-949b-8c2d05e3c3f3",
+            "id": "color_source",
+            "versioned_id": "color_source_v3",
+            "settings": {
+                "color": 4278492973
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Color_Team_B",
+            "uuid": "26834c51-76a4-4c89-a71b-a1a60e3ec226",
+            "id": "color_source",
+            "versioned_id": "color_source_v3",
+            "settings": {
+                "color": 4290262784
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Color_Team_B_2",
+            "uuid": "1be8d73d-e864-4784-a869-1aa2b8c9fa59",
+            "id": "color_source",
+            "versioned_id": "color_source_v3",
+            "settings": {
+                "color": 4290445567
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "half_text",
+            "uuid": "550ce3ab-f4f3-449d-8b7d-069e7cfca040",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "1st",
+                "font": {
+                    "face": "Srinakharinwirot",
+                    "style": "Regular",
+                    "size": 256,
+                    "flags": 0
+                }
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "livescore_",
+            "uuid": "6503c9e2-5895-46f6-aa1a-ccb7a49b7af6",
+            "id": "browser_source",
+            "versioned_id": "browser_source",
+            "settings": {
+                "is_local_file": true,
+                "local_file": "D:/scoreboard-main/livescores.html",
+                "url": "https://opknice.github.io/scoreboard/livescores",
+                "width": 1920,
+                "height": 1080,
+                "fps": 60,
+                "fps_custom": true,
+                "restart_when_active": false
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "ObsBrowser.Refresh": [
+                    {
+                        "key": "OBS_KEY_NUM1"
+                    }
+                ]
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870913,
+                    "name": "Chroma Key",
+                    "uuid": "2bfa8c88-a74b-4277-afcd-22abe1a9957a",
+                    "id": "chroma_key_filter",
+                    "versioned_id": "chroma_key_filter_v2",
+                    "settings": {},
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "LOGO ALL",
+            "uuid": "d07a9f72-76cc-4f0f-82a9-bec725b4cf6f",
+            "id": "image_source",
+            "versioned_id": "image_source",
+            "settings": {
+                "file": "D:/scoreboard/pic scoreboard/logoallteam.png"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "logochampionleague",
+            "uuid": "d4e3d922-78fc-49b3-a2d8-45d62a45942e",
+            "id": "image_source",
+            "versioned_id": "image_source",
+            "settings": {
+                "file": "D:/scoreboard/pic scoreboard/removevar.png"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "logoON",
+            "uuid": "d8537603-7de0-4fbb-bb0a-dea71f71b17d",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "D:/scoreboard/pic scoreboard/replay_shot.mp4",
+                "speed_percent": 180
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870913,
+                    "name": "Chroma Key",
+                    "uuid": "e8b56e57-7c65-4578-8a5a-27ce3ee0a838",
+                    "id": "chroma_key_filter",
+                    "versioned_id": "chroma_key_filter_v2",
+                    "settings": {
+                        "similarity": 365
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "logo_overall",
+            "uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f",
+            "id": "image_source",
+            "versioned_id": "image_source",
+            "settings": {
+                "file": "D:/scoreboard/pic scoreboard/logo sure.png",
+                "undo_uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "logo_team_a",
+            "uuid": "4d01ec6f-d572-45ce-aa67-2cc4dc7adad9",
+            "id": "image_source",
+            "versioned_id": "image_source",
+            "settings": {
+                "file": "D:\\scoreboard\\logoteam/A10.png"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "logo_team_b",
+            "uuid": "2731ce2a-6bf1-4d45-80f3-093cd817b85f",
+            "id": "image_source",
+            "versioned_id": "image_source",
+            "settings": {
+                "file": "D:\\scoreboard\\logoteam/A1.png"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "logo_var",
+            "uuid": "595bedb0-ba45-42e1-be11-260bd0766b95",
+            "id": "image_source",
+            "versioned_id": "image_source",
+            "settings": {
+                "file": "D:/scoreboard/pic scoreboard/removevar.png"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Main Stream",
+            "uuid": "e9711276-c5d9-4781-8d9c-2e6c07f2413e",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 85,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "Media Source",
+                        "source_uuid": "da13957c-6bdf-46f9-90fb-817f92ef43ab",
+                        "visible": false,
+                        "locked": true,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 85,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -5.0,
+                            "y": -6.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7870370149612427,
+                            "y": -1.0111111402511597
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Audio Input Capture",
+                        "source_uuid": "c3e1ed2d-d695-49d6-aeba-66ad8cde6efe",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 18,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Sony",
+                        "source_uuid": "9fde01e2-5e91-4c06-8e08-08ac72199d39",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 17,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "livescore_",
+                        "source_uuid": "6503c9e2-5895-46f6-aa1a-ccb7a49b7af6",
+                        "visible": false,
+                        "locked": true,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 59,
+                        "crop_top": 89,
+                        "crop_right": 57,
+                        "crop_bottom": 857,
+                        "id": 84,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 116.0,
+                            "y": 952.0
+                        },
+                        "pos_rel": {
+                            "x": -1.5629630088806152,
+                            "y": 0.7629629373550415
+                        },
+                        "scale": {
+                            "x": 0.9351851940155029,
+                            "y": 0.8361111283302307
+                        },
+                        "scale_rel": {
+                            "x": 0.9351851940155029,
+                            "y": 0.8361111283302307
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "livescore_ Show Transition",
+                            "transition": {
+                                "luma_image": "barndoor-v.png",
+                                "luma_softness": 1.0
+                            },
+                            "duration": 1500
+                        },
+                        "hide_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "livescore_ Hide Transition",
+                            "transition": {
+                                "luma_image": "barndoor-v.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": true
+                            },
+                            "duration": 100
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "LOGO ALL",
+                        "source_uuid": "d07a9f72-76cc-4f0f-82a9-bec725b4cf6f",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 78,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 959.0,
+                            "y": 1008.0
+                        },
+                        "pos_rel": {
+                            "x": -0.0018518518190830946,
+                            "y": 0.8666666746139526
+                        },
+                        "scale": {
+                            "x": 0.6592592597007751,
+                            "y": 0.6592592597007751
+                        },
+                        "scale_rel": {
+                            "x": 0.6592592597007751,
+                            "y": 0.6592592597007751
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "LOGO ALL Show Transition",
+                            "transition": {
+                                "luma_image": "barndoor-h.png",
+                                "luma_softness": 1.0
+                            },
+                            "duration": 1500
+                        },
+                        "hide_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "LOGO ALL Hide Transition",
+                            "transition": {
+                                "luma_image": "barndoor-h.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": true
+                            },
+                            "duration": 400
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_overall",
+                        "source_uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 182,
+                        "crop_top": 389,
+                        "crop_right": 182,
+                        "crop_bottom": 431,
+                        "id": 64,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 38.7587890625,
+                            "y": 46.060211181640625
+                        },
+                        "pos_rel": {
+                            "x": -1.7060022354125977,
+                            "y": -0.9147033095359802
+                        },
+                        "scale": {
+                            "x": 0.4064815044403076,
+                            "y": 0.4583333432674408
+                        },
+                        "scale_rel": {
+                            "x": 0.35719162225723267,
+                            "y": 0.4031124413013458
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_B_2",
+                        "source_uuid": "1be8d73d-e864-4784-a869-1aa2b8c9fa59",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 65,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 222.41412353515625,
+                            "y": 125.21685791015625
+                        },
+                        "pos_rel": {
+                            "x": -1.3658998012542725,
+                            "y": -0.7681169509887695
+                        },
+                        "scale": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.031481482088565826
+                        },
+                        "scale_rel": {
+                            "x": 0.0018307087011635303,
+                            "y": 0.027688533067703247
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_B",
+                        "source_uuid": "26834c51-76a4-4c89-a71b-a1a60e3ec226",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 66,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 222.41412353515625,
+                            "y": 114.222900390625
+                        },
+                        "pos_rel": {
+                            "x": -1.3658998012542725,
+                            "y": -0.7884761095046997
+                        },
+                        "scale": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.01666666753590107
+                        },
+                        "scale_rel": {
+                            "x": 0.0018307087011635303,
+                            "y": 0.014658634550869465
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_A_2",
+                        "source_uuid": "b493636a-1e5e-48fa-949b-8c2d05e3c3f3",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 67,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 222.41412353515625,
+                            "y": 81.68072509765625
+                        },
+                        "pos_rel": {
+                            "x": -1.3658998012542725,
+                            "y": -0.8487393856048584
+                        },
+                        "scale": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.031481482088565826
+                        },
+                        "scale_rel": {
+                            "x": 0.0018307087011635303,
+                            "y": 0.027688533067703247
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_A",
+                        "source_uuid": "3920ea41-1608-48bd-b48d-0c3f23a44238",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 68,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 222.41412353515625,
+                            "y": 67.16867065429688
+                        },
+                        "pos_rel": {
+                            "x": -1.3658998012542725,
+                            "y": -0.8756135702133179
+                        },
+                        "scale": {
+                            "x": 0.0020833334419876337,
+                            "y": 0.01666666753590107
+                        },
+                        "scale_rel": {
+                            "x": 0.0018307087011635303,
+                            "y": 0.014658634550869465
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_b",
+                        "source_uuid": "2731ce2a-6bf1-4d45-80f3-093cd817b85f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 69,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 569.5162963867188,
+                            "y": 123.45779418945312
+                        },
+                        "pos_rel": {
+                            "x": -0.7231179475784302,
+                            "y": -0.7713744640350342
+                        },
+                        "scale": {
+                            "x": 0.09285714477300644,
+                            "y": 0.09378299862146378
+                        },
+                        "scale_rel": {
+                            "x": 0.08159729838371277,
+                            "y": 0.08248384296894073
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_a",
+                        "source_uuid": "4d01ec6f-d572-45ce-aa67-2cc4dc7adad9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 70,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 569.5162963867188,
+                            "y": 66.28915405273438
+                        },
+                        "pos_rel": {
+                            "x": -0.7231179475784302,
+                            "y": -0.8772423267364502
+                        },
+                        "scale": {
+                            "x": 0.09285714477300644,
+                            "y": 0.09378299862146378
+                        },
+                        "scale_rel": {
+                            "x": 0.08159729838371277,
+                            "y": 0.08248384296894073
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logochampionleague",
+                        "source_uuid": "d4e3d922-78fc-49b3-a2d8-45d62a45942e",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 256,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 71,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 36.99993896484375,
+                            "y": 9.99993896484375
+                        },
+                        "pos_rel": {
+                            "x": -1.7092593908309937,
+                            "y": -0.9814815521240234
+                        },
+                        "scale": {
+                            "x": 0.9444444179534912,
+                            "y": 0.9435185194015503
+                        },
+                        "scale_rel": {
+                            "x": 0.8299212455749512,
+                            "y": 0.8298416137695312
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_b",
+                        "source_uuid": "af845d99-2d11-4baf-8b2a-e352928d032c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 72,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 394.91943359375,
+                            "y": 123.45779418945312
+                        },
+                        "pos_rel": {
+                            "x": -1.0464454889297485,
+                            "y": -0.7713744640350342
+                        },
+                        "scale": {
+                            "x": 0.17314814031124115,
+                            "y": 0.18148164451122284
+                        },
+                        "scale_rel": {
+                            "x": 0.15215221047401428,
+                            "y": 0.1596163958311081
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_a",
+                        "source_uuid": "1a7416b5-45e8-4bd4-afe0-085560af8bf9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 73,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 394.91943359375,
+                            "y": 75.96383666992188
+                        },
+                        "pos_rel": {
+                            "x": -1.0464454889297485,
+                            "y": -0.8593262434005737
+                        },
+                        "scale": {
+                            "x": 0.15648153424263,
+                            "y": 0.18055546283721924
+                        },
+                        "scale_rel": {
+                            "x": 0.1375066190958023,
+                            "y": 0.15880179405212402
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_b",
+                        "source_uuid": "00af54db-455e-4c4a-9b99-cb91226e3e03",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 74,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 214.5052490234375,
+                            "y": 122.5782470703125
+                        },
+                        "pos_rel": {
+                            "x": -1.3805458545684814,
+                            "y": -0.7730032205581665
+                        },
+                        "scale": {
+                            "x": 0.335185170173645,
+                            "y": 0.2898147702217102
+                        },
+                        "scale_rel": {
+                            "x": 0.294540673494339,
+                            "y": 0.2548973262310028
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_a",
+                        "source_uuid": "b0275b49-e703-4271-8fe2-126795607f31",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 75,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 214.5052490234375,
+                            "y": 75.84332275390625
+                        },
+                        "pos_rel": {
+                            "x": -1.3805458545684814,
+                            "y": -0.8595494031906128
+                        },
+                        "scale": {
+                            "x": 0.33796295523643494,
+                            "y": 0.2898147702217102
+                        },
+                        "scale_rel": {
+                            "x": 0.2969816029071808,
+                            "y": 0.2548973262310028
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "time_counter",
+                        "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 76,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 133.2218017578125,
+                            "y": 123.45785522460938
+                        },
+                        "pos_rel": {
+                            "x": -1.5310707092285156,
+                            "y": -0.7713743448257446
+                        },
+                        "scale": {
+                            "x": 0.20277777314186096,
+                            "y": 0.22037038207054138
+                        },
+                        "scale_rel": {
+                            "x": 0.1781889796257019,
+                            "y": 0.19381973147392273
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_var",
+                        "source_uuid": "595bedb0-ba45-42e1-be11-260bd0766b95",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 19,
+                        "crop_right": 203,
+                        "crop_bottom": 14,
+                        "id": 79,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 1534.0,
+                            "y": 3.0
+                        },
+                        "pos_rel": {
+                            "x": 1.0629630088806152,
+                            "y": -0.9944444298744202
+                        },
+                        "scale": {
+                            "x": 1.8528858423233032,
+                            "y": 1.8521872758865356
+                        },
+                        "scale_rel": {
+                            "x": 1.6282051801681519,
+                            "y": 1.6290322542190552
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "half_text",
+                        "source_uuid": "550ce3ab-f4f3-449d-8b7d-069e7cfca040",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 77,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 65.9981689453125,
+                            "y": 124.33731079101562
+                        },
+                        "pos_rel": {
+                            "x": -1.6555589437484741,
+                            "y": -0.7697457075119019
+                        },
+                        "scale": {
+                            "x": 0.13333334028720856,
+                            "y": 0.1518518477678299
+                        },
+                        "scale_rel": {
+                            "x": 0.11716535687446594,
+                            "y": 0.13355645537376404
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Group logo",
+                        "source_uuid": "19aa841e-425e-406d-8408-67c28df839ce",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 80,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 36.99993896484375,
+                            "y": 3.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7092593908309937,
+                            "y": -0.9944444298744202
+                        },
+                        "scale": {
+                            "x": 0.878740131855011,
+                            "y": 0.8795180916786194
+                        },
+                        "scale_rel": {
+                            "x": 0.878740131855011,
+                            "y": 0.8795180916786194
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "Group logo Show Transition",
+                            "transition": {
+                                "luma_image": "barndoor-v.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": false
+                            },
+                            "duration": 2000
+                        },
+                        "hide_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "Group logo Hide Transition",
+                            "transition": {
+                                "luma_softness": 1.0,
+                                "luma_invert": true
+                            },
+                            "duration": 100
+                        },
+                        "private_settings": {
+                            "collapsed": true
+                        }
+                    },
+                    {
+                        "name": "livescore_",
+                        "source_uuid": "6503c9e2-5895-46f6-aa1a-ccb7a49b7af6",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 59,
+                        "crop_top": 89,
+                        "crop_right": 57,
+                        "crop_bottom": 857,
+                        "id": 44,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 117.0,
+                            "y": 953.0
+                        },
+                        "pos_rel": {
+                            "x": -1.5611110925674438,
+                            "y": 0.7648148536682129
+                        },
+                        "scale": {
+                            "x": 0.9351851940155029,
+                            "y": 0.8361111283302307
+                        },
+                        "scale_rel": {
+                            "x": 0.9351851940155029,
+                            "y": 0.8361111283302307
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "livescore_ Show Transition",
+                            "transition": {
+                                "luma_image": "linear-topleft.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": true
+                            },
+                            "duration": 1200
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "ตารางคะแนนสด",
+                        "source_uuid": "4ac1993f-d894-41dd-8f21-3eb633244a1b",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 213,
+                        "crop_top": 16,
+                        "crop_right": 222,
+                        "crop_bottom": 238,
+                        "id": 81,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 116.0,
+                            "y": 14.0
+                        },
+                        "pos_rel": {
+                            "x": -1.5629630088806152,
+                            "y": -0.9740740656852722
+                        },
+                        "scale": {
+                            "x": 1.1370370388031006,
+                            "y": 1.1370370388031006
+                        },
+                        "scale_rel": {
+                            "x": 1.1370370388031006,
+                            "y": 1.1370370388031006
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "ตารางคะแนนสด Show Transition",
+                            "transition": {
+                                "luma_image": "linear-v.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": false
+                            },
+                            "duration": 1500
+                        },
+                        "hide_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "ตารางคะแนนสด Hide Transition",
+                            "transition": {
+                                "luma_image": "barndoor-v.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": true
+                            },
+                            "duration": 800
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "คะแนน",
+                        "source_uuid": "63a58e30-7fba-404c-9bbf-ca7b99f6696e",
+                        "visible": false,
+                        "locked": true,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 83,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 116.0,
+                            "y": 14.0
+                        },
+                        "pos_rel": {
+                            "x": -1.5629630088806152,
+                            "y": -0.9740740656852722
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 1500
+                        },
+                        "hide_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "คะแนน Hide Transition",
+                            "transition": {
+                                "luma_image": "barndoor-h.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": true
+                            },
+                            "duration": 400
+                        },
+                        "private_settings": {
+                            "collapsed": false
+                        }
+                    },
+                    {
+                        "name": "action",
+                        "source_uuid": "549d8feb-fb83-431d-8443-00053ed6fac8",
+                        "visible": true,
+                        "locked": true,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 20,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.85": [],
+                "libobs.hide_scene_item.85": [],
+                "libobs.show_scene_item.18": [],
+                "libobs.hide_scene_item.18": [],
+                "libobs.show_scene_item.17": [],
+                "libobs.hide_scene_item.17": [],
+                "libobs.show_scene_item.84": [
+                    {
+                        "key": "OBS_KEY_NUM3"
+                    }
+                ],
+                "libobs.hide_scene_item.84": [
+                    {
+                        "key": "OBS_KEY_NUM1"
+                    }
+                ],
+                "libobs.show_scene_item.78": [
+                    {
+                        "key": "OBS_KEY_NUM1"
+                    }
+                ],
+                "libobs.hide_scene_item.78": [
+                    {
+                        "key": "OBS_KEY_NUM3"
+                    },
+                    {
+                        "key": "OBS_KEY_NUM2"
+                    }
+                ],
+                "libobs.show_scene_item.80": [
+                    {
+                        "key": "OBS_KEY_NUM1"
+                    },
+                    {
+                        "key": "OBS_KEY_NUM3"
+                    }
+                ],
+                "libobs.hide_scene_item.80": [
+                    {
+                        "key": "OBS_KEY_NUM2"
+                    }
+                ],
+                "libobs.show_scene_item.83": [
+                    {
+                        "key": "OBS_KEY_NUM2"
+                    }
+                ],
+                "libobs.hide_scene_item.83": [
+                    {
+                        "key": "OBS_KEY_NUM1"
+                    }
+                ],
+                "libobs.show_scene_item.20": [],
+                "libobs.hide_scene_item.20": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Media Source",
+            "uuid": "da13957c-6bdf-46f9-90fb-817f92ef43ab",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "D:/obs/united.webm",
+                "restart_on_activate": false
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "name_team_a",
+            "uuid": "1a7416b5-45e8-4bd4-afe0-085560af8bf9",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "แก๊งค์4พ่อบ้าน",
+                "font": {
+                    "face": "Srinakharinwirot",
+                    "style": "Regular",
+                    "size": 256,
+                    "flags": 0
+                }
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "name_team_b",
+            "uuid": "af845d99-2d11-4baf-8b2a-e352928d032c",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "พรหมานุสรณ์ FC",
+                "font": {
+                    "face": "Srinakharinwirot",
+                    "style": "Regular",
+                    "size": 256,
+                    "flags": 0
+                }
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Replay",
+            "uuid": "a9c42870-76b5-481b-be70-30f37eb4b41b",
+            "id": "scene",
+            "versioned_id": "scene",
+            "settings": {
+                "id_counter": 8,
+                "custom_size": false,
+                "items": [
+                    {
+                        "name": "Source Replay",
+                        "source_uuid": "2e64e40c-1b5d-4523-92bc-4c542f18f494",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 5,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logoON",
+                        "source_uuid": "d8537603-7de0-4fbb-bb0a-dea71f71b17d",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 2,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "ReplayON",
+                        "source_uuid": "ea89b928-9912-4532-bd6b-6f2aa5eb3067",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 2,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 1,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": -75.0,
+                            "y": 41.0
+                        },
+                        "pos_rel": {
+                            "x": -1.9166666269302368,
+                            "y": -0.9240740537643433
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.555555582046509,
+                            "y": 2.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Audio Input Capture",
+                        "source_uuid": "c3e1ed2d-d695-49d6-aeba-66ad8cde6efe",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 8,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_rel": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.show_scene_item.5": [],
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.2": [],
+                "libobs.hide_scene_item.2": [],
+                "libobs.show_scene_item.1": [],
+                "libobs.hide_scene_item.1": [],
+                "libobs.show_scene_item.8": [],
+                "libobs.hide_scene_item.8": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "ReplayON",
+            "uuid": "ea89b928-9912-4532-bd6b-6f2aa5eb3067",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "D:/scoreboard/pic scoreboard/Replay.mp4",
+                "speed_percent": 90
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870913,
+                    "name": "Chroma Key",
+                    "uuid": "db70618a-8d23-4ed6-9a4b-8a72e556eab3",
+                    "id": "chroma_key_filter",
+                    "versioned_id": "chroma_key_filter_v2",
+                    "settings": {
+                        "similarity": 420
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "score_team_a",
+            "uuid": "b0275b49-e703-4271-8fe2-126795607f31",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "0",
+                "font": {
+                    "face": "Srinakharinwirot",
+                    "style": "Regular",
+                    "size": 256,
+                    "flags": 0
+                }
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "score_team_b",
+            "uuid": "00af54db-455e-4c4a-9b99-cb91226e3e03",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "0",
+                "font": {
+                    "face": "Srinakharinwirot",
+                    "style": "Regular",
+                    "size": 256,
+                    "flags": 0
+                }
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Sony",
+            "uuid": "9fde01e2-5e91-4c06-8e08-08ac72199d39",
+            "id": "dshow_input",
+            "versioned_id": "dshow_input",
+            "settings": {
+                "video_device_id": "APS HDMIUSB3 Video Capture:\\\\?\\usb#22vid_04b4&pid_00f9&mi_00#226&237a767e&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "last_video_device_id": "APS HDMIUSB3 Video Capture:\\\\?\\usb#22vid_04b4&pid_00f9&mi_00#226&237a767e&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "active": true
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Source Replay",
+            "uuid": "2e64e40c-1b5d-4523-92bc-4c542f18f494",
+            "id": "ffmpeg_source",
+            "versioned_id": "ffmpeg_source",
+            "settings": {
+                "local_file": "D:/obs/Replay 2025-10-03 22-57-49.mkv",
+                "is_local_file": true,
+                "looping": false,
+                "restart_on_activate": true,
+                "speed_percent": 82
+            },
+            "mixers": 255,
+            "sync": 0,
+            "flags": 0,
+            "volume": 0.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": true,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.unmute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Play": [],
+                "MediaSource.Pause": [],
+                "MediaSource.Stop": [],
+                "dwm_clear": [],
+                "dwm_random": [],
+                "dwm_refresh": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870913,
+                    "name": "Directory watch media",
+                    "uuid": "6356c96a-1716-454d-9a32-41e911bda052",
+                    "id": "dir_watch_media",
+                    "versioned_id": "dir_watch_media",
+                    "settings": {
+                        "dir": "D:/obs",
+                        "sort_by": 0
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "time_counter",
+            "uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "00:00",
+                "font": {
+                    "face": "Srinakharinwirot",
+                    "style": "Regular",
+                    "size": 256,
+                    "flags": 0
+                },
+                "color": 0
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        }
+    ]
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1024">
+  <title>ตารางคะแนนฟุตบอล + ข้อความล่าสุด (แสดงเฉพาะวันที่)</title>
+  
+  <style>
+    :root {
+      --row-color-odd:   71,110,236;
+      --row-color-even: 169,192,255;
+      --row-alpha:       0.10;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background: 
+        url('images/') no-repeat center 20px,
+        url('images/bg2.jpg')   no-repeat center center fixed;
+      background-size: 250px auto, cover;
+      font-family: "Segoe UI", sans-serif;
+      color: #fff;
+      opacity: 0;
+      transition: opacity .8s ease-in-out;
+    }
+    body.loaded { opacity: 1; }
+
+    h1, h2 {
+      margin: 40px 0 20px;
+      text-align: center;
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background: transparent;
+      backdrop-filter: blur(4px);
+    }
+    th, td {
+      padding: 10px;
+      border: none;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 1.2rem;
+    }
+    td.team-cell {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-left: 0;
+      text-align: left;
+    }
+    img.logo {
+      max-width: 35px;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    #tableBody tr:nth-child(odd)  { background: rgba(var(--row-color-odd),  var(--row-alpha)); }
+    #tableBody tr:nth-child(even) { background: rgba(var(--row-color-even),var(--row-alpha)); }
+
+    @keyframes slideInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: none; }
+    }
+    #tableBody tr {
+      opacity: 0;
+      transform: translateY(20px);
+      --delay: 0s;
+      animation: slideInUp .5s ease-out forwards;
+      animation-delay: var(--delay);
+    }
+
+    .no-data td {
+      color: #fff;
+      font-size: 1.1rem;
+      text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+  </style>
+</head>
+<body>
+  <h2><br><br></h2>
+  <div id="latestMessageContainer"></div>
+
+  <table id="leagueTable">
+    <thead>
+      <tr>
+        <th>อันดับ</th>
+        <th>ทีม</th>
+        <th>แข่ง</th>
+        <th>ชนะ</th>
+        <th>เสมอ</th>
+        <th>แพ้</th>
+        <th>ได้</th>
+        <th>เสีย</th>
+        <th>ได้-เสีย</th>
+        <th>คะแนน</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import {
+      getDatabase,
+      ref,
+      onValue
+    } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('loaded');
+    });
+
+const firebaseConfig = {
+  apiKey: "AIzaSyC5VOsYQGQdav1BMw48GY9ErOuxd-tp6G8",
+  authDomain: "alcohol-dd2b1.firebaseapp.com",
+  databaseURL: "https://alcohol-dd2b1-default-rtdb.firebaseio.com",
+  projectId: "alcohol-dd2b1",
+  storageBucket: "alcohol-dd2b1.firebasestorage.app",
+  messagingSenderId: "111449466001",
+  appId: "1:111449466001:web:492984bb3519419fcf0b30",
+  measurementId: "G-E2V3GPLSDB"
+};
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    const matchesRef = ref(db, 'matches');
+
+    const initTeam = () => ({ P:0, W:0, D:0, L:0, GF:0, GA:0, GD:0, Pts:0 });
+    const renderNoData = () => {
+      document.getElementById('tableBody').innerHTML = `
+        <tr class="no-data">
+          <td colspan="10">ยังไม่มีข้อมูลการแข่งขัน</td>
+        </tr>
+      `;
+    };
+
+    // พาธโฟลเดอร์โลโก้ & โลโก้สำรอง
+    const logoBasePath = 'logos';
+    const defaultLogo  = 'images/logo.png';
+
+    onValue(matchesRef, snapshot => {
+      const stats = {};
+      if (!snapshot.exists()) {
+        renderNoData();
+        return;
+      }
+
+      snapshot.forEach(child => {
+        const { teamA, teamB, scoreA, scoreB } = child.val() || {};
+        if (!teamA || !teamB) return;
+        const aName = teamA.trim();
+        const bName = teamB.trim();
+
+        if (!stats[aName]) stats[aName] = initTeam();
+        if (!stats[bName]) stats[bName] = initTeam();
+
+        const a = Number(scoreA);
+        const b = Number(scoreB);
+        if (!Number.isFinite(a) || !Number.isFinite(b)) return;
+
+        stats[aName].P++;
+        stats[bName].P++;
+        stats[aName].GF += a;
+        stats[aName].GA += b;
+        stats[bName].GF += b;
+        stats[bName].GA += a;
+
+        if (a > b) {
+          stats[aName].W++;
+          stats[aName].Pts += 3;
+          stats[bName].L++;
+        } else if (a < b) {
+          stats[bName].W++;
+          stats[bName].Pts += 3;
+          stats[aName].L++;
+        } else {
+          stats[aName].D++;
+          stats[bName].D++;
+          stats[aName].Pts++;
+          stats[bName].Pts++;
+        }
+      });
+
+      const tableData = Object.keys(stats).map(team => {
+        const s = stats[team];
+        s.GD = s.GF - s.GA;
+        return { team, ...s };
+      });
+
+      const tbody = document.getElementById('tableBody');
+      tbody.innerHTML = '';
+      if (tableData.length === 0) {
+        renderNoData();
+        return;
+      }
+
+      tableData.sort((a, b) => {
+        if (b.Pts !== a.Pts) return b.Pts - a.Pts;
+        if (b.GD  !== a.GD ) return b.GD  - a.GD;
+        if (b.GF  !== a.GF ) return b.GF  - a.GF;
+        return a.team.localeCompare(b.team);
+      });
+
+      tableData.forEach((row, i) => {
+        const tr = document.createElement('tr');
+        tr.style.setProperty('--delay', `${i * 0.05}s`);
+
+        // สร้างชื่อไฟล์โลโก้ + .png และเข้ารหัสชื่อทีมก่อน
+        const safeName = encodeURIComponent(row.team);
+        const logoSrc  = `${logoBasePath}/${safeName}.png`;
+
+        tr.innerHTML = `
+          <td>${i + 1}</td>
+          <td class="team-cell">
+            <img
+              class="logo"
+              src="${logoSrc}"
+              alt="${row.team} logo"
+              onerror="this.onerror=null; this.src='${defaultLogo}'"
+            >
+            ${row.team}
+          </td>
+          <td>${row.P}</td>
+          <td>${row.W}</td>
+          <td>${row.D}</td>
+          <td>${row.L}</td>
+          <td>${row.GF}</td>
+          <td>${row.GA}</td>
+          <td>${row.GD}</td>
+          <td>${row.Pts}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    });
+  </script>
+</body>
+</html>

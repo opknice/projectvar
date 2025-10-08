@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Score Marquee</title>
+  <style>
+    /* เบื้องหลังทั้งหมด */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #00ff00;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 2rem;
+      background: #00ff00;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    /* marquee container */
+    #score-marquee {
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      background: #00ff00;
+      color: #fff;
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-size: 2rem;
+      font-weight: bold;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0 auto;
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ซ่อนเมื่อไม่มีข้อมูล */
+    #score-marquee.hidden {
+      display: none;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* ตัวหนังสือเลื่อน */
+    .scrolling-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 40s linear infinite;
+    }
+
+    /* ไฮไลต์คะแนน */
+    .score-highlight {
+      background: #fff;
+      color: #000;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.2rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      display: inline-block;
+      margin: 0 0.3rem;
+      white-space: nowrap;
+    }
+
+    /* หยุดเมื่อ hover */
+    #score-marquee:hover .scrolling-text {
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll-left {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* โลโก้ทีม */
+    .team-logo {
+      width: 100px;
+      height: 100px;
+      vertical-align: middle;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>คะแนนวันนี้ (<span id="today-label"></span>)</h1>
+
+  <div id="score-marquee" class="hidden">
+    <div class="scrolling-text" id="scrolling-content">
+      กำลังโหลดข้อมูล...
+    </div>
+  </div>
+
+  <!-- Firebase SDK (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+  <script>
+    // — 1. เริ่มต้น Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyC5VOsYQGQdav1BMw48GY9ErOuxd-tp6G8",
+  authDomain: "alcohol-dd2b1.firebaseapp.com",
+  databaseURL: "https://alcohol-dd2b1-default-rtdb.firebaseio.com",
+  projectId: "alcohol-dd2b1",
+  storageBucket: "alcohol-dd2b1.firebasestorage.app",
+  messagingSenderId: "111449466001",
+  appId: "1:111449466001:web:492984bb3519419fcf0b30",
+  measurementId: "G-E2V3GPLSDB"
+};
+
+
+    
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
+    // — 2. ตัวแปรโลโก้ + ค่า default
+    const defaultLogo = 'logos/default.png';
+    let teamLogos = {};   // จะเก็บ mapping ชื่อทีม → path โลโก้
+
+    // — 3. คืนค่าวันที่ในรูป YYYY-MM-DD
+    function getTodayString() {
+      return new Date().toISOString().slice(0,10);
+    }
+
+    // — 4. เตรียม Marquee container
+    const marqueeEl = document.getElementById('score-marquee');
+    const contentEl = document.getElementById('scrolling-content');
+    marqueeEl.classList.add('hidden');
+
+    function showMarquee() {
+      marqueeEl.classList.remove('hidden');
+    }
+
+    // — 5. แสดงวันที่หน้า UI
+    const today = getTodayString();
+    document.getElementById('today-label').innerText = today;
+
+    // — 6. สร้าง Query ของแมตช์วันนี้
+    const todayQuery = db.ref('matches')
+                         .orderByChild('date')
+                         .equalTo(today);
+
+    let cycleStarted = false;
+
+    // — 7. ฟังก์ชันเริ่มต้น: ดึงชื่อทีมทั้งหมด แล้วเริ่มฟัง event แมตช์วันนี้
+    async function init() {
+      try {
+        // ดึง matches ทั้งหมดเพื่อเก็บชื่อทีม
+        const allSnap = await db.ref('matches').once('value');
+        const allData = allSnap.val() || {};
+
+        // กรองชื่อทีมไม่ซ้ำ
+        const set = new Set();
+        Object.values(allData).forEach(m => {
+          if (m.teamA) set.add(m.teamA);
+          if (m.teamB) set.add(m.teamB);
+        });
+
+        // สร้าง mapping ชื่อ → path โลโก้
+        teamLogos = Array.from(set).reduce((acc, name) => {
+          acc[name] = `logos/${name}.png`;
+          return acc;
+        }, {});
+
+        // ฟังอีเวนต์แมตช์วันนี้
+        todayQuery.on('value', renderMatches);
+      }
+      catch (err) {
+        console.error('Init error:', err);
+      }
+    }
+
+    // — 8. ฟังก์ชัน render แมตช์วันนี้
+    function renderMatches(snapshot) {
+      if (!snapshot.exists()) {
+        marqueeEl.classList.add('hidden');
+        return;
+      }
+
+      const parts = [];
+      snapshot.forEach(childSnap => {
+        const m = childSnap.val();
+        const logoA = `<img src="${teamLogos[m.teamA]||defaultLogo}"
+                          class="team-logo"
+                          alt="${m.teamA}"
+                          onerror="this.src='${defaultLogo}'">`;
+        const logoB = `<img src="${teamLogos[m.teamB]||defaultLogo}"
+                          class="team-logo"
+                          alt="${m.teamB}"
+                          onerror="this.src='${defaultLogo}'">`;
+        const score = `<span class="score-highlight">${m.scoreA} - ${m.scoreB}</span>`;
+
+        parts.push(`${logoA}${m.teamA} ${score} ${m.teamB}${logoB}`);
+      });
+
+      // เว้นวรรคระหว่าง item หลายๆ ชุด
+      contentEl.innerHTML = parts.join('&nbsp;'.repeat(20));
+
+      if (!cycleStarted) {
+        cycleStarted = true;
+        showMarquee();
+      }
+    }
+
+    // — 9. เริ่มทำงานเมื่อ DOM โหลดเสร็จ
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

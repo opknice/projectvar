@@ -30,14 +30,26 @@ const firebaseConfigGeneralMatch = {
   measurementId: "G-6GXKY9030T"
 };
 
+const firebaseConfigAlcoholMatch = {
+  apiKey: "AIzaSyC5VOsYQGQdav1BMw48GY9ErOuxd-tp6G8",
+  authDomain: "alcohol-dd2b1.firebaseapp.com",
+  databaseURL: "https://alcohol-dd2b1-default-rtdb.firebaseio.com",
+  projectId: "alcohol-dd2b1",
+  storageBucket: "alcohol-dd2b1.firebasestorage.app",
+  messagingSenderId: "111449466001",
+  appId: "1:111449466001:web:492984bb3519419fcf0b30",
+  measurementId: "G-E2V3GPLSDB"
+};
+
 // 3. เริ่มต้นแอป และดึงอ็อบเจ็กต์ Database
 const appChampion = initializeApp(firebaseConfigChampionLeague, "ChampionLeagueApp");
 const appGeneral = initializeApp(firebaseConfigGeneralMatch, "GeneralApp");
+const appAlcohol = initializeApp(firebaseConfigAlcoholMatch, "AlcoholApp");
 
 // ✅ Get each database instance
 const database = getDatabase(appChampion);
 const database_ = getDatabase(appGeneral);
-
+const database__ = getDatabase(appAlcohol);
 // ---------------------------- ---------------------------- ---------------------------- ---------------------------- ---------------------------- ----------------------------
 // ---------------------------- ---------------------------- GENERAL ---------------------------- ---------------------------- ---------------------------- ----------------------------
 
@@ -60,7 +72,7 @@ const elements = [
     "startTimeMinutes", "startTimeSeconds", "saveTimeSettingsBtn", "saveAndUpdateTimeBtn", "closeTimeSettingsBtn",
     "timeSettingsError", "changelogBtn", "changelogPopup", "closeChangelogBtn",
     "logoPathBtn", "logoPathPopup", "currentLogoPath", "logoPathInput", "editLogoPathBtn", "closeLogoPathBtn",
-    "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_"
+    "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_", "MatchSave__"
 ].reduce((acc, id) => {
     acc[id.replace(/-(\w)/g, (m, p1) => p1.toUpperCase())] = $(id);
     return acc;
@@ -447,6 +459,26 @@ const saveinfo_ = () => {
     .catch(err => alert('บันทึกไม่สำเร็จ: ' + err.message));
 };
 
+const saveinfo__ = () => {
+  const confirmSave = confirm('Alcohol SuperLeague แน่นะ !! ??');
+  if (!confirmSave) return; // ถ้าเลือกยกเลิก ให้หยุดฟังก์ชันทันที
+
+  const now = Date.now();
+  const matchInfo = {
+    teamA: nameA.innerText,
+    teamB: nameB.innerText,
+    scoreA: parseInt(scoreA, 10),
+    scoreB: parseInt(scoreB, 10),
+    roundLabel: label2.innerText,
+    date: new Date(now).toISOString().slice(0, 10), // format "YYYY-MM-DD"
+    url: ""
+  };
+
+  push(ref(database__, 'matches'), matchInfo)
+    .then(() => alert('บันทึกคะแนนเรียบร้อยแล้ว'))
+    .catch(err => alert('บันทึกไม่สำเร็จ: ' + err.message));
+};
+
 
 
 const openTimeSettings = () => {
@@ -669,6 +701,7 @@ const setupEventListeners = () => {
     elements.fullEndBtn.addEventListener('click', fulltime);
     elements.MatchSave.addEventListener('click', saveinfo);
     elements.MatchSave_.addEventListener('click', saveinfo_);
+    elements.MatchSave__.addEventListener('click', saveinfo__);
     // elements.pauseBtn.addEventListener('click', stopTimer);
     elements.resetToStartBtn.addEventListener('click', resetToStartTime); 
     // elements.resetToZeroBtn.addEventListener('click', resetToZero);     

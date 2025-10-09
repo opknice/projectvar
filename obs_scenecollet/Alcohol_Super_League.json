@@ -9,953 +9,8 @@
             "name": "Replay"
         }
     ],
-    "name": "AGENCY League",
+    "name": "Alcohol Super League",
     "groups": [
-        {
-            "prev_ver": 536870913,
-            "name": "Group",
-            "uuid": "08533d92-94ca-431a-a209-51af29213e96",
-            "id": "group",
-            "versioned_id": "group",
-            "settings": {
-                "id_counter": 0,
-                "custom_size": true,
-                "cx": 1702,
-                "cy": 247,
-                "items": [
-                    {
-                        "name": "logo_overall",
-                        "source_uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 331,
-                        "crop_right": 0,
-                        "crop_bottom": 173,
-                        "id": 156,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 30.289459228515625
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -0.9439083933830261
-                        },
-                        "scale": {
-                            "x": 0.2918402850627899,
-                            "y": 0.3398148715496063
-                        },
-                        "scale_rel": {
-                            "x": 0.2918402850627899,
-                            "y": 0.3398148715496063
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "Color_Team_B_2",
-                        "source_uuid": "1be8d73d-e864-4784-a869-1aa2b8c9fa59",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 270.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 1,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 157,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 488.0002136230469,
-                            "y": 123.0
-                        },
-                        "pos_rel": {
-                            "x": -0.8740736842155457,
-                            "y": -0.7722222208976746
-                        },
-                        "scale": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
-                        },
-                        "scale_rel": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "Color_Team_B",
-                        "source_uuid": "26834c51-76a4-4c89-a71b-a1a60e3ec226",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 270.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 1,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 158,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 403.0,
-                            "y": 123.0
-                        },
-                        "pos_rel": {
-                            "x": -1.0314815044403076,
-                            "y": -0.7722222208976746
-                        },
-                        "scale": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
-                        },
-                        "scale_rel": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "Color_Team_A_2",
-                        "source_uuid": "b493636a-1e5e-48fa-949b-8c2d05e3c3f3",
-                        "visible": true,
-                        "locked": false,
-                        "rot": -90.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 1,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 159,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 146.0,
-                            "y": 123.0
-                        },
-                        "pos_rel": {
-                            "x": -1.5074074268341064,
-                            "y": -0.7722222208976746
-                        },
-                        "scale": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
-                        },
-                        "scale_rel": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "Color_Team_A",
-                        "source_uuid": "3920ea41-1608-48bd-b48d-0c3f23a44238",
-                        "visible": true,
-                        "locked": false,
-                        "rot": -90.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 1,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 160,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 61.5001220703125,
-                            "y": 123.0
-                        },
-                        "pos_rel": {
-                            "x": -1.663888692855835,
-                            "y": -0.7722222208976746
-                        },
-                        "scale": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
-                        },
-                        "scale_rel": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "logo_team_b",
-                        "source_uuid": "2731ce2a-6bf1-4d45-80f3-093cd817b85f",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 161,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 448.350341796875,
-                            "y": 42.823333740234375
-                        },
-                        "pos_rel": {
-                            "x": -0.9474993944168091,
-                            "y": -0.9206975102424622
-                        },
-                        "scale": {
-                            "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
-                        },
-                        "scale_rel": {
-                            "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "logo_team_a",
-                        "source_uuid": "4d01ec6f-d572-45ce-aa67-2cc4dc7adad9",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 162,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 102.08697509765625,
-                            "y": 42.0
-                        },
-                        "pos_rel": {
-                            "x": -1.5887278318405151,
-                            "y": -0.9222221970558167
-                        },
-                        "scale": {
-                            "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
-                        },
-                        "scale_rel": {
-                            "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "name_team_b",
-                        "source_uuid": "af845d99-2d11-4baf-8b2a-e352928d032c",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 163,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 460.91021728515625,
-                            "y": 91.78970336914062
-                        },
-                        "pos_rel": {
-                            "x": -0.9242403507232666,
-                            "y": -0.8300190567970276
-                        },
-                        "scale": {
-                            "x": 0.11296297609806061,
-                            "y": 0.11203700304031372
-                        },
-                        "scale_rel": {
-                            "x": 0.11296297609806061,
-                            "y": 0.11203700304031372
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "name_team_a",
-                        "source_uuid": "1a7416b5-45e8-4bd4-afe0-085560af8bf9",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 164,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 106.353271484375,
-                            "y": 91.78970336914062
-                        },
-                        "pos_rel": {
-                            "x": -1.580827236175537,
-                            "y": -0.8300190567970276
-                        },
-                        "scale": {
-                            "x": 0.10277774184942245,
-                            "y": 0.11203700304031372
-                        },
-                        "scale_rel": {
-                            "x": 0.10277774184942245,
-                            "y": 0.11203700304031372
-                        },
-                        "bounds": {
-                            "x": 2144.0,
-                            "y": 256.0
-                        },
-                        "bounds_rel": {
-                            "x": 3.970370292663574,
-                            "y": 0.4740740656852722
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "score_team_b",
-                        "source_uuid": "00af54db-455e-4c4a-9b99-cb91226e3e03",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 165,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 353.6168212890625,
-                            "y": 87.28945922851562
-                        },
-                        "pos_rel": {
-                            "x": -1.1229318380355835,
-                            "y": -0.8383528590202332
-                        },
-                        "scale": {
-                            "x": 0.3703703284263611,
-                            "y": 0.4046296179294586
-                        },
-                        "scale_rel": {
-                            "x": 0.3703703284263611,
-                            "y": 0.4046296179294586
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "score_team_a",
-                        "source_uuid": "b0275b49-e703-4271-8fe2-126795607f31",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 166,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 248.7635498046875,
-                            "y": 87.28945922851562
-                        },
-                        "pos_rel": {
-                            "x": -1.3171045780181885,
-                            "y": -0.8383528590202332
-                        },
-                        "scale": {
-                            "x": 0.3703703284263611,
-                            "y": 0.4046296179294586
-                        },
-                        "scale_rel": {
-                            "x": 0.3703703284263611,
-                            "y": 0.4046296179294586
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "Image",
-                        "source_uuid": "211fd3a7-5082-4c44-bde6-c4a96bf0abcf",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 167,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 244.763427734375,
-                            "y": 28.847442626953125
-                        },
-                        "pos_rel": {
-                            "x": -1.3245121240615845,
-                            "y": -0.9465788006782532
-                        },
-                        "scale": {
-                            "x": 0.7511196732521057,
-                            "y": 1.0095678567886353
-                        },
-                        "scale_rel": {
-                            "x": 0.7511196732521057,
-                            "y": 1.0095678567886353
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "time_counter",
-                        "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 72,
-                        "crop_bottom": 0,
-                        "id": 168,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 281.5869140625,
-                            "y": 140.2894287109375
-                        },
-                        "pos_rel": {
-                            "x": -1.2563204765319824,
-                            "y": -0.7402047514915466
-                        },
-                        "scale": {
-                            "x": 0.15833330154418945,
-                            "y": 0.16296300292015076
-                        },
-                        "scale_rel": {
-                            "x": 0.15833330154418945,
-                            "y": 0.16296300292015076
-                        },
-                        "bounds": {
-                            "x": 494.0,
-                            "y": 256.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.914814829826355,
-                            "y": 0.4740740656852722
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "dash",
-                        "source_uuid": "ec55accd-180e-4a30-88a1-e8fbf56852cd",
-                        "visible": false,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 150,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 321.0,
-                            "y": 145.78939819335938
-                        },
-                        "pos_rel": {
-                            "x": -1.1833332777023315,
-                            "y": -0.7300196290016174
-                        },
-                        "scale": {
-                            "x": 1.1574064493179321,
-                            "y": 1.1148149967193604
-                        },
-                        "scale_rel": {
-                            "x": 1.1574064493179321,
-                            "y": 1.1148149967193604
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "logo_support",
-                        "source_uuid": "50ea5271-5031-4334-883e-d3777f7445e4",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 357,
-                        "crop_top": 0,
-                        "crop_right": 365,
-                        "crop_bottom": 0,
-                        "id": 177,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 1557.9462890625,
-                            "y": 21.583984375
-                        },
-                        "pos_rel": {
-                            "x": 1.1073079109191895,
-                            "y": -0.960029661655426
-                        },
-                        "scale": {
-                            "x": 0.12020033597946167,
-                            "y": 0.12037037312984467
-                        },
-                        "scale_rel": {
-                            "x": 0.12020033597946167,
-                            "y": 0.12037037312984467
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "logo_var",
-                        "source_uuid": "595bedb0-ba45-42e1-be11-260bd0766b95",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 556,
-                        "crop_top": 197,
-                        "crop_right": 554,
-                        "crop_bottom": 361,
-                        "id": 178,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 1389.2998046875,
-                            "y": 30.403717041015625
-                        },
-                        "pos_rel": {
-                            "x": 0.7949996590614319,
-                            "y": -0.9436967968940735
-                        },
-                        "scale": {
-                            "x": 0.21041572093963623,
-                            "y": 0.20964211225509644
-                        },
-                        "scale_rel": {
-                            "x": 0.21041572093963623,
-                            "y": 0.20964211225509644
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.show_scene_item.156": [],
-                "libobs.hide_scene_item.156": [],
-                "libobs.show_scene_item.157": [],
-                "libobs.hide_scene_item.157": [],
-                "libobs.show_scene_item.158": [],
-                "libobs.hide_scene_item.158": [],
-                "libobs.show_scene_item.159": [],
-                "libobs.hide_scene_item.159": [],
-                "libobs.show_scene_item.160": [],
-                "libobs.hide_scene_item.160": [],
-                "libobs.show_scene_item.161": [],
-                "libobs.hide_scene_item.161": [],
-                "libobs.show_scene_item.162": [],
-                "libobs.hide_scene_item.162": [],
-                "libobs.show_scene_item.163": [],
-                "libobs.hide_scene_item.163": [],
-                "libobs.show_scene_item.164": [],
-                "libobs.hide_scene_item.164": [],
-                "libobs.show_scene_item.165": [],
-                "libobs.hide_scene_item.165": [],
-                "libobs.show_scene_item.166": [],
-                "libobs.hide_scene_item.166": [],
-                "libobs.show_scene_item.167": [],
-                "libobs.hide_scene_item.167": [],
-                "libobs.show_scene_item.168": [],
-                "libobs.hide_scene_item.168": [],
-                "libobs.show_scene_item.150": [],
-                "libobs.hide_scene_item.150": [],
-                "libobs.show_scene_item.177": [],
-                "libobs.hide_scene_item.177": [],
-                "libobs.show_scene_item.178": [],
-                "libobs.hide_scene_item.178": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
-            "private_settings": {}
-        },
         {
             "prev_ver": 536870913,
             "name": "Group 3",
@@ -1045,11 +100,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 1135.0,
-                            "y": 167.9996337890625
+                            "y": 167.99966430664062
                         },
                         "pos_rel": {
                             "x": 0.32407405972480774,
-                            "y": -0.6888895630836487
+                            "y": -0.6888895034790039
                         },
                         "scale": {
                             "x": 0.11851851642131805,
@@ -1100,11 +155,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 815.0000610351562,
-                            "y": 167.9996337890625
+                            "y": 167.99966430664062
                         },
                         "pos_rel": {
                             "x": -0.2685184180736542,
-                            "y": -0.6888895630836487
+                            "y": -0.6888895034790039
                         },
                         "scale": {
                             "x": 0.13240741193294525,
@@ -1643,18 +698,18 @@
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 186,
-                        "crop_top": 35,
+                        "crop_top": 141,
                         "crop_right": 191,
-                        "crop_bottom": 338,
+                        "crop_bottom": 236,
                         "id": 200,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 107.00006103515625,
-                            "y": 194.00021362304688
+                            "x": 105.0,
+                            "y": 198.0
                         },
                         "pos_rel": {
-                            "x": -1.5796295404434204,
-                            "y": -0.6407403349876404
+                            "x": -1.5833333730697632,
+                            "y": -0.6333333253860474
                         },
                         "scale": {
                             "x": 1.113651156425476,
@@ -1709,7 +764,7 @@
                         },
                         "pos_rel": {
                             "x": -1.5629628896713257,
-                            "y": 0.7870374321937561
+                            "y": 0.7870374917984009
                         },
                         "scale": {
                             "x": 0.9351851940155029,
@@ -1786,6 +841,1008 @@
             "monitoring_type": 0,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "Group",
+            "uuid": "654c5ef4-08f0-4f1d-87d7-a57f91e3d0d4",
+            "id": "group",
+            "versioned_id": "group",
+            "settings": {
+                "id_counter": 0,
+                "custom_size": true,
+                "cx": 1742,
+                "cy": 205,
+                "items": [
+                    {
+                        "name": "Color_Team_B_2",
+                        "source_uuid": "1be8d73d-e864-4784-a869-1aa2b8c9fa59",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 270.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 244,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 433.00885009765625,
+                            "y": 142.72991943359375
+                        },
+                        "pos_rel": {
+                            "x": -0.9759095311164856,
+                            "y": -0.7356853485107422
+                        },
+                        "scale": {
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
+                        },
+                        "scale_rel": {
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_B",
+                        "source_uuid": "26834c51-76a4-4c89-a71b-a1a60e3ec226",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 270.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 245,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 345.5308837890625,
+                            "y": 142.59716796875
+                        },
+                        "pos_rel": {
+                            "x": -1.1379057168960571,
+                            "y": -0.7359311580657959
+                        },
+                        "scale": {
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
+                        },
+                        "scale_rel": {
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_A_2",
+                        "source_uuid": "b493636a-1e5e-48fa-949b-8c2d05e3c3f3",
+                        "visible": true,
+                        "locked": false,
+                        "rot": -90.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 246,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 134.0706787109375,
+                            "y": 142.72991943359375
+                        },
+                        "pos_rel": {
+                            "x": -1.5294986963272095,
+                            "y": -0.7356853485107422
+                        },
+                        "scale": {
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
+                        },
+                        "scale_rel": {
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Color_Team_A",
+                        "source_uuid": "3920ea41-1608-48bd-b48d-0c3f23a44238",
+                        "visible": true,
+                        "locked": false,
+                        "rot": -90.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 1,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 247,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 46.72552490234375,
+                            "y": 142.59716796875
+                        },
+                        "pos_rel": {
+                            "x": -1.6912490129470825,
+                            "y": -0.7359311580657959
+                        },
+                        "scale": {
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
+                        },
+                        "scale_rel": {
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_overall",
+                        "source_uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 179,
+                        "crop_right": 0,
+                        "crop_bottom": 309,
+                        "id": 243,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7777777910232544,
+                            "y": -1.0
+                        },
+                        "scale": {
+                            "x": 0.2500000298023224,
+                            "y": 0.2907407283782959
+                        },
+                        "scale_rel": {
+                            "x": 0.2500000298023224,
+                            "y": 0.2907407283782959
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_b",
+                        "source_uuid": "2731ce2a-6bf1-4d45-80f3-093cd817b85f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 248,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 383.50006103515625,
+                            "y": 53.500030517578125
+                        },
+                        "pos_rel": {
+                            "x": -1.0675925016403198,
+                            "y": -0.900925874710083
+                        },
+                        "scale": {
+                            "x": 0.07592592388391495,
+                            "y": 0.07592591643333435
+                        },
+                        "scale_rel": {
+                            "x": 0.07592592388391495,
+                            "y": 0.07592591643333435
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_a",
+                        "source_uuid": "4d01ec6f-d572-45ce-aa67-2cc4dc7adad9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 249,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 88.99993896484375,
+                            "y": 53.500030517578125
+                        },
+                        "pos_rel": {
+                            "x": -1.612963080406189,
+                            "y": -0.900925874710083
+                        },
+                        "scale": {
+                            "x": 0.07592592388391495,
+                            "y": 0.07592591643333435
+                        },
+                        "scale_rel": {
+                            "x": 0.07592592388391495,
+                            "y": 0.07592591643333435
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_b",
+                        "source_uuid": "00af54db-455e-4c4a-9b99-cb91226e3e03",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 250,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 272.0,
+                            "y": 98.0
+                        },
+                        "pos_rel": {
+                            "x": -1.2740740776062012,
+                            "y": -0.8185185194015503
+                        },
+                        "scale": {
+                            "x": 0.3166666328907013,
+                            "y": 0.3462963104248047
+                        },
+                        "scale_rel": {
+                            "x": 0.3166666328907013,
+                            "y": 0.3462963104248047
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_a",
+                        "source_uuid": "b0275b49-e703-4271-8fe2-126795607f31",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 251,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 206.5,
+                            "y": 98.0
+                        },
+                        "pos_rel": {
+                            "x": -1.395370364189148,
+                            "y": -0.8185185194015503
+                        },
+                        "scale": {
+                            "x": 0.3166666328907013,
+                            "y": 0.3462963104248047
+                        },
+                        "scale_rel": {
+                            "x": 0.3166666328907013,
+                            "y": 0.3462963104248047
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "Image",
+                        "source_uuid": "211fd3a7-5082-4c44-bde6-c4a96bf0abcf",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 252,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 212.0,
+                            "y": 18.5
+                        },
+                        "pos_rel": {
+                            "x": -1.3851852416992188,
+                            "y": -0.9657407402992249
+                        },
+                        "scale": {
+                            "x": 0.6425926089286804,
+                            "y": 0.8638888597488403
+                        },
+                        "scale_rel": {
+                            "x": 0.6425926089286804,
+                            "y": 0.8638888597488403
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "time_counter",
+                        "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 72,
+                        "crop_bottom": 0,
+                        "id": 253,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 255.50433349609375,
+                            "y": 35.5693359375
+                        },
+                        "pos_rel": {
+                            "x": -1.3046215772628784,
+                            "y": -0.934130847454071
+                        },
+                        "scale": {
+                            "x": 0.13611112534999847,
+                            "y": 0.1398148387670517
+                        },
+                        "scale_rel": {
+                            "x": 0.13611112534999847,
+                            "y": 0.1398148387670517
+                        },
+                        "bounds": {
+                            "x": 494.0,
+                            "y": 256.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.914814829826355,
+                            "y": 0.4740740656852722
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "dash",
+                        "source_uuid": "ec55accd-180e-4a30-88a1-e8fbf56852cd",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 254,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 276.99993896484375,
+                            "y": 117.5
+                        },
+                        "pos_rel": {
+                            "x": -1.2648149728775024,
+                            "y": -0.7824074029922485
+                        },
+                        "scale": {
+                            "x": 0.9907407164573669,
+                            "y": 0.9546297192573547
+                        },
+                        "scale_rel": {
+                            "x": 0.9907407164573669,
+                            "y": 0.9546297192573547
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_b",
+                        "source_uuid": "af845d99-2d11-4baf-8b2a-e352928d032c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 255,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 392.43206787109375,
+                            "y": 104.0
+                        },
+                        "pos_rel": {
+                            "x": -1.0510517358779907,
+                            "y": -0.8074073791503906
+                        },
+                        "scale": {
+                            "x": 0.08888889849185944,
+                            "y": 0.08888889849185944
+                        },
+                        "scale_rel": {
+                            "x": 0.08888889849185944,
+                            "y": 0.08888889849185944
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_a",
+                        "source_uuid": "1a7416b5-45e8-4bd4-afe0-085560af8bf9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 256,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 94.49993896484375,
+                            "y": 104.0
+                        },
+                        "pos_rel": {
+                            "x": -1.6027778387069702,
+                            "y": -0.8074073791503906
+                        },
+                        "scale": {
+                            "x": 0.08148148655891418,
+                            "y": 0.08888889849185944
+                        },
+                        "scale_rel": {
+                            "x": 0.08148148655891418,
+                            "y": 0.08888889849185944
+                        },
+                        "bounds": {
+                            "x": 2144.0,
+                            "y": 256.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.970370292663574,
+                            "y": 0.4740740656852722
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "half_text",
+                        "source_uuid": "1c9c8405-2bd1-448f-94ca-a242e98ac43b",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 257,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 188.4998779296875,
+                            "y": 23.0
+                        },
+                        "pos_rel": {
+                            "x": -1.4287039041519165,
+                            "y": -0.9574074149131775
+                        },
+                        "scale": {
+                            "x": 0.17685186862945557,
+                            "y": 0.17777779698371887
+                        },
+                        "scale_rel": {
+                            "x": 0.17685186862945557,
+                            "y": 0.17777779698371887
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_support",
+                        "source_uuid": "50ea5271-5031-4334-883e-d3777f7445e4",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 357,
+                        "crop_top": 0,
+                        "crop_right": 365,
+                        "crop_bottom": 0,
+                        "id": 262,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1593.7864990234375,
+                            "y": 22.80059814453125
+                        },
+                        "pos_rel": {
+                            "x": 1.1736787557601929,
+                            "y": -0.9577767252922058
+                        },
+                        "scale": {
+                            "x": 0.12340886145830154,
+                            "y": 0.12322308868169785
+                        },
+                        "scale_rel": {
+                            "x": 0.12340886145830154,
+                            "y": 0.12322308868169785
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_var",
+                        "source_uuid": "595bedb0-ba45-42e1-be11-260bd0766b95",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 556,
+                        "crop_top": 197,
+                        "crop_right": 554,
+                        "crop_bottom": 361,
+                        "id": 263,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1420.893310546875,
+                            "y": 35.829620361328125
+                        },
+                        "pos_rel": {
+                            "x": 0.8535061478614807,
+                            "y": -0.9336488246917725
+                        },
+                        "scale": {
+                            "x": 0.21574974060058594,
+                            "y": 0.21370157599449158
+                        },
+                        "scale_rel": {
+                            "x": 0.21574974060058594,
+                            "y": 0.21370157599449158
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.show_scene_item.244": [],
+                "libobs.hide_scene_item.244": [],
+                "libobs.show_scene_item.245": [],
+                "libobs.hide_scene_item.245": [],
+                "libobs.show_scene_item.246": [],
+                "libobs.hide_scene_item.246": [],
+                "libobs.show_scene_item.247": [],
+                "libobs.hide_scene_item.247": [],
+                "libobs.show_scene_item.243": [],
+                "libobs.hide_scene_item.243": [],
+                "libobs.show_scene_item.248": [],
+                "libobs.hide_scene_item.248": [],
+                "libobs.show_scene_item.249": [],
+                "libobs.hide_scene_item.249": [],
+                "libobs.show_scene_item.250": [],
+                "libobs.hide_scene_item.250": [],
+                "libobs.show_scene_item.251": [],
+                "libobs.hide_scene_item.251": [],
+                "libobs.show_scene_item.252": [],
+                "libobs.hide_scene_item.252": [],
+                "libobs.show_scene_item.253": [],
+                "libobs.hide_scene_item.253": [],
+                "libobs.show_scene_item.254": [],
+                "libobs.hide_scene_item.254": [],
+                "libobs.show_scene_item.255": [],
+                "libobs.hide_scene_item.255": [],
+                "libobs.show_scene_item.256": [],
+                "libobs.hide_scene_item.256": [],
+                "libobs.show_scene_item.257": [],
+                "libobs.hide_scene_item.257": [],
+                "libobs.show_scene_item.262": [],
+                "libobs.hide_scene_item.262": [],
+                "libobs.show_scene_item.263": [],
+                "libobs.hide_scene_item.263": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
         }
     ],
     "quick_transitions": [
@@ -1817,8 +1874,8 @@
     "current_transition": "Fade",
     "transition_duration": 400,
     "preview_locked": false,
-    "scaling_enabled": true,
-    "scaling_level": -11,
+    "scaling_enabled": false,
+    "scaling_level": -10,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
@@ -2327,7 +2384,7 @@
             "versioned_id": "browser_source",
             "settings": {
                 "is_local_file": true,
-                "local_file": "D:/scoreboard-main/table_agency.html",
+                "local_file": "D:/scoreboard-main/table_alcohol.html",
                 "width": 1920,
                 "height": 1080,
                 "fps": 60,
@@ -2485,7 +2542,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4285530125
+                "color": 4278219775
             },
             "mixers": 0,
             "sync": 0,
@@ -2511,7 +2568,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4291035386
+                "color": 4294574109
             },
             "mixers": 0,
             "sync": 0,
@@ -2537,7 +2594,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4294901811
+                "color": 4290262784
             },
             "mixers": 0,
             "sync": 0,
@@ -2563,7 +2620,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4285211648
+                "color": 4290445567
             },
             "mixers": 0,
             "sync": 0,
@@ -2589,8 +2646,8 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/scoreboard/pic scoreboard/agency_league_cut_scene.mp4",
-                "speed_percent": 150
+                "local_file": "D:/scoreboard/pic scoreboard/ALCOHOLD_.mp4",
+                "speed_percent": 140
             },
             "mixers": 255,
             "sync": 0,
@@ -2625,8 +2682,8 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/scoreboard/pic scoreboard/agency_league_cut_scene.mp4",
-                "speed_percent": 150
+                "local_file": "D:/scoreboard/pic scoreboard/ALCOHOLD_.mp4",
+                "speed_percent": 140
             },
             "mixers": 255,
             "sync": 0,
@@ -2669,6 +2726,39 @@
                     "flags": 0
                 },
                 "color": 16777215
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "half_text",
+            "uuid": "1c9c8405-2bd1-448f-94ca-a242e98ac43b",
+            "id": "text_gdiplus",
+            "versioned_id": "text_gdiplus_v3",
+            "settings": {
+                "text": "1st",
+                "font": {
+                    "face": "Srinakharinwirot",
+                    "style": "Regular",
+                    "size": 150,
+                    "flags": 0
+                },
+                "color": 734463
             },
             "mixers": 0,
             "sync": 0,
@@ -2752,7 +2842,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "รอบที่ 4",
+                "text": "สนามที่ 1",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -2785,7 +2875,7 @@
             "versioned_id": "browser_source",
             "settings": {
                 "is_local_file": true,
-                "local_file": "D:/scoreboard-main/livescores_____.html",
+                "local_file": "D:/scoreboard-main/livescores_alcohol.html",
                 "url": "https://opknice.github.io/scoreboard/livescores",
                 "width": 1920,
                 "height": 1080,
@@ -2863,7 +2953,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:/scoreboard/pic scoreboard/logoallteamagencyleague.png"
+                "file": "D:/scoreboard/pic scoreboard/logoallteamalcohol.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -2919,8 +3009,8 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:/scoreboard/pic scoreboard/2.png",
-                "undo_uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f"
+                "undo_uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f",
+                "file": "D:/scoreboard/pic scoreboard/alcohol.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -2945,10 +3035,7 @@
                     "uuid": "11ad1f6b-fb83-4748-bab6-5eb58e94d93c",
                     "id": "chroma_key_filter",
                     "versioned_id": "chroma_key_filter_v2",
-                    "settings": {
-                        "similarity": 575,
-                        "smoothness": 1
-                    },
+                    "settings": {},
                     "mixers": 0,
                     "sync": 0,
                     "flags": 0,
@@ -3044,7 +3131,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B5.png"
+                "file": "D:\\scoreboard\\logoteam/A9.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -3070,7 +3157,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B3.png"
+                "file": "D:\\scoreboard\\logoteam/A1.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -3153,7 +3240,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 205,
+                "id_counter": 263,
                 "custom_size": false,
                 "items": [
                     {
@@ -3405,18 +3492,18 @@
                         "bounds_type": 0,
                         "bounds_align": 0,
                         "bounds_crop": false,
-                        "crop_left": 199,
+                        "crop_left": 0,
                         "crop_top": 424,
-                        "crop_right": 154,
+                        "crop_right": 0,
                         "crop_bottom": 444,
                         "id": 182,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 429.0,
+                            "x": 294.0,
                             "y": 913.0
                         },
                         "pos_rel": {
-                            "x": -0.9833333492279053,
+                            "x": -1.2333333492279053,
                             "y": 0.690740704536438
                         },
                         "scale": {
@@ -3462,61 +3549,6 @@
                         "private_settings": {}
                     },
                     {
-                        "name": "logo_overall",
-                        "source_uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 331,
-                        "crop_right": 0,
-                        "crop_bottom": 173,
-                        "id": 156,
-                        "group_item_backup": true,
-                        "pos": {
-                            "x": 32.0001220703125,
-                            "y": 34.2327880859375
-                        },
-                        "pos_rel": {
-                            "x": -1.7185182571411133,
-                            "y": -0.9366059303283691
-                        },
-                        "scale": {
-                            "x": 0.2918402850627899,
-                            "y": 0.3398148715496063
-                        },
-                        "scale_rel": {
-                            "x": 0.3204895257949829,
-                            "y": 0.3728333115577698
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
                         "name": "Color_Team_B_2",
                         "source_uuid": "1be8d73d-e864-4784-a869-1aa2b8c9fa59",
                         "visible": true,
@@ -3534,23 +3566,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 157,
+                        "id": 244,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 567.9061279296875,
-                            "y": 135.95166015625
+                            "x": 493.58245849609375,
+                            "y": 167.3681640625
                         },
                         "pos_rel": {
-                            "x": -0.7260997891426086,
-                            "y": -0.748237669467926
+                            "x": -0.8637362122535706,
+                            "y": -0.6900589466094971
                         },
                         "scale": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
                         },
                         "scale_rel": {
-                            "x": 0.002287849085405469,
-                            "y": 0.08635102212429047
+                            "x": 0.002967136912047863,
+                            "y": 0.08982805907726288
                         },
                         "bounds": {
                             "x": 1.0,
@@ -3589,23 +3621,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 158,
+                        "id": 245,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 474.5616455078125,
-                            "y": 135.95166015625
+                            "x": 399.72589111328125,
+                            "y": 167.22552490234375
                         },
                         "pos_rel": {
-                            "x": -0.8989599347114563,
-                            "y": -0.748237669467926
+                            "x": -1.03754460811615,
+                            "y": -0.6903231143951416
                         },
                         "scale": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
                         },
                         "scale_rel": {
-                            "x": 0.002287849085405469,
-                            "y": 0.08635102212429047
+                            "x": 0.002967136912047863,
+                            "y": 0.08982805907726288
                         },
                         "bounds": {
                             "x": 1.0,
@@ -3644,23 +3676,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 159,
+                        "id": 246,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 192.33258056640625,
-                            "y": 135.95166015625
+                            "x": 172.84674072265625,
+                            "y": 167.3681640625
                         },
                         "pos_rel": {
-                            "x": -1.4216063022613525,
-                            "y": -0.748237669467926
+                            "x": -1.4576911926269531,
+                            "y": -0.6900589466094971
                         },
                         "scale": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
                         },
                         "scale_rel": {
-                            "x": 0.002287849085405469,
-                            "y": 0.08635102212429047
+                            "x": 0.002967136912047863,
+                            "y": 0.08982805907726288
                         },
                         "bounds": {
                             "x": 1.0,
@@ -3699,23 +3731,78 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 160,
+                        "id": 247,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 99.53753662109375,
-                            "y": 135.95166015625
+                            "x": 79.13262939453125,
+                            "y": 167.22552490234375
                         },
                         "pos_rel": {
-                            "x": -1.5934489965438843,
-                            "y": -0.748237669467926
+                            "x": -1.6312358379364014,
+                            "y": -0.6903231143951416
                         },
                         "scale": {
-                            "x": 0.0020833334419876337,
-                            "y": 0.07870370149612427
+                            "x": 0.0027654869481921196,
+                            "y": 0.08359721302986145
                         },
                         "scale_rel": {
-                            "x": 0.002287849085405469,
-                            "y": 0.08635102212429047
+                            "x": 0.002967136912047863,
+                            "y": 0.08982805907726288
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_overall",
+                        "source_uuid": "fb35f612-88ab-4381-8f22-81b8bab38c7f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 179,
+                        "crop_right": 0,
+                        "crop_bottom": 309,
+                        "id": 243,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 29.00006103515625,
+                            "y": 14.0
+                        },
+                        "pos_rel": {
+                            "x": -1.7240740060806274,
+                            "y": -0.9740740656852722
+                        },
+                        "scale": {
+                            "x": 0.2500000298023224,
+                            "y": 0.2907407283782959
+                        },
+                        "scale_rel": {
+                            "x": 0.2682291865348816,
+                            "y": 0.3124108612537384
                         },
                         "bounds": {
                             "x": 1.0,
@@ -3754,23 +3841,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 161,
+                        "id": 248,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 524.3638916015625,
-                            "y": 47.98455810546875
+                            "x": 440.463623046875,
+                            "y": 71.48760986328125
                         },
                         "pos_rel": {
-                            "x": -0.8067335486412048,
-                            "y": -0.911139726638794
+                            "x": -0.9621043801307678,
+                            "y": -0.8676155209541321
                         },
                         "scale": {
-                            "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
+                            "x": 0.07592592388391495,
+                            "y": 0.07592591643333435
                         },
                         "scale_rel": {
-                            "x": 0.09723357856273651,
-                            "y": 0.09714490175247192
+                            "x": 0.08146218955516815,
+                            "y": 0.08158499747514725
                         },
                         "bounds": {
                             "x": 1.0,
@@ -3809,23 +3896,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 162,
+                        "id": 249,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 144.1087646484375,
-                            "y": 47.081207275390625
+                            "x": 124.48956298828125,
+                            "y": 71.48760986328125
                         },
                         "pos_rel": {
-                            "x": -1.5109096765518188,
-                            "y": -0.9128125905990601
+                            "x": -1.5472415685653687,
+                            "y": -0.8676155209541321
                         },
                         "scale": {
-                            "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
+                            "x": 0.07592592388391495,
+                            "y": 0.07592591643333435
                         },
                         "scale_rel": {
-                            "x": 0.09723357856273651,
-                            "y": 0.09714490175247192
+                            "x": 0.08146218955516815,
+                            "y": 0.08158499747514725
                         },
                         "bounds": {
                             "x": 1.0,
@@ -3834,116 +3921,6 @@
                         "bounds_rel": {
                             "x": 0.0018518518190830946,
                             "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "name_team_b",
-                        "source_uuid": "af845d99-2d11-4baf-8b2a-e352928d032c",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 163,
-                        "group_item_backup": true,
-                        "pos": {
-                            "x": 538.15673828125,
-                            "y": 101.70880126953125
-                        },
-                        "pos_rel": {
-                            "x": -0.7811912298202515,
-                            "y": -0.8116503953933716
-                        },
-                        "scale": {
-                            "x": 0.11296297609806061,
-                            "y": 0.11203700304031372
-                        },
-                        "scale_rel": {
-                            "x": 0.1240522712469101,
-                            "y": 0.12292318046092987
-                        },
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0018518518190830946,
-                            "y": 0.0018518518190830946
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "name_team_a",
-                        "source_uuid": "1a7416b5-45e8-4bd4-afe0-085560af8bf9",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 0,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 164,
-                        "group_item_backup": true,
-                        "pos": {
-                            "x": 148.7938232421875,
-                            "y": 101.70880126953125
-                        },
-                        "pos_rel": {
-                            "x": -1.502233624458313,
-                            "y": -0.8116503953933716
-                        },
-                        "scale": {
-                            "x": 0.10277774184942245,
-                            "y": 0.11203700304031372
-                        },
-                        "scale_rel": {
-                            "x": 0.11286717653274536,
-                            "y": 0.12292318046092987
-                        },
-                        "bounds": {
-                            "x": 2144.0,
-                            "y": 256.0
-                        },
-                        "bounds_rel": {
-                            "x": 3.970370292663574,
-                            "y": 0.4740740656852722
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -3974,23 +3951,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 165,
+                        "id": 250,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 420.33062744140625,
-                            "y": 96.771240234375
+                            "x": 320.8333740234375,
+                            "y": 119.30435180664062
                         },
                         "pos_rel": {
-                            "x": -0.9993877410888672,
-                            "y": -0.8207939863204956
+                            "x": -1.1836419105529785,
+                            "y": -0.7790660262107849
                         },
                         "scale": {
-                            "x": 0.3703703284263611,
-                            "y": 0.4046296179294586
+                            "x": 0.3166666328907013,
+                            "y": 0.3462963104248047
                         },
                         "scale_rel": {
-                            "x": 0.40672868490219116,
-                            "y": 0.44394585490226746
+                            "x": 0.33975687623023987,
+                            "y": 0.37210720777511597
                         },
                         "bounds": {
                             "x": 1.0,
@@ -4029,23 +4006,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 166,
+                        "id": 251,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 305.1842041015625,
-                            "y": 96.771240234375
+                            "x": 250.557373046875,
+                            "y": 119.30435180664062
                         },
                         "pos_rel": {
-                            "x": -1.212621808052063,
-                            "y": -0.8207939863204956
+                            "x": -1.3137826919555664,
+                            "y": -0.7790660262107849
                         },
                         "scale": {
-                            "x": 0.3703703284263611,
-                            "y": 0.4046296179294586
+                            "x": 0.3166666328907013,
+                            "y": 0.3462963104248047
                         },
                         "scale_rel": {
-                            "x": 0.40672868490219116,
-                            "y": 0.44394585490226746
+                            "x": 0.33975687623023987,
+                            "y": 0.37210720777511597
                         },
                         "bounds": {
                             "x": 1.0,
@@ -4069,7 +4046,7 @@
                     {
                         "name": "Image",
                         "source_uuid": "211fd3a7-5082-4c44-bde6-c4a96bf0abcf",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -4084,23 +4061,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 167,
+                        "id": 252,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 300.7913818359375,
-                            "y": 32.650665283203125
+                            "x": 256.4583740234375,
+                            "y": 33.878875732421875
                         },
                         "pos_rel": {
-                            "x": -1.2207566499710083,
-                            "y": -0.9395357966423035
+                            "x": -1.3028548955917358,
+                            "y": -0.9372613430023193
                         },
                         "scale": {
-                            "x": 0.7511196732521057,
-                            "y": 1.0095678567886353
+                            "x": 0.6425926089286804,
+                            "y": 0.8638888597488403
                         },
                         "scale_rel": {
-                            "x": 0.8248552083969116,
-                            "y": 1.1076633930206299
+                            "x": 0.6894482374191284,
+                            "y": 0.9282780885696411
                         },
                         "bounds": {
                             "x": 1.0,
@@ -4139,23 +4116,23 @@
                         "crop_top": 0,
                         "crop_right": 72,
                         "crop_bottom": 0,
-                        "id": 168,
+                        "id": 253,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 341.229736328125,
-                            "y": 154.92098999023438
+                            "x": 303.1348876953125,
+                            "y": 52.220458984375
                         },
                         "pos_rel": {
-                            "x": -1.1458708047866821,
-                            "y": -0.7131092548370361
+                            "x": -1.216416835784912,
+                            "y": -0.9032954573631287
                         },
                         "scale": {
-                            "x": 0.15833330154418945,
-                            "y": 0.16296300292015076
+                            "x": 0.13611112534999847,
+                            "y": 0.1398148387670517
                         },
                         "scale_rel": {
-                            "x": 0.17387649416923523,
-                            "y": 0.17879745364189148
+                            "x": 0.14603589475154877,
+                            "y": 0.1502358317375183
                         },
                         "bounds": {
                             "x": 494.0,
@@ -4194,23 +4171,23 @@
                         "crop_top": 0,
                         "crop_right": 0,
                         "crop_bottom": 0,
-                        "id": 150,
+                        "id": 254,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 384.51190185546875,
-                            "y": 160.95538330078125
+                            "x": 326.1978759765625,
+                            "y": 140.25775146484375
                         },
                         "pos_rel": {
-                            "x": -1.065718650817871,
-                            "y": -0.7019344568252563
+                            "x": -1.1737076044082642,
+                            "y": -0.7402634024620056
                         },
                         "scale": {
-                            "x": 1.1574064493179321,
-                            "y": 1.1148149967193604
+                            "x": 0.9907407164573669,
+                            "y": 0.9546297192573547
                         },
                         "scale_rel": {
-                            "x": 1.2710262537002563,
-                            "y": 1.2231370210647583
+                            "x": 1.062982201576233,
+                            "y": 1.0257822275161743
                         },
                         "bounds": {
                             "x": 1.0,
@@ -4219,6 +4196,171 @@
                         "bounds_rel": {
                             "x": 0.0018518518190830946,
                             "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_b",
+                        "source_uuid": "af845d99-2d11-4baf-8b2a-e352928d032c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 255,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 450.0469665527344,
+                            "y": 125.75155639648438
+                        },
+                        "pos_rel": {
+                            "x": -0.9443574547767639,
+                            "y": -0.767126739025116
+                        },
+                        "scale": {
+                            "x": 0.08888889849185944,
+                            "y": 0.08888889849185944
+                        },
+                        "scale_rel": {
+                            "x": 0.09537037461996078,
+                            "y": 0.09551415592432022
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_a",
+                        "source_uuid": "1a7416b5-45e8-4bd4-afe0-085560af8bf9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 256,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 130.390625,
+                            "y": 125.75155639648438
+                        },
+                        "pos_rel": {
+                            "x": -1.5363136529922485,
+                            "y": -0.767126739025116
+                        },
+                        "scale": {
+                            "x": 0.08148148655891418,
+                            "y": 0.08888889849185944
+                        },
+                        "scale_rel": {
+                            "x": 0.08742284774780273,
+                            "y": 0.09551415592432022
+                        },
+                        "bounds": {
+                            "x": 2144.0,
+                            "y": 256.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.970370292663574,
+                            "y": 0.4740740656852722
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "half_text",
+                        "source_uuid": "1c9c8405-2bd1-448f-94ca-a242e98ac43b",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 257,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 231.2447509765625,
+                            "y": 38.71429443359375
+                        },
+                        "pos_rel": {
+                            "x": -1.3495467901229858,
+                            "y": -0.9283068776130676
+                        },
+                        "scale": {
+                            "x": 0.17685186862945557,
+                            "y": 0.17777779698371887
+                        },
+                        "scale_rel": {
+                            "x": 0.18974730372428894,
+                            "y": 0.19102831184864044
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "scale_filter": "disable",
                         "blend_method": "default",
@@ -4249,23 +4391,23 @@
                         "crop_top": 0,
                         "crop_right": 365,
                         "crop_bottom": 0,
-                        "id": 177,
+                        "id": 262,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 1742.8861083984375,
-                            "y": 24.68145751953125
+                            "x": 1739.0,
+                            "y": 38.500030517578125
                         },
                         "pos_rel": {
-                            "x": 1.449789047241211,
-                            "y": -0.9542936086654663
+                            "x": 1.4425926208496094,
+                            "y": -0.9287036657333374
                         },
                         "scale": {
-                            "x": 0.12020033597946167,
-                            "y": 0.12037037312984467
+                            "x": 0.12340886145830154,
+                            "y": 0.12322308868169785
                         },
                         "scale_rel": {
-                            "x": 0.13200010359287262,
-                            "y": 0.1320662796497345
+                            "x": 0.13240742683410645,
+                            "y": 0.13240742683410645
                         },
                         "bounds": {
                             "x": 0.0,
@@ -4304,23 +4446,23 @@
                         "crop_top": 197,
                         "crop_right": 554,
                         "crop_bottom": 361,
-                        "id": 178,
+                        "id": 263,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 1557.68408203125,
-                            "y": 34.358154296875
+                            "x": 1553.5,
+                            "y": 52.500152587890625
                         },
                         "pos_rel": {
-                            "x": 1.1068223714828491,
-                            "y": -0.936373770236969
+                            "x": 1.099074125289917,
+                            "y": -0.9027774930000305
                         },
                         "scale": {
-                            "x": 0.21041572093963623,
-                            "y": 0.20964211225509644
+                            "x": 0.21574974060058594,
+                            "y": 0.21370157599449158
                         },
                         "scale_rel": {
-                            "x": 0.23107171058654785,
-                            "y": 0.2300121933221817
+                            "x": 0.23148147761821747,
+                            "y": 0.22962965071201324
                         },
                         "bounds": {
                             "x": 0.0,
@@ -4343,9 +4485,9 @@
                     },
                     {
                         "name": "Group",
-                        "source_uuid": "08533d92-94ca-431a-a209-51af29213e96",
+                        "source_uuid": "654c5ef4-08f0-4f1d-87d7-a57f91e3d0d4",
                         "visible": true,
-                        "locked": true,
+                        "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
                             "x": 1920.0,
@@ -4356,26 +4498,26 @@
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 0,
-                        "crop_top": 0,
+                        "crop_top": 9,
                         "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 171,
+                        "crop_bottom": 35,
+                        "id": 260,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 32.0001220703125,
-                            "y": 1.000244140625
+                            "x": 29.00006103515625,
+                            "y": 14.0
                         },
                         "pos_rel": {
-                            "x": -1.7185182571411133,
-                            "y": -0.9981476664543152
+                            "x": -1.7240740060806274,
+                            "y": -0.9740740656852722
                         },
                         "scale": {
-                            "x": 1.0981675386428833,
-                            "y": 1.0971659421920776
+                            "x": 1.0729166269302368,
+                            "y": 1.0745341777801514
                         },
                         "scale_rel": {
-                            "x": 1.0981675386428833,
-                            "y": 1.0971659421920776
+                            "x": 1.0729166269302368,
+                            "y": 1.0745341777801514
                         },
                         "bounds": {
                             "x": 0.0,
@@ -4393,10 +4535,9 @@
                             "versioned_id": "wipe_transition",
                             "name": "Group Show Transition",
                             "transition": {
-                                "luma_image": "barndoor-v.png",
-                                "luma_softness": 0.68
+                                "luma_image": "barndoor-v.png"
                             },
-                            "duration": 1400
+                            "duration": 400
                         },
                         "hide_transition": {
                             "id": "wipe_transition",
@@ -4406,10 +4547,10 @@
                                 "luma_image": "barndoor-v.png",
                                 "luma_invert": true
                             },
-                            "duration": 500
+                            "duration": 400
                         },
                         "private_settings": {
-                            "collapsed": true
+                            "collapsed": false
                         }
                     },
                     {
@@ -4434,11 +4575,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 0.0,
-                            "y": 0.0
+                            "y": -4.0
                         },
                         "pos_rel": {
                             "x": -1.7777777910232544,
-                            "y": -1.0
+                            "y": -1.0074074268341064
                         },
                         "scale": {
                             "x": 1.0,
@@ -4489,11 +4630,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 1135.0,
-                            "y": 167.9996337890625
+                            "y": 163.99966430664062
                         },
                         "pos_rel": {
                             "x": 0.32407405972480774,
-                            "y": -0.6888895630836487
+                            "y": -0.6962969303131104
                         },
                         "scale": {
                             "x": 0.11851851642131805,
@@ -4544,11 +4685,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 815.0000610351562,
-                            "y": 167.9996337890625
+                            "y": 163.99966430664062
                         },
                         "pos_rel": {
                             "x": -0.2685184180736542,
-                            "y": -0.6888895630836487
+                            "y": -0.6962969303131104
                         },
                         "scale": {
                             "x": 0.13240741193294525,
@@ -4599,11 +4740,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 1126.0,
-                            "y": 97.99951171875
+                            "y": 93.99951171875
                         },
                         "pos_rel": {
                             "x": 0.307407408952713,
-                            "y": -0.8185194134712219
+                            "y": -0.8259268403053284
                         },
                         "scale": {
                             "x": 0.125,
@@ -4654,11 +4795,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 806.0001220703125,
-                            "y": 97.99951171875
+                            "y": 93.99951171875
                         },
                         "pos_rel": {
                             "x": -0.28518494963645935,
-                            "y": -0.8185194134712219
+                            "y": -0.8259268403053284
                         },
                         "scale": {
                             "x": 0.11851851642131805,
@@ -4709,11 +4850,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 1018.0001831054688,
-                            "y": 61.999755859375
+                            "y": 57.999755859375
                         },
                         "pos_rel": {
                             "x": 0.10740774869918823,
-                            "y": -0.8851856589317322
+                            "y": -0.8925930261611938
                         },
                         "scale": {
                             "x": 0.14907412230968475,
@@ -4764,11 +4905,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 977.0001220703125,
-                            "y": 97.9996337890625
+                            "y": 93.9996337890625
                         },
                         "pos_rel": {
                             "x": 0.03148170933127403,
-                            "y": -0.8185191750526428
+                            "y": -0.8259266018867493
                         },
                         "scale": {
                             "x": 0.13381235301494598,
@@ -4819,11 +4960,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 1033.0,
-                            "y": 138.0
+                            "y": 134.0
                         },
                         "pos_rel": {
                             "x": 0.13518518209457397,
-                            "y": -0.7444444298744202
+                            "y": -0.7518518567085266
                         },
                         "scale": {
                             "x": 0.279720276594162,
@@ -4874,11 +5015,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 940.0000610351562,
-                            "y": 138.0
+                            "y": 134.0
                         },
                         "pos_rel": {
                             "x": -0.03703692555427551,
-                            "y": -0.7444444298744202
+                            "y": -0.7518518567085266
                         },
                         "scale": {
                             "x": 0.279720276594162,
@@ -4929,11 +5070,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 968.0001831054688,
-                            "y": 129.99948120117188
+                            "y": 125.99948120117188
                         },
                         "pos_rel": {
                             "x": 0.014815153554081917,
-                            "y": -0.7592602372169495
+                            "y": -0.7666676044464111
                         },
                         "scale": {
                             "x": 1.0,
@@ -4984,11 +5125,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 964.0000610351562,
-                            "y": 33.000030517578125
+                            "y": 29.000030517578125
                         },
                         "pos_rel": {
                             "x": 0.007407520432025194,
-                            "y": -0.9388888478279114
+                            "y": -0.946296215057373
                         },
                         "scale": {
                             "x": 0.14055144786834717,
@@ -5039,11 +5180,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 944.0,
-                            "y": 61.000213623046875
+                            "y": 57.000213623046875
                         },
                         "pos_rel": {
                             "x": -0.029629629105329514,
-                            "y": -0.8870366215705872
+                            "y": -0.8944440484046936
                         },
                         "scale": {
                             "x": 0.17574931681156158,
@@ -5087,18 +5228,18 @@
                         "bounds_align": 0,
                         "bounds_crop": false,
                         "crop_left": 186,
-                        "crop_top": 35,
+                        "crop_top": 141,
                         "crop_right": 191,
-                        "crop_bottom": 338,
+                        "crop_bottom": 236,
                         "id": 200,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 107.00006103515625,
-                            "y": 194.00021362304688
+                            "x": 105.0,
+                            "y": 194.0
                         },
                         "pos_rel": {
-                            "x": -1.5796295404434204,
-                            "y": -0.6407403349876404
+                            "x": -1.5833333730697632,
+                            "y": -0.6407407522201538
                         },
                         "scale": {
                             "x": 1.113651156425476,
@@ -5149,11 +5290,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 116.00006103515625,
-                            "y": 965.000244140625
+                            "y": 961.000244140625
                         },
                         "pos_rel": {
                             "x": -1.5629628896713257,
-                            "y": 0.7870374917984009
+                            "y": 0.7796300649642944
                         },
                         "scale": {
                             "x": 0.9351851940155029,
@@ -5204,11 +5345,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
-                            "y": 0.0
+                            "y": -4.0
                         },
                         "pos_rel": {
                             "x": -1.7777777910232544,
-                            "y": -1.0
+                            "y": -1.0074074268341064
                         },
                         "scale": {
                             "x": 1.0,
@@ -5237,7 +5378,7 @@
                                 "luma_image": "zigzag-h.png",
                                 "luma_softness": 1.0
                             },
-                            "duration": 2500
+                            "duration": 2000
                         },
                         "hide_transition": {
                             "id": "wipe_transition",
@@ -5361,7 +5502,7 @@
                         "key": "OBS_KEY_NUM3"
                     }
                 ],
-                "libobs.show_scene_item.171": [
+                "libobs.show_scene_item.260": [
                     {
                         "key": "OBS_KEY_NUM1"
                     },
@@ -5369,7 +5510,7 @@
                         "key": "OBS_KEY_NUM3"
                     }
                 ],
-                "libobs.hide_scene_item.171": [
+                "libobs.hide_scene_item.260": [
                     {
                         "key": "OBS_KEY_NUM2"
                     }
@@ -5439,11 +5580,11 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "PB ALLSTAR",
+                "text": "ซ้อนัท หมูพิเรน",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
-                    "size": 300,
+                    "size": 320,
                     "flags": 0
                 },
                 "antialiasing": true
@@ -5472,11 +5613,11 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "เทศบาลเมืองเพชรบุรี",
+                "text": "พรหมานุสรณ์ FC",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
-                    "size": 300,
+                    "size": 320,
                     "flags": 0
                 }
             },
@@ -5902,9 +6043,9 @@
                 "text": "0",
                 "undo_suuid": "b0275b49-e703-4271-8fe2-126795607f31",
                 "font": {
-                    "face": "Srinakharinwirot",
+                    "face": "Impact",
                     "style": "Regular",
-                    "size": 350,
+                    "size": 250,
                     "flags": 0
                 },
                 "color": 16777215
@@ -5935,9 +6076,9 @@
             "settings": {
                 "text": "0",
                 "font": {
-                    "face": "Srinakharinwirot",
+                    "face": "Impact",
                     "style": "Regular",
-                    "size": 350,
+                    "size": 250,
                     "flags": 0
                 },
                 "color": 16777215
@@ -6008,7 +6149,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.0,
+            "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
             "muted": true,
@@ -6074,7 +6215,7 @@
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
-                    "size": 300,
+                    "size": 280,
                     "flags": 0
                 },
                 "color": 16777215

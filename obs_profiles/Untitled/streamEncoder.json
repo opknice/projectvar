@@ -1,1 +1,1 @@
-{"bitrate":6000,"target_usage":"TU7","rate_control":"CBR"}
+{"rate_control":"CBR","bitrate":8000,"keyint_sec":2,"preset":"p7","multipass":"fullres","lookahead":false}

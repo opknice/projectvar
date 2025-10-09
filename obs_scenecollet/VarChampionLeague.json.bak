@@ -977,7 +977,7 @@
                     {
                         "name": "ตารางคะแนนสด",
                         "source_uuid": "4ac1993f-d894-41dd-8f21-3eb633244a1b",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -1752,7 +1752,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4278219775
+                "color": 4278250239
             },
             "mixers": 0,
             "sync": 0,
@@ -1778,7 +1778,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4294574109
+                "color": 4278492973
             },
             "mixers": 0,
             "sync": 0,
@@ -2100,7 +2100,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/A9.png"
+                "file": "D:\\scoreboard\\logoteam/A10.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -3449,7 +3449,7 @@
                     {
                         "name": "ตารางคะแนนสด",
                         "source_uuid": "4ac1993f-d894-41dd-8f21-3eb633244a1b",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3579,7 +3579,7 @@
                             "duration": 400
                         },
                         "private_settings": {
-                            "collapsed": true
+                            "collapsed": false
                         }
                     },
                     {
@@ -3756,7 +3756,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "ซ้อนัท หมูพิเรน",
+                "text": "แก๊งค์4พ่อบ้าน",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -4241,7 +4241,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/obs/Replay 2025-10-08 23-07-33.mkv",
+                "local_file": "D:/obs/Replay 2025-10-03 22-57-49.mkv",
                 "is_local_file": true,
                 "looping": false,
                 "restart_on_activate": true,

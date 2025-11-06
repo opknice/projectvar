@@ -493,7 +493,7 @@ const saveinfo__ = () => {
 };
 
 const saveinfo___ = () => {
-  const confirmSave = confirm('Alcohol SuperLeague แน่นะ !! ??');
+  const confirmSave = confirm('บอล 5 เส้า แน่นะ !! ??');
   if (!confirmSave) return; // ถ้าเลือกยกเลิก ให้หยุดฟังก์ชันทันที
 
   const now = Date.now();

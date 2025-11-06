@@ -56,7 +56,7 @@ const firebaseConfig5SaoMatch = {
 const appChampion = initializeApp(firebaseConfigChampionLeague, "ChampionLeagueApp");
 const appGeneral = initializeApp(firebaseConfigGeneralMatch, "GeneralApp");
 const appAlcohol = initializeApp(firebaseConfigAlcoholMatch, "AlcoholApp");
-const app5Sao = initializeApp(firebaseConfig5SaoMatch, "AlcoholApp");
+const app5Sao = initializeApp(firebaseConfig5SaoMatch, "5SaoApp");
 
 // ✅ Get each database instance
 const database = getDatabase(appChampion);

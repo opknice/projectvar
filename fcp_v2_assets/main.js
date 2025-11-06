@@ -41,15 +41,28 @@ const firebaseConfigAlcoholMatch = {
   measurementId: "G-E2V3GPLSDB"
 };
 
+const firebaseConfig5SaoMatch = {
+  apiKey: "AIzaSyDmn75Ngpcs6eb2Zsb-dWrzYlSrFLboVnk",
+  authDomain: "sao-26548.firebaseapp.com",
+  databaseURL: "https://sao-26548-default-rtdb.firebaseio.com",
+  projectId: "sao-26548",
+  storageBucket: "sao-26548.firebasestorage.app",
+  messagingSenderId: "1078068038535",
+  appId: "1:1078068038535:web:9adb166f54303838b5e122",
+  measurementId: "G-414NN274DQ"
+};
+
 // 3. เริ่มต้นแอป และดึงอ็อบเจ็กต์ Database
 const appChampion = initializeApp(firebaseConfigChampionLeague, "ChampionLeagueApp");
 const appGeneral = initializeApp(firebaseConfigGeneralMatch, "GeneralApp");
 const appAlcohol = initializeApp(firebaseConfigAlcoholMatch, "AlcoholApp");
+const app5Sao = initializeApp(firebaseConfig5SaoMatch, "AlcoholApp");
 
 // ✅ Get each database instance
 const database = getDatabase(appChampion);
 const database_ = getDatabase(appGeneral);
 const database__ = getDatabase(appAlcohol);
+const database___ = getDatabase(app5Sao);
 // ---------------------------- ---------------------------- ---------------------------- ---------------------------- ---------------------------- ----------------------------
 // ---------------------------- ---------------------------- GENERAL ---------------------------- ---------------------------- ---------------------------- ----------------------------
 
@@ -479,6 +492,25 @@ const saveinfo__ = () => {
     .catch(err => alert('บันทึกไม่สำเร็จ: ' + err.message));
 };
 
+const saveinfo___ = () => {
+  const confirmSave = confirm('Alcohol SuperLeague แน่นะ !! ??');
+  if (!confirmSave) return; // ถ้าเลือกยกเลิก ให้หยุดฟังก์ชันทันที
+
+  const now = Date.now();
+  const matchInfo = {
+    teamA: nameA.innerText,
+    teamB: nameB.innerText,
+    scoreA: parseInt(scoreA, 10),
+    scoreB: parseInt(scoreB, 10),
+    roundLabel: label2.innerText,
+    date: new Date(now).toISOString().slice(0, 10), // format "YYYY-MM-DD"
+    url: ""
+  };
+
+  push(ref(database___, 'matches'), matchInfo)
+    .then(() => alert('บันทึกคะแนนเรียบร้อยแล้ว'))
+    .catch(err => alert('บันทึกไม่สำเร็จ: ' + err.message));
+};
 
 
 const openTimeSettings = () => {
@@ -702,6 +734,7 @@ const setupEventListeners = () => {
     elements.MatchSave.addEventListener('click', saveinfo);
     elements.MatchSave_.addEventListener('click', saveinfo_);
     elements.MatchSave__.addEventListener('click', saveinfo__);
+    elements.MatchSave___.addEventListener('click', saveinfo___);
     // elements.pauseBtn.addEventListener('click', stopTimer);
     elements.resetToStartBtn.addEventListener('click', resetToStartTime); 
     // elements.resetToZeroBtn.addEventListener('click', resetToZero);     

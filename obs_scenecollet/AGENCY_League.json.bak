@@ -2485,7 +2485,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4278221823
+                "color": 4285530125
             },
             "mixers": 0,
             "sync": 0,
@@ -2511,7 +2511,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4278190080
+                "color": 4291035386
             },
             "mixers": 0,
             "sync": 0,
@@ -2537,7 +2537,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4294967295
+                "color": 4294901811
             },
             "mixers": 0,
             "sync": 0,
@@ -2563,7 +2563,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4289200139
+                "color": 4285211648
             },
             "mixers": 0,
             "sync": 0,
@@ -2720,7 +2720,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "คู่ที่ 5",
+                "text": "คู่ที่ 1",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -3044,7 +3044,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B2.png"
+                "file": "D:\\scoreboard\\logoteam/B5.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -3070,7 +3070,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B7.png"
+                "file": "D:\\scoreboard\\logoteam/B3.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -4409,7 +4409,7 @@
                             "duration": 500
                         },
                         "private_settings": {
-                            "collapsed": false
+                            "collapsed": true
                         }
                     },
                     {
@@ -5439,7 +5439,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "โฮมโปรเพชรบุรี",
+                "text": "PB ALLSTAR",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -5472,7 +5472,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "โรงเรียนอรุณประดิษฐ์",
+                "text": "เทศบาลเมืองเพชรบุรี",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -5899,7 +5899,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "2",
+                "text": "0",
                 "undo_suuid": "b0275b49-e703-4271-8fe2-126795607f31",
                 "font": {
                     "face": "Srinakharinwirot",
@@ -5933,7 +5933,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "2",
+                "text": "0",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -5999,7 +5999,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/obs/Replay 2025-10-03 22-57-49.mkv",
+                "local_file": "D:/obs/Replay 2025-10-08 23-07-33.mkv",
                 "is_local_file": true,
                 "looping": false,
                 "restart_on_activate": true,
@@ -6070,7 +6070,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "48:48",
+                "text": "00:00",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",

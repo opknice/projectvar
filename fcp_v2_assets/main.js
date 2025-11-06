@@ -85,7 +85,7 @@ const elements = [
     "startTimeMinutes", "startTimeSeconds", "saveTimeSettingsBtn", "saveAndUpdateTimeBtn", "closeTimeSettingsBtn",
     "timeSettingsError", "changelogBtn", "changelogPopup", "closeChangelogBtn",
     "logoPathBtn", "logoPathPopup", "currentLogoPath", "logoPathInput", "editLogoPathBtn", "closeLogoPathBtn",
-    "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_", "MatchSave__"
+    "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_", "MatchSave__", "MatchSave___"
 ].reduce((acc, id) => {
     acc[id.replace(/-(\w)/g, (m, p1) => p1.toUpperCase())] = $(id);
     return acc;

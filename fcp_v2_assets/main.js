@@ -345,6 +345,7 @@ const resetScore = () => {
     setText('score_team_a', '0');
     setText('score_team_b', '0');
     showToast(translations[currentLang].toastScoreReset, 'info');
+    setText('half_text', "");
 };
 
 const updateTimerDisplay = () => {
@@ -358,8 +359,6 @@ const updateTimerDisplay = () => {
 const hidetimer_1 = () => {
     elements.timerText.textContent = "";
     setText('time_counter', "");
-    elements.halfText.textContent = "";
-    setText('half_text', "");
     stopTimer();
 };
 

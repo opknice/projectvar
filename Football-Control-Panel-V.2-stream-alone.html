@@ -303,6 +303,44 @@
                     <div class="row center" style="margin-bottom:0; margin-top: 5px;">
                         <button id="play1Btn" class="btn btn-success">เริ่มครึ่งแรก<i class="fas fa-play"></i></button>
                         <button id="halfpauseBtn" class="btn btn-danger">พักครึ่งแรก<i class="fas fa-pause"></i></button>
+
+                        <script>
+                        // กด '/' เพื่อเรียกปุ่ม play1Btn, กด '8' เพื่อเรียกปุ่ม halfpauseBtn
+                        document.addEventListener('keydown', function(e) {
+                          const tgt = e.target;
+                          const tag = tgt && tgt.tagName ? tgt.tagName.toUpperCase() : '';
+                          if (tag === 'INPUT' || tag === 'TEXTAREA' || tgt.isContentEditable) return; // หลีกเลี่ยงเมื่อพิมพ์ในช่องข้อความ
+
+                          if (e.key === '/') {
+                            const btn = document.getElementById('play1Btn');
+                            if (btn) { btn.click(); e.preventDefault(); }
+                          } else if (e.key === '8') {
+                            const btn = document.getElementById('halfpauseBtn');
+                            if (btn) { btn.click(); e.preventDefault(); }
+                          } else if (e.key === '5') {
+                            const btn = document.getElementById('play2Btn');
+                            if (btn) { btn.click(); e.preventDefault(); }
+                          } else if (e.key === '2') {
+                            const btn = document.getElementById('fullEndBtn');
+                            if (btn) { btn.click(); e.preventDefault(); }
+                          } else if (e.key === '*') {
+                            const btn = document.getElementById('swapBtn');
+                            if (btn) { btn.click(); e.preventDefault(); }
+                          } else if (e.key === '7') {
+                            const btn = document.getElementById('scoreAPlusBtn');
+                            if (btn) { btn.click(); e.preventDefault(); }
+                          } else if (e.key === '4') {
+                            const btn = document.getElementById('scoreAMinusBtn');
+                            if (btn) { btn.click(); e.preventDefault(); }
+                          } else if (e.key === '9') {
+                            const btn = document.getElementById('scoreBPlusBtn');
+                            if (btn) { btn.click(); e.preventDefault(); }
+                          } else if (e.key === '6') {
+                            const btn = document.getElementById('scoreBMinusBtn');
+                            if (btn) { btn.click(); e.preventDefault(); }
+                          }
+                        });
+                        </script>
                         
                         <!-- <button id="pauseBtn" class="btn-secondary"><i class="fas fa-pause"></i></button>
                         <button id="resetToZeroBtn" class="btn-danger" data-lang-title="resetToZeroHint"><i class="fas fa-undo"></i></button> -->

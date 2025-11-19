@@ -85,7 +85,7 @@ const elements = [
     "startTimeMinutes", "startTimeSeconds", "saveTimeSettingsBtn", "saveAndUpdateTimeBtn", "closeTimeSettingsBtn",
     "timeSettingsError", "changelogBtn", "changelogPopup", "closeChangelogBtn",
     "logoPathBtn", "logoPathPopup", "currentLogoPath", "logoPathInput", "editLogoPathBtn", "closeLogoPathBtn",
-    "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_", "MatchSave__", "MatchSave___"
+    "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_", "MatchSave__", "MatchSave___", "hidetimer"
 ].reduce((acc, id) => {
     acc[id.replace(/-(\w)/g, (m, p1) => p1.toUpperCase())] = $(id);
     return acc;
@@ -353,6 +353,14 @@ const updateTimerDisplay = () => {
     const timeString = `${m}:${s}`;
     elements.timerText.textContent = timeString;
     setText('time_counter', timeString);
+};
+
+const hidetimer_1 = () => {
+    elements.timerText.textContent = "";
+    setText('time_counter', "");
+    elements.halfText.textContent = "";
+    setText('half_text', "");
+    stopTimer();
 };
 
 const startTimer1 = () => {
@@ -727,6 +735,7 @@ const setupEventListeners = () => {
     elements.scoreBMinusBtn.addEventListener('click', () => changeScore('B', -1));
     elements.resetScoreBtn.addEventListener('click', resetScore);
     elements.halfBtn.addEventListener('click', toggleHalf);
+    elements.hidetimer.addEventListener('click', hidetimer_1);
     elements.play1Btn.addEventListener('click', startTimer1);
     elements.play2Btn.addEventListener('click', startTimer2);
     elements.halfpauseBtn.addEventListener('click', halfpause);

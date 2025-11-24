@@ -21,7 +21,7 @@
                 "id_counter": 0,
                 "custom_size": true,
                 "cx": 1702,
-                "cy": 247,
+                "cy": 246,
                 "items": [
                     {
                         "name": "logo_overall",
@@ -45,11 +45,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 0.0,
-                            "y": 30.289459228515625
+                            "y": 29.466094970703125
                         },
                         "pos_rel": {
                             "x": -1.7777777910232544,
-                            "y": -0.9439083933830261
+                            "y": -0.9454331398010254
                         },
                         "scale": {
                             "x": 0.2918402850627899,
@@ -100,11 +100,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 488.0002136230469,
-                            "y": 123.0
+                            "y": 122.17666625976562
                         },
                         "pos_rel": {
                             "x": -0.8740736842155457,
-                            "y": -0.7722222208976746
+                            "y": -0.773746907711029
                         },
                         "scale": {
                             "x": 0.0020833334419876337,
@@ -155,11 +155,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 403.0,
-                            "y": 123.0
+                            "y": 122.17666625976562
                         },
                         "pos_rel": {
                             "x": -1.0314815044403076,
-                            "y": -0.7722222208976746
+                            "y": -0.773746907711029
                         },
                         "scale": {
                             "x": 0.0020833334419876337,
@@ -210,11 +210,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 146.0,
-                            "y": 123.0
+                            "y": 122.17666625976562
                         },
                         "pos_rel": {
                             "x": -1.5074074268341064,
-                            "y": -0.7722222208976746
+                            "y": -0.773746907711029
                         },
                         "scale": {
                             "x": 0.0020833334419876337,
@@ -265,11 +265,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 61.5001220703125,
-                            "y": 123.0
+                            "y": 122.17666625976562
                         },
                         "pos_rel": {
                             "x": -1.663888692855835,
-                            "y": -0.7722222208976746
+                            "y": -0.773746907711029
                         },
                         "scale": {
                             "x": 0.0020833334419876337,
@@ -320,19 +320,19 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 448.350341796875,
-                            "y": 42.823333740234375
+                            "y": 42.0
                         },
                         "pos_rel": {
                             "x": -0.9474993944168091,
-                            "y": -0.9206975102424622
+                            "y": -0.9222221970558167
                         },
                         "scale": {
                             "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
+                            "y": 0.0885416716337204
                         },
                         "scale_rel": {
                             "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
+                            "y": 0.0885416716337204
                         },
                         "bounds": {
                             "x": 1.0,
@@ -374,20 +374,20 @@
                         "id": 162,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 102.08697509765625,
-                            "y": 42.0
+                            "x": 102.0870361328125,
+                            "y": 41.1766357421875
                         },
                         "pos_rel": {
-                            "x": -1.5887278318405151,
-                            "y": -0.9222221970558167
+                            "x": -1.5887277126312256,
+                            "y": -0.9237469434738159
                         },
                         "scale": {
                             "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
+                            "y": 0.0885416716337204
                         },
                         "scale_rel": {
                             "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
+                            "y": 0.0885416716337204
                         },
                         "bounds": {
                             "x": 1.0,
@@ -430,11 +430,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 460.91021728515625,
-                            "y": 91.78970336914062
+                            "y": 90.96640014648438
                         },
                         "pos_rel": {
                             "x": -0.9242403507232666,
-                            "y": -0.8300190567970276
+                            "y": -0.8315436840057373
                         },
                         "scale": {
                             "x": 0.11296297609806061,
@@ -485,11 +485,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 106.353271484375,
-                            "y": 91.78970336914062
+                            "y": 90.96640014648438
                         },
                         "pos_rel": {
                             "x": -1.580827236175537,
-                            "y": -0.8300190567970276
+                            "y": -0.8315436840057373
                         },
                         "scale": {
                             "x": 0.10277774184942245,
@@ -540,11 +540,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 353.6168212890625,
-                            "y": 87.28945922851562
+                            "y": 86.46609497070312
                         },
                         "pos_rel": {
                             "x": -1.1229318380355835,
-                            "y": -0.8383528590202332
+                            "y": -0.8398776054382324
                         },
                         "scale": {
                             "x": 0.3703703284263611,
@@ -595,11 +595,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 248.7635498046875,
-                            "y": 87.28945922851562
+                            "y": 86.46609497070312
                         },
                         "pos_rel": {
                             "x": -1.3171045780181885,
-                            "y": -0.8383528590202332
+                            "y": -0.8398776054382324
                         },
                         "scale": {
                             "x": 0.3703703284263611,
@@ -650,11 +650,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 244.763427734375,
-                            "y": 28.847442626953125
+                            "y": 28.02410888671875
                         },
                         "pos_rel": {
                             "x": -1.3245121240615845,
-                            "y": -0.9465788006782532
+                            "y": -0.9481034874916077
                         },
                         "scale": {
                             "x": 0.7511196732521057,
@@ -705,11 +705,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 281.5869140625,
-                            "y": 140.2894287109375
+                            "y": 139.466064453125
                         },
                         "pos_rel": {
                             "x": -1.2563204765319824,
-                            "y": -0.7402047514915466
+                            "y": -0.7417294979095459
                         },
                         "scale": {
                             "x": 0.15833330154418945,
@@ -760,11 +760,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 321.0,
-                            "y": 145.78939819335938
+                            "y": 144.96603393554688
                         },
                         "pos_rel": {
                             "x": -1.1833332777023315,
-                            "y": -0.7300196290016174
+                            "y": -0.7315443754196167
                         },
                         "scale": {
                             "x": 1.1574064493179321,
@@ -815,11 +815,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 1557.9462890625,
-                            "y": 21.583984375
+                            "y": 20.76068115234375
                         },
                         "pos_rel": {
                             "x": 1.1073079109191895,
-                            "y": -0.960029661655426
+                            "y": -0.9615543484687805
                         },
                         "scale": {
                             "x": 0.12020033597946167,
@@ -870,11 +870,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 1389.2998046875,
-                            "y": 30.403717041015625
+                            "y": 29.580352783203125
                         },
                         "pos_rel": {
                             "x": 0.7949996590614319,
-                            "y": -0.9436967968940735
+                            "y": -0.9452215433120728
                         },
                         "scale": {
                             "x": 0.21041572093963623,
@@ -1709,7 +1709,7 @@
                         },
                         "pos_rel": {
                             "x": -1.5629628896713257,
-                            "y": 0.7870374321937561
+                            "y": 0.7870374917984009
                         },
                         "scale": {
                             "x": 0.9351851940155029,
@@ -1780,6 +1780,438 @@
                 "libobs.hide_scene_item.200": [],
                 "libobs.show_scene_item.199": [],
                 "libobs.hide_scene_item.199": []
+            },
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "score_up",
+            "uuid": "24f7a7e5-d101-448e-9d9d-6d69110df540",
+            "id": "group",
+            "versioned_id": "group",
+            "settings": {
+                "id_counter": 0,
+                "custom_size": true,
+                "cx": 1673,
+                "cy": 279,
+                "items": [
+                    {
+                        "name": "update_sc",
+                        "source_uuid": "92315a7f-a682-4903-a3a3-7fb35c6974df",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 312,
+                        "crop_right": 0,
+                        "crop_bottom": 476,
+                        "id": 206,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 151.0001220703125,
+                            "y": 15.0
+                        },
+                        "pos_rel": {
+                            "x": -1.498147964477539,
+                            "y": -0.9722222089767456
+                        },
+                        "scale": {
+                            "x": 0.6981481313705444,
+                            "y": 0.6981481313705444
+                        },
+                        "scale_rel": {
+                            "x": 0.6981481313705444,
+                            "y": 0.6981481313705444
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_b",
+                        "source_uuid": "2731ce2a-6bf1-4d45-80f3-093cd817b85f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 213,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1533.0,
+                            "y": 139.0
+                        },
+                        "pos_rel": {
+                            "x": 1.0611112117767334,
+                            "y": -0.7425925731658936
+                        },
+                        "scale": {
+                            "x": 0.2898148000240326,
+                            "y": 0.2898148000240326
+                        },
+                        "scale_rel": {
+                            "x": 0.2898148000240326,
+                            "y": 0.2898148000240326
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_a",
+                        "source_uuid": "4d01ec6f-d572-45ce-aa67-2cc4dc7adad9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 214,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 101.00006103515625,
+                            "y": 139.0
+                        },
+                        "pos_rel": {
+                            "x": -1.59074068069458,
+                            "y": -0.7425925731658936
+                        },
+                        "scale": {
+                            "x": 0.2898148000240326,
+                            "y": 0.2898148000240326
+                        },
+                        "scale_rel": {
+                            "x": 0.2898148000240326,
+                            "y": 0.2898148000240326
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_b",
+                        "source_uuid": "af845d99-2d11-4baf-8b2a-e352928d032c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 215,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 1223.0,
+                            "y": 152.99996948242188
+                        },
+                        "pos_rel": {
+                            "x": 0.48703712224960327,
+                            "y": -0.7166666984558105
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.25
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.25
+                        },
+                        "bounds": {
+                            "x": 2144.0,
+                            "y": 256.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.970370292663574,
+                            "y": 0.4740740656852722
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_a",
+                        "source_uuid": "1a7416b5-45e8-4bd4-afe0-085560af8bf9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 216,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 463.00006103515625,
+                            "y": 152.99996948242188
+                        },
+                        "pos_rel": {
+                            "x": -0.9203702807426453,
+                            "y": -0.7166666984558105
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.25
+                        },
+                        "scale_rel": {
+                            "x": 0.25,
+                            "y": 0.25
+                        },
+                        "bounds": {
+                            "x": 2144.0,
+                            "y": 256.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.970370292663574,
+                            "y": 0.4740740656852722
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_b",
+                        "source_uuid": "00af54db-455e-4c4a-9b99-cb91226e3e03",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 217,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 960.0000610351562,
+                            "y": 154.00003051757812
+                        },
+                        "pos_rel": {
+                            "x": 1.2665987014770508e-7,
+                            "y": -0.7148147821426392
+                        },
+                        "scale": {
+                            "x": 0.7064814567565918,
+                            "y": 0.7055555582046509
+                        },
+                        "scale_rel": {
+                            "x": 0.7064814567565918,
+                            "y": 0.7055555582046509
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_a",
+                        "source_uuid": "b0275b49-e703-4271-8fe2-126795607f31",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 218,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 790.0000610351562,
+                            "y": 154.00003051757812
+                        },
+                        "pos_rel": {
+                            "x": -0.3148146867752075,
+                            "y": -0.7148147821426392
+                        },
+                        "scale": {
+                            "x": 0.7064814567565918,
+                            "y": 0.7055555582046509
+                        },
+                        "scale_rel": {
+                            "x": 0.7064814567565918,
+                            "y": 0.7055555582046509
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    }
+                ]
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {
+                "libobs.show_scene_item.206": [],
+                "libobs.hide_scene_item.206": [],
+                "libobs.show_scene_item.213": [],
+                "libobs.hide_scene_item.213": [],
+                "libobs.show_scene_item.214": [],
+                "libobs.hide_scene_item.214": [],
+                "libobs.show_scene_item.215": [],
+                "libobs.hide_scene_item.215": [],
+                "libobs.show_scene_item.216": [],
+                "libobs.hide_scene_item.216": [],
+                "libobs.show_scene_item.217": [],
+                "libobs.hide_scene_item.217": [],
+                "libobs.show_scene_item.218": [],
+                "libobs.hide_scene_item.218": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -2033,15 +2465,15 @@
                     },
                     "macroActionConditionSplitterPosition": [
                         {
-                            "pos": 201
+                            "pos": 63
                         },
                         {
-                            "pos": 200
+                            "pos": 338
                         }
                     ],
                     "macroElseActionSplitterPosition": [
                         {
-                            "pos": 168
+                            "pos": 306
                         },
                         {
                             "pos": 0
@@ -2122,6 +2554,246 @@
                             },
                             "blockUntilTransitionDone": true,
                             "sceneType": 0
+                        },
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "wait",
+                            "duration": {
+                                "value": {
+                                    "value": 1.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "duration2": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "waitType": 0,
+                            "version": 1
+                        },
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "hotkey",
+                            "action": 0,
+                            "hotkeyType": 1,
+                            "hotkeyName": "[Main Stream] libobs.show_scene_item.219",
+                            "key": 0,
+                            "left_shift": false,
+                            "right_shift": false,
+                            "left_ctrl": false,
+                            "right_ctrl": false,
+                            "left_alt": false,
+                            "right_alt": false,
+                            "left_meta": false,
+                            "right_meta": false,
+                            "duration": {
+                                "value": {
+                                    "value": 0.3,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "onlyOBS": false,
+                            "version": 2
+                        },
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "wait",
+                            "duration": {
+                                "value": {
+                                    "value": 3.5,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "duration2": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "waitType": 0,
+                            "version": 1
+                        },
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "hotkey",
+                            "action": 0,
+                            "hotkeyType": 1,
+                            "hotkeyName": "[Main Stream] libobs.hide_scene_item.219",
+                            "key": 0,
+                            "left_shift": false,
+                            "right_shift": false,
+                            "left_ctrl": false,
+                            "right_ctrl": false,
+                            "left_alt": false,
+                            "right_alt": false,
+                            "left_meta": false,
+                            "right_meta": false,
+                            "duration": {
+                                "value": {
+                                    "value": 0.3,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "onlyOBS": false,
+                            "version": 2
+                        },
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "wait",
+                            "duration": {
+                                "value": {
+                                    "value": 1.5,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "duration2": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "waitType": 0,
+                            "version": 1
+                        },
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "hotkey",
+                            "action": 0,
+                            "hotkeyType": 1,
+                            "hotkeyName": "[Main Stream] libobs.show_scene_item.171",
+                            "key": 0,
+                            "left_shift": false,
+                            "right_shift": false,
+                            "left_ctrl": false,
+                            "right_ctrl": false,
+                            "left_alt": false,
+                            "right_alt": false,
+                            "left_meta": false,
+                            "right_meta": false,
+                            "duration": {
+                                "value": {
+                                    "value": 0.3,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "onlyOBS": false,
+                            "version": 2
+                        },
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "wait",
+                            "duration": {
+                                "value": {
+                                    "value": 0.5,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "duration2": {
+                                "value": {
+                                    "value": 0.0,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "waitType": 0,
+                            "version": 1
+                        },
+                        {
+                            "segmentSettings": {
+                                "collapsed": false,
+                                "useCustomLabel": false,
+                                "customLabel": "My label",
+                                "enabled": true,
+                                "version": 1
+                            },
+                            "id": "hotkey",
+                            "action": 0,
+                            "hotkeyType": 1,
+                            "hotkeyName": "[Main Stream] libobs.show_scene_item.84",
+                            "key": 0,
+                            "left_shift": false,
+                            "right_shift": false,
+                            "left_ctrl": false,
+                            "right_ctrl": false,
+                            "left_alt": false,
+                            "right_alt": false,
+                            "left_meta": false,
+                            "right_meta": false,
+                            "duration": {
+                                "value": {
+                                    "value": 0.3,
+                                    "type": 0
+                                },
+                                "unit": 0,
+                                "version": 1
+                            },
+                            "onlyOBS": false,
+                            "version": 2
                         }
                     ],
                     "elseActions": [],
@@ -2485,7 +3157,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4285530125
+                "color": 4294901811
             },
             "mixers": 0,
             "sync": 0,
@@ -2511,7 +3183,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4291035386
+                "color": 4285211648
             },
             "mixers": 0,
             "sync": 0,
@@ -2537,7 +3209,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4294901811
+                "color": 4294967295
             },
             "mixers": 0,
             "sync": 0,
@@ -2563,7 +3235,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4285211648
+                "color": 4278190335
             },
             "mixers": 0,
             "sync": 0,
@@ -2752,13 +3424,13 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "รอบที่ 4",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
                     "size": 256,
                     "flags": 0
-                }
+                },
+                "text": "รอบที่ 5"
             },
             "mixers": 0,
             "sync": 0,
@@ -3044,7 +3716,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B5.png"
+                "file": "D:\\scoreboard\\logoteam/B3.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -3070,7 +3742,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B3.png"
+                "file": "D:\\scoreboard\\logoteam/B6.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -3153,13 +3825,13 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 205,
+                "id_counter": 219,
                 "custom_size": false,
                 "items": [
                     {
                         "name": "Media Source",
                         "source_uuid": "da13957c-6bdf-46f9-90fb-817f92ef43ab",
-                        "visible": false,
+                        "visible": true,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3324,7 +3996,7 @@
                     {
                         "name": "livescore_",
                         "source_uuid": "6503c9e2-5895-46f6-aa1a-ccb7a49b7af6",
-                        "visible": false,
+                        "visible": true,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3394,7 +4066,7 @@
                     {
                         "name": "logoallteam",
                         "source_uuid": "ac67b03c-5527-4fab-8b92-a21a0b38e35d",
-                        "visible": true,
+                        "visible": false,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3483,11 +4155,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 32.0001220703125,
-                            "y": 34.2327880859375
+                            "y": 34.232757568359375
                         },
                         "pos_rel": {
                             "x": -1.7185182571411133,
-                            "y": -0.9366059303283691
+                            "y": -0.9366059899330139
                         },
                         "scale": {
                             "x": 0.2918402850627899,
@@ -3538,11 +4210,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 567.9061279296875,
-                            "y": 135.95166015625
+                            "y": 135.95162963867188
                         },
                         "pos_rel": {
                             "x": -0.7260997891426086,
-                            "y": -0.748237669467926
+                            "y": -0.7482377290725708
                         },
                         "scale": {
                             "x": 0.0020833334419876337,
@@ -3593,11 +4265,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 474.5616455078125,
-                            "y": 135.95166015625
+                            "y": 135.95162963867188
                         },
                         "pos_rel": {
                             "x": -0.8989599347114563,
-                            "y": -0.748237669467926
+                            "y": -0.7482377290725708
                         },
                         "scale": {
                             "x": 0.0020833334419876337,
@@ -3648,11 +4320,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 192.33258056640625,
-                            "y": 135.95166015625
+                            "y": 135.95162963867188
                         },
                         "pos_rel": {
                             "x": -1.4216063022613525,
-                            "y": -0.748237669467926
+                            "y": -0.7482377290725708
                         },
                         "scale": {
                             "x": 0.0020833334419876337,
@@ -3703,11 +4375,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 99.53753662109375,
-                            "y": 135.95166015625
+                            "y": 135.95162963867188
                         },
                         "pos_rel": {
                             "x": -1.5934489965438843,
-                            "y": -0.748237669467926
+                            "y": -0.7482377290725708
                         },
                         "scale": {
                             "x": 0.0020833334419876337,
@@ -3766,11 +4438,11 @@
                         },
                         "scale": {
                             "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
+                            "y": 0.0885416716337204
                         },
                         "scale_rel": {
                             "x": 0.09723357856273651,
-                            "y": 0.09714490175247192
+                            "y": 0.09714490920305252
                         },
                         "bounds": {
                             "x": 1.0,
@@ -3813,19 +4485,19 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 144.1087646484375,
-                            "y": 47.081207275390625
+                            "y": 47.0811767578125
                         },
                         "pos_rel": {
                             "x": -1.5109096765518188,
-                            "y": -0.9128125905990601
+                            "y": -0.9128126502037048
                         },
                         "scale": {
                             "x": 0.0885416641831398,
-                            "y": 0.0885416641831398
+                            "y": 0.0885416716337204
                         },
                         "scale_rel": {
                             "x": 0.09723357856273651,
-                            "y": 0.09714490175247192
+                            "y": 0.09714490920305252
                         },
                         "bounds": {
                             "x": 1.0,
@@ -3978,11 +4650,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 420.33062744140625,
-                            "y": 96.771240234375
+                            "y": 96.77120971679688
                         },
                         "pos_rel": {
                             "x": -0.9993877410888672,
-                            "y": -0.8207939863204956
+                            "y": -0.8207940459251404
                         },
                         "scale": {
                             "x": 0.3703703284263611,
@@ -4033,11 +4705,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 305.1842041015625,
-                            "y": 96.771240234375
+                            "y": 96.77120971679688
                         },
                         "pos_rel": {
                             "x": -1.212621808052063,
-                            "y": -0.8207939863204956
+                            "y": -0.8207940459251404
                         },
                         "scale": {
                             "x": 0.3703703284263611,
@@ -4143,11 +4815,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 341.229736328125,
-                            "y": 154.92098999023438
+                            "y": 154.92095947265625
                         },
                         "pos_rel": {
                             "x": -1.1458708047866821,
-                            "y": -0.7131092548370361
+                            "y": -0.7131093144416809
                         },
                         "scale": {
                             "x": 0.15833330154418945,
@@ -4198,11 +4870,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 384.51190185546875,
-                            "y": 160.95538330078125
+                            "y": 160.955322265625
                         },
                         "pos_rel": {
                             "x": -1.065718650817871,
-                            "y": -0.7019344568252563
+                            "y": -0.7019345760345459
                         },
                         "scale": {
                             "x": 1.1574064493179321,
@@ -4257,7 +4929,7 @@
                         },
                         "pos_rel": {
                             "x": 1.449789047241211,
-                            "y": -0.9542936086654663
+                            "y": -0.9542935490608215
                         },
                         "scale": {
                             "x": 0.12020033597946167,
@@ -4308,11 +4980,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 1557.68408203125,
-                            "y": 34.358154296875
+                            "y": 34.358123779296875
                         },
                         "pos_rel": {
                             "x": 1.1068223714828491,
-                            "y": -0.936373770236969
+                            "y": -0.9363738298416138
                         },
                         "scale": {
                             "x": 0.21041572093963623,
@@ -4345,7 +5017,7 @@
                         "name": "Group",
                         "source_uuid": "08533d92-94ca-431a-a209-51af29213e96",
                         "visible": true,
-                        "locked": true,
+                        "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
                             "x": 1920.0,
@@ -4363,11 +5035,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 32.0001220703125,
-                            "y": 1.000244140625
+                            "y": 1.903564453125
                         },
                         "pos_rel": {
                             "x": -1.7185182571411133,
-                            "y": -0.9981476664543152
+                            "y": -0.9964748620986938
                         },
                         "scale": {
                             "x": 1.0981675386428833,
@@ -5255,6 +5927,464 @@
                         }
                     },
                     {
+                        "name": "update_sc",
+                        "source_uuid": "92315a7f-a682-4903-a3a3-7fb35c6974df",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 312,
+                        "crop_right": 0,
+                        "crop_bottom": 476,
+                        "id": 206,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 383.1722412109375,
+                            "y": 766.6343994140625
+                        },
+                        "pos_rel": {
+                            "x": -1.0681995153427124,
+                            "y": 0.41969335079193115
+                        },
+                        "scale": {
+                            "x": 0.6981481313705444,
+                            "y": 0.6981481313705444
+                        },
+                        "scale_rel": {
+                            "x": 0.5879800915718079,
+                            "y": 0.5880459547042847
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_b",
+                        "source_uuid": "2731ce2a-6bf1-4d45-80f3-093cd817b85f",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 213,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 1547.092041015625,
+                            "y": 871.078857421875
+                        },
+                        "pos_rel": {
+                            "x": 1.0872074365615845,
+                            "y": 0.6131089925765991
+                        },
+                        "scale": {
+                            "x": 0.2898148000240326,
+                            "y": 0.2898148000240326
+                        },
+                        "scale_rel": {
+                            "x": 0.24408189952373505,
+                            "y": 0.24410922825336456
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "logo_team_a",
+                        "source_uuid": "4d01ec6f-d572-45ce-aa67-2cc4dc7adad9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 214,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 341.06219482421875,
+                            "y": 871.078857421875
+                        },
+                        "pos_rel": {
+                            "x": -1.1461811065673828,
+                            "y": 0.6131089925765991
+                        },
+                        "scale": {
+                            "x": 0.2898148000240326,
+                            "y": 0.2898148000240326
+                        },
+                        "scale_rel": {
+                            "x": 0.24408189952373505,
+                            "y": 0.24410922825336456
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_b",
+                        "source_uuid": "af845d99-2d11-4baf-8b2a-e352928d032c",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 215,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 1286.0101318359375,
+                            "y": 882.8709716796875
+                        },
+                        "pos_rel": {
+                            "x": 0.6037224531173706,
+                            "y": 0.6349462270736694
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.25
+                        },
+                        "scale_rel": {
+                            "x": 0.21054990589618683,
+                            "y": 0.2105734795331955
+                        },
+                        "bounds": {
+                            "x": 2144.0,
+                            "y": 256.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.970370292663574,
+                            "y": 0.4740740656852722
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "name_team_a",
+                        "source_uuid": "1a7416b5-45e8-4bd4-afe0-085560af8bf9",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 216,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 645.9384765625,
+                            "y": 882.8709716796875
+                        },
+                        "pos_rel": {
+                            "x": -0.5815954208374023,
+                            "y": 0.6349462270736694
+                        },
+                        "scale": {
+                            "x": 0.25,
+                            "y": 0.25
+                        },
+                        "scale_rel": {
+                            "x": 0.21054990589618683,
+                            "y": 0.2105734795331955
+                        },
+                        "bounds": {
+                            "x": 2144.0,
+                            "y": 256.0
+                        },
+                        "bounds_rel": {
+                            "x": 3.970370292663574,
+                            "y": 0.4740740656852722
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_b",
+                        "source_uuid": "00af54db-455e-4c4a-9b99-cb91226e3e03",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 217,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 1064.51171875,
+                            "y": 883.7132568359375
+                        },
+                        "pos_rel": {
+                            "x": 0.19354021549224854,
+                            "y": 0.6365060806274414
+                        },
+                        "scale": {
+                            "x": 0.7064814567565918,
+                            "y": 0.7055555582046509
+                        },
+                        "scale_rel": {
+                            "x": 0.5949984788894653,
+                            "y": 0.5942851305007935
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_team_a",
+                        "source_uuid": "b0275b49-e703-4271-8fe2-126795607f31",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 0,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 218,
+                        "group_item_backup": true,
+                        "pos": {
+                            "x": 921.3377685546875,
+                            "y": 883.7132568359375
+                        },
+                        "pos_rel": {
+                            "x": -0.07159672677516937,
+                            "y": 0.6365060806274414
+                        },
+                        "scale": {
+                            "x": 0.7064814567565918,
+                            "y": 0.7055555582046509
+                        },
+                        "scale_rel": {
+                            "x": 0.5949984788894653,
+                            "y": 0.5942851305007935
+                        },
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0018518518190830946,
+                            "y": 0.0018518518190830946
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 0
+                        },
+                        "hide_transition": {
+                            "duration": 0
+                        },
+                        "private_settings": {}
+                    },
+                    {
+                        "name": "score_up",
+                        "source_uuid": "24f7a7e5-d101-448e-9d9d-6d69110df540",
+                        "visible": false,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 219,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 256.0,
+                            "y": 754.0
+                        },
+                        "pos_rel": {
+                            "x": -1.3037036657333374,
+                            "y": 0.39629626274108887
+                        },
+                        "scale": {
+                            "x": 0.8421996235847473,
+                            "y": 0.842293918132782
+                        },
+                        "scale_rel": {
+                            "x": 0.8421996235847473,
+                            "y": 0.842293918132782
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "score_up Show Transition",
+                            "transition": {
+                                "luma_image": "barndoor-v.png",
+                                "luma_softness": 1.0,
+                                "luma_invert": false
+                            },
+                            "duration": 1000
+                        },
+                        "hide_transition": {
+                            "id": "wipe_transition",
+                            "versioned_id": "wipe_transition",
+                            "name": "score_up Hide Transition",
+                            "transition": {
+                                "luma_softness": 1.0,
+                                "luma_invert": true,
+                                "luma_image": "barndoor-v.png"
+                            },
+                            "duration": 1000
+                        },
+                        "private_settings": {
+                            "collapsed": true
+                        }
+                    },
+                    {
                         "name": "cut_scene",
                         "source_uuid": "7d88f1af-9911-40df-bfad-425c00ee40cf",
                         "visible": true,
@@ -5346,6 +6476,9 @@
                 "libobs.hide_scene_item.84": [
                     {
                         "key": "OBS_KEY_NUM1"
+                    },
+                    {
+                        "key": "OBS_KEY_SPACE"
                     }
                 ],
                 "libobs.show_scene_item.182": [
@@ -5359,6 +6492,9 @@
                     },
                     {
                         "key": "OBS_KEY_NUM3"
+                    },
+                    {
+                        "key": "OBS_KEY_SPACE"
                     }
                 ],
                 "libobs.show_scene_item.171": [
@@ -5372,6 +6508,9 @@
                 "libobs.hide_scene_item.171": [
                     {
                         "key": "OBS_KEY_NUM2"
+                    },
+                    {
+                        "key": "OBS_KEY_SPACE"
                     }
                 ],
                 "libobs.show_scene_item.197": [
@@ -5385,10 +6524,19 @@
                     },
                     {
                         "key": "OBS_KEY_NUM3"
+                    },
+                    {
+                        "key": "OBS_KEY_SPACE"
                     }
                 ],
                 "libobs.show_scene_item.180": [],
-                "libobs.hide_scene_item.180": []
+                "libobs.hide_scene_item.180": [],
+                "libobs.show_scene_item.219": [],
+                "libobs.hide_scene_item.219": [
+                    {
+                        "key": "OBS_KEY_SPACE"
+                    }
+                ]
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -5439,7 +6587,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "PB ALLSTAR",
+                "text": "เทศบาลเมืองเพชรบุรี",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -5472,13 +6620,13 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "เทศบาลเมืองเพชรบุรี",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
                     "size": 300,
                     "flags": 0
-                }
+                },
+                "text": "สว่างสรรเพชร"
             },
             "mixers": 0,
             "sync": 0,
@@ -5999,7 +7147,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/obs/Replay 2025-10-08 23-07-33.mkv",
+                "local_file": "D:/obs/Replay 2025-10-16 14-30-30.mkv",
                 "is_local_file": true,
                 "looping": false,
                 "restart_on_activate": true,
@@ -6070,7 +7218,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "00:00",
+                "text": "03:24",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -6095,6 +7243,62 @@
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
             "private_settings": {}
+        },
+        {
+            "prev_ver": 536870913,
+            "name": "update_sc",
+            "uuid": "92315a7f-a682-4903-a3a3-7fb35c6974df",
+            "id": "image_source",
+            "versioned_id": "image_source",
+            "settings": {
+                "file": "D:/scoreboard/pic scoreboard/score_update_agency.png"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870913,
+                    "name": "Chroma Key",
+                    "uuid": "8ce04592-9f5b-4983-be34-fcea31c8092c",
+                    "id": "chroma_key_filter",
+                    "versioned_id": "chroma_key_filter_v2",
+                    "settings": {
+                        "smoothness": 1,
+                        "spill": 1,
+                        "similarity": 470
+                    },
+                    "mixers": 0,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         }
     ]
 }

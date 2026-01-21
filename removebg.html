@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro AI Background Remover | Bulk & High Quality</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: radial-gradient(circle at top left, #f8fafc, #f1f5f9);
+            color: #1e293b;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+        }
+
+        .drop-zone {
+            border: 2px dashed #cbd5e1;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .drop-zone.dragover {
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.05);
+            transform: scale(1.01);
+        }
+
+        .checkerboard {
+            background-image: linear-gradient(45deg, #e5e7eb 25%, transparent 25%), 
+                              linear-gradient(-45deg, #e5e7eb 25%, transparent 25%), 
+                              linear-gradient(45deg, transparent 75%, #e5e7eb 75%), 
+                              linear-gradient(-45deg, transparent 75%, #e5e7eb 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+
+        .compare-slider {
+            position: absolute;
+            top: 0; bottom: 0; left: 0;
+            width: 100%; height: 100%;
+            overflow: hidden;
+        }
+
+        .slider-handle {
+            position: absolute;
+            top: 0; bottom: 0;
+            width: 2px;
+            background: white;
+            cursor: ew-resize;
+            z-index: 10;
+        }
+
+        .slider-handle::after {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 32px; height: 32px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m18 8 4 4-4 4'/%3E%3Cpath d='m6 8-4 4 4 4'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 16px;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .loading-shimmer {
+            background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite linear;
+        }
+
+        .loader-sm {
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #ffffff;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+        }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Navigation/Status -->
+        <nav class="flex justify-between items-center mb-12">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-indigo-600 rounded-xl shadow-lg shadow-indigo-200">
+                    <i data-lucide="layers" class="text-white w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-slate-800">VisionCut Pro</span>
+            </div>
+            <div id="stats" class="hidden sm:flex gap-6 text-sm font-medium text-slate-500">
+                <div class="flex items-center gap-2">
+                    <span id="stat-total" class="text-slate-900">0</span> รูปภาพทั้งหมด
+                </div>
+                <div class="flex items-center gap-2">
+                    <span id="stat-done" class="text-emerald-600">0</span> สำเร็จแล้ว
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Hero Section -->
+        <div class="grid lg:grid-cols-12 gap-12 items-start">
+            
+            <!-- Left: Control Panel -->
+            <div class="lg:col-span-4 space-y-6">
+                <div class="glass-card rounded-3xl p-8">
+                    <h2 class="text-2xl font-bold mb-2">ลบพื้นหลังด้วย AI</h2>
+                    <p class="text-slate-500 text-sm mb-8">คุณภาพระดับสตูดิโอ ประมวลผลรวดเร็ว รองรับไฟล์จำนวนมาก</p>
+
+                    <div id="drop-zone" class="drop-zone rounded-2xl p-8 text-center cursor-pointer mb-6">
+                        <input type="file" id="file-input" class="hidden" multiple accept="image/*">
+                        <div class="flex flex-col items-center">
+                            <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center mb-4">
+                                <i data-lucide="upload-cloud"></i>
+                            </div>
+                            <p class="font-semibold text-slate-700">อัปโหลดรูปภาพของคุณ</p>
+                            <p class="text-xs text-slate-400 mt-1">ลากไฟล์มาวาง หรือคลิกเพื่อเลือก</p>
+                        </div>
+                    </div>
+
+                    <div id="action-buttons" class="hidden space-y-3">
+                        <button id="process-all-btn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-2xl font-bold transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 shadow-xl shadow-indigo-100">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            เริ่มประมวลผลทั้งหมด
+                        </button>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button id="download-zip-btn" class="hidden bg-emerald-500 hover:bg-emerald-600 text-white py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="download"></i> ZIP
+                            </button>
+                            <button id="clear-btn" class="bg-slate-100 hover:bg-slate-200 text-slate-600 py-3 rounded-xl font-bold transition-all">
+                                ล้างข้อมูล
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Card -->
+                <div class="bg-indigo-900 rounded-3xl p-8 text-white">
+                    <h3 class="font-bold mb-4 flex items-center gap-2">
+                        <i data-lucide="info" class="w-4 h-4"></i>
+                        คำแนะนำ
+                    </h3>
+                    <ul class="text-indigo-100 text-xs space-y-3 leading-relaxed">
+                        <li class="flex gap-2"><i data-lucide="check-circle" class="w-3 h-3 mt-0.5 text-indigo-400"></i> รองรับไฟล์ JPG, PNG และ WebP ขนาดไม่เกิน 10MB</li>
+                        <li class="flex gap-2"><i data-lucide="check-circle" class="w-3 h-3 mt-0.5 text-indigo-400"></i> AI จะพยายามรักษาความละเอียดเดิมของภาพให้ดีที่สุด</li>
+                        <li class="flex gap-2"><i data-lucide="check-circle" class="w-3 h-3 mt-0.5 text-indigo-400"></i> หากขอบภาพไม่คมชัด แนะนำให้ใช้ภาพที่มี Contrast สูง</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: Display Grid -->
+            <div class="lg:col-span-8">
+                <div id="empty-state" class="text-center py-24 glass-card rounded-3xl border-dashed">
+                    <div class="max-w-xs mx-auto">
+                        <div class="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="image" class="text-slate-300 w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-400">ยังไม่มีรูปภาพ</h3>
+                        <p class="text-slate-400 text-sm">เพิ่มรูปภาพเพื่อเริ่มการลบพื้นหลังอัจฉริยะ</p>
+                    </div>
+                </div>
+
+                <div id="image-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Cards will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = "";
+        const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('file-input');
+        const imageGrid = document.getElementById('image-grid');
+        const emptyState = document.getElementById('empty-state');
+        const actionButtons = document.getElementById('action-buttons');
+        const processAllBtn = document.getElementById('process-all-btn');
+        const downloadZipBtn = document.getElementById('download-zip-btn');
+        const clearBtn = document.getElementById('clear-btn');
+        
+        let imageItems = [];
+
+        // Function to initialize icons safely
+        function initIcons() {
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+        }
+
+        // Run when DOM is ready
+        window.addEventListener('DOMContentLoaded', () => {
+            initIcons();
+        });
+
+        // Drag and Drop Events
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(name => {
+            dropZone.addEventListener(name, e => e.preventDefault(), false);
+        });
+
+        dropZone.addEventListener('dragover', () => dropZone.classList.add('dragover'));
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+        dropZone.addEventListener('drop', (e) => {
+            dropZone.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        dropZone.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', (e) => handleFiles(e.target.files));
+
+        function handleFiles(files) {
+            if (files.length === 0) return;
+            
+            emptyState.classList.add('hidden');
+            actionButtons.classList.remove('hidden');
+            
+            Array.from(files).forEach(file => {
+                if (!file.type.startsWith('image/')) return;
+                
+                const id = Math.random().toString(36).substr(2, 9);
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const item = {
+                        id,
+                        file,
+                        originalSrc: e.target.result,
+                        processedSrc: null,
+                        status: 'idle'
+                    };
+                    imageItems.push(item);
+                    renderCard(item);
+                    updateStats();
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function renderCard(item) {
+            const container = document.createElement('div');
+            container.id = `card-${item.id}`;
+            container.className = "glass-card rounded-2xl overflow-hidden flex flex-col group animate-in fade-in slide-in-from-bottom-4 duration-500";
+            
+            container.innerHTML = `
+                <div class="relative aspect-[4/3] checkerboard group">
+                    <img id="before-${item.id}" src="${item.originalSrc}" class="absolute inset-0 w-full h-full object-cover z-0">
+                    <div id="after-container-${item.id}" class="absolute inset-0 z-10 w-0 overflow-hidden border-r-2 border-white shadow-2xl transition-all duration-75">
+                        <img src="${item.originalSrc}" id="after-img-${item.id}" class="absolute inset-0 h-full object-cover" style="width: auto; max-width: none;">
+                    </div>
+                    <div class="compare-slider z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div id="handle-${item.id}" class="slider-handle" style="left: 0%"></div>
+                    </div>
+                    <div id="loader-${item.id}" class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm z-30 hidden items-center justify-center flex-col text-white">
+                        <div class="w-12 h-1 bg-white/20 rounded-full overflow-hidden mb-3 max-w-[120px]">
+                            <div class="h-full bg-indigo-400 loading-shimmer w-full"></div>
+                        </div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest">Processing High Quality</span>
+                    </div>
+                    <div id="badge-${item.id}" class="absolute top-4 left-4 z-40 px-3 py-1 bg-white/90 backdrop-blur rounded-full text-[10px] font-bold shadow-sm">
+                        READY
+                    </div>
+                </div>
+                <div class="p-4 flex items-center justify-between bg-white">
+                    <div class="overflow-hidden mr-4">
+                        <p class="text-sm font-bold truncate text-slate-700">${item.file.name}</p>
+                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-tight">${(item.file.size/1024/1024).toFixed(2)} MB</p>
+                    </div>
+                    <div class="flex gap-2 shrink-0">
+                        <button id="btn-proc-${item.id}" onclick="processImage('${item.id}')" class="p-2 bg-indigo-50 text-indigo-600 rounded-lg hover:bg-indigo-600 hover:text-white transition-colors">
+                            <i data-lucide="wand-2" class="w-4 h-4"></i>
+                        </button>
+                        <a id="btn-dl-${item.id}" class="hidden p-2 bg-emerald-50 text-emerald-600 rounded-lg hover:bg-emerald-600 hover:text-white transition-colors">
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+            
+            imageGrid.prepend(container);
+            initIcons();
+            setupSlider(item.id);
+        }
+
+        function setupSlider(id) {
+            const card = document.getElementById(`card-${id}`);
+            const afterContainer = document.getElementById(`after-container-${id}`);
+            const handle = document.getElementById(`handle-${id}`);
+            const afterImg = document.getElementById(`after-img-${id}`);
+
+            const updateSlider = (x) => {
+                const rect = card.getBoundingClientRect();
+                let position = ((x - rect.left) / rect.width) * 100;
+                position = Math.max(0, Math.min(100, position));
+                
+                afterContainer.style.width = `${position}%`;
+                handle.style.left = `${position}%`;
+                afterImg.style.width = `${rect.width}px`;
+            };
+
+            card.addEventListener('mousemove', (e) => updateSlider(e.clientX));
+            card.addEventListener('touchmove', (e) => updateSlider(e.touches[0].clientX));
+            
+            window.addEventListener('resize', () => {
+                const rect = card.getBoundingClientRect();
+                if (rect.width > 0) afterImg.style.width = `${rect.width}px`;
+            });
+        }
+
+        async function processImage(id) {
+            const item = imageItems.find(i => i.id === id);
+            if (!item || item.status === 'processing' || item.status === 'done') return;
+
+            item.status = 'processing';
+            const loader = document.getElementById(`loader-${id}`);
+            const badge = document.getElementById(`badge-${id}`);
+            const btnProc = document.getElementById(`btn-proc-${id}`);
+            
+            loader.classList.remove('hidden');
+            loader.classList.add('flex');
+            badge.innerText = "PROCESSING";
+            badge.className = "absolute top-4 left-4 z-40 px-3 py-1 bg-indigo-600 text-white rounded-full text-[10px] font-bold shadow-sm";
+
+            try {
+                const base64Data = item.originalSrc.split(',')[1];
+                const prompt = "Remove the background completely. Return the subject with a transparent background. Best high-fidelity quality PNG.";
+                
+                const response = await callGeminiAPI(prompt, base64Data);
+
+                if (response) {
+                    item.processedSrc = `data:image/png;base64,${response}`;
+                    item.status = 'done';
+                    
+                    document.getElementById(`after-img-${id}`).src = item.processedSrc;
+                    document.getElementById(`after-container-${id}`).style.width = "100%";
+                    document.getElementById(`handle-${id}`).style.left = "100%";
+                    
+                    const btnDl = document.getElementById(`btn-dl-${id}`);
+                    btnDl.classList.remove('hidden');
+                    btnDl.href = item.processedSrc;
+                    btnDl.download = `VisionCut_${item.file.name.split('.')[0]}.png`;
+                    
+                    btnProc.classList.add('hidden');
+                    badge.innerText = "DONE";
+                    badge.className = "absolute top-4 left-4 z-40 px-3 py-1 bg-emerald-500 text-white rounded-full text-[10px] font-bold shadow-sm";
+                }
+            } catch (error) {
+                console.error("Gemini Image Process Error:", error);
+                item.status = 'error';
+                badge.innerText = "ERROR";
+                badge.className = "absolute top-4 left-4 z-40 px-3 py-1 bg-red-500 text-white rounded-full text-[10px] font-bold shadow-sm";
+            } finally {
+                loader.classList.add('hidden');
+                updateStats();
+                checkBulkCompletion();
+            }
+        }
+
+        async function callGeminiAPI(prompt, base64Image) {
+            // Updated to the correct model for image editing/generation
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=${apiKey}`;
+            
+            const payload = {
+                contents: [{
+                    parts: [
+                        { text: prompt },
+                        { inlineData: { mimeType: "image/png", data: base64Image } }
+                    ]
+                }],
+                generationConfig: {
+                    // Must specify IMAGE modality for this model to return an image
+                    responseModalities: ["IMAGE"]
+                }
+            };
+
+            let attempts = 5;
+            let backoff = 1000;
+
+            while (attempts > 0) {
+                try {
+                    const res = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!res.ok) {
+                        const errorData = await res.json();
+                        throw new Error(`API Error ${res.status}: ${JSON.stringify(errorData)}`);
+                    }
+                    
+                    const result = await res.json();
+                    
+                    // Extract the base64 image data from the response part
+                    const imagePart = result.candidates?.[0]?.content?.parts?.find(p => p.inlineData);
+                    const b64 = imagePart?.inlineData?.data;
+                    
+                    if (b64) return b64;
+                    
+                    throw new Error("No image data returned in API response candidates");
+                } catch (e) {
+                    attempts--;
+                    if (attempts === 0) throw e;
+                    await new Promise(r => setTimeout(r, backoff));
+                    backoff *= 2;
+                }
+            }
+        }
+
+        processAllBtn.addEventListener('click', async () => {
+            const idle = imageItems.filter(i => i.status === 'idle' || i.status === 'error');
+            if (idle.length === 0) return;
+
+            processAllBtn.disabled = true;
+            processAllBtn.innerHTML = `<span class="loader-sm mr-2"></span> กำลังประมวลผล...`;
+            
+            const pool = [...idle];
+            const execute = async () => {
+                while (pool.length > 0) {
+                    const item = pool.shift();
+                    await processImage(item.id);
+                }
+            };
+            
+            // Limit concurrency to avoid hitting rate limits too fast
+            await Promise.all([execute(), execute()]);
+
+            processAllBtn.disabled = false;
+            processAllBtn.innerHTML = `<i data-lucide="sparkles" class="w-5 h-5"></i> เริ่มประมวลผลทั้งหมด`;
+            initIcons();
+        });
+
+        downloadZipBtn.addEventListener('click', async () => {
+            const finished = imageItems.filter(i => i.processedSrc);
+            if (finished.length === 0) return;
+
+            downloadZipBtn.innerText = "กำลังสร้าง ZIP...";
+            const zip = new JSZip();
+            finished.forEach(item => {
+                const b64 = item.processedSrc.split(',')[1];
+                zip.file(`VisionCut_${item.file.name.split('.')[0]}.png`, b64, {base64: true});
+            });
+
+            const blob = await zip.generateAsync({type: "blob"});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = "VisionCut_Collection.zip";
+            a.click();
+            downloadZipBtn.innerHTML = `<i data-lucide="download"></i> ZIP`;
+            initIcons();
+        });
+
+        clearBtn.addEventListener('click', () => {
+            imageItems = [];
+            imageGrid.innerHTML = '';
+            emptyState.classList.remove('hidden');
+            actionButtons.classList.add('hidden');
+            downloadZipBtn.classList.add('hidden');
+            updateStats();
+        });
+
+        function updateStats() {
+            const total = imageItems.length;
+            const done = imageItems.filter(i => i.status === 'done').length;
+            
+            const totalEl = document.getElementById('stat-total');
+            const doneEl = document.getElementById('stat-done');
+            if (totalEl) totalEl.innerText = total;
+            if (doneEl) doneEl.innerText = done;
+            
+            if (total > 0) document.getElementById('stats')?.classList.remove('hidden');
+            else document.getElementById('stats')?.classList.add('hidden');
+        }
+
+        function checkBulkCompletion() {
+            const done = imageItems.filter(i => i.status === 'done').length;
+            if (done > 0) downloadZipBtn.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

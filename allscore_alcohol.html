@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+  />
+  <title>ผลบอลเรียลไทม์ แยกสัปดาห์</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg-color: #f5f7fa;
+      --primary-color: #2c3e50;
+      --text-color: #333333;
+      --border-radius: 8px;
+      --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.5;
+      padding: 1rem;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    header h1 {
+      font-family: 'Roboto Slab', serif;
+      color: var(--primary-color);
+      white-space: normal;
+      margin-bottom: 1rem;
+    }
+
+    .team-logo {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 576px) {
+      .team-logo {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .match-score {
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    .team-link {
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+      white-space: normal;
+    }
+
+    /* Modal text bold */
+    #teamModal .modal-body,
+    #teamModal .modal-header .modal-title {
+      font-weight: 600;
+      white-space: normal;
+    }
+  </style>
+</head>
+<body>
+  <header class="text-center py-4">
+    <h1>Alcohol Super League</h1>
+  </header>
+
+  <main id="scoreboard" class="container">
+    <div class="d-flex justify-content-center align-items-center loading-spinner">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">กำลังโหลด...</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal for team history -->
+  <div
+    class="modal fade"
+    id="teamModal"
+    tabindex="-1"
+    aria-labelledby="teamModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="teamModalLabel"></h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <!-- เนื้อหา dynamic -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Facebook video -->
+  <div
+    class="modal fade"
+    id="videoModal"
+    tabindex="-1"
+    aria-labelledby="videoModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videoModalLabel">คลิปการแข่งขัน</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body p-0" id="videoModalBody">
+          <!-- Facebook video iframe will be injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <!-- Modal for usage instructions -->
+  <div
+    class="modal fade"
+    id="usageModal"
+    tabindex="-1"
+    aria-labelledby="usageModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="usageModalLabel">
+            <span style="color: red;">วิธีการใช้งาน</span>
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body fw-bold">
+          <ul class="mb-0">
+            <li>กดเลือกทีมเพื่อแสดงผลการแข่งขัน ทั้งหมด</li>
+            
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            ปิด
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap Bundle JS (Popper + Collapse + Modal) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Firebase + UI Logic -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+    import {
+      getDatabase,
+      ref,
+      onValue,
+      query,
+      orderByChild
+    } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC5VOsYQGQdav1BMw48GY9ErOuxd-tp6G8",
+  authDomain: "alcohol-dd2b1.firebaseapp.com",
+  databaseURL: "https://alcohol-dd2b1-default-rtdb.firebaseio.com",
+  projectId: "alcohol-dd2b1",
+  storageBucket: "alcohol-dd2b1.firebasestorage.app",
+  messagingSenderId: "111449466001",
+  appId: "1:111449466001:web:492984bb3519419fcf0b30",
+  measurementId: "G-E2V3GPLSDB"
+};
+
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    const matchesRef = query(ref(db, "matches"), orderByChild("timestamp"));
+
+let allMatches = [];
+
+onValue(matchesRef, (snapshot) => {
+  const data = snapshot.val() || {};
+  allMatches = Object.values(data);
+  const container = document.getElementById("scoreboard");
+  container.innerHTML = "";
+
+  if (allMatches.length === 0) {
+    container.innerHTML = `
+      <div class="text-center py-5 text-secondary">
+        ไม่มีข้อมูลการแข่งขันในขณะนี้
+      </div>
+    `;
+    return;
+  }
+
+  const groups = allMatches.reduce((acc, match) => {
+    const date = match.date || "ไม่ระบุวันที่";
+    if (!acc[date]) acc[date] = [];
+    acc[date].push(match);
+    return acc;
+  }, {});
+
+  let weekNumber = 1;
+
+  Object.keys(groups).sort().forEach((date) => {
+    const weekCard = document.createElement("div");
+    weekCard.className = "card mb-4 shadow-sm";
+    weekCard.innerHTML = `
+      <div class="card-header bg-secondary text-white text-center">
+        สัปดาห์ที่ ${weekNumber++} <span class="d-block w-100 text-center">
+  วันที่: ${date}
+</span>
+      </div>
+      <div class="card-body p-0"></div>
+    `;
+    const body = weekCard.querySelector(".card-body");
+
+    groups[date].forEach((m) => {
+      const scoreA = Number(m.scoreA);
+      const scoreB = Number(m.scoreB);
+      const winA = scoreA > scoreB;
+      const winB = scoreB > scoreA;
+      const colorA = winA ? "text-success" : winB ? "text-danger" : "text-dark";
+      const colorB = winB ? "text-success" : winA ? "text-danger" : "text-dark";
+
+      // สร้างปุ่มคลิป ถ้ามี URL อยู่ในฐานข้อมูล
+      // (clipButton is now only used for legacy, not for score click)
+      const clipButton = ""; // Remove legacy clip button
+
+      const matchId = `stats-${m.timestamp}`;
+      const logoA = `logos/${encodeURIComponent(m.teamA)}.png`;
+      const logoB = `logos/${encodeURIComponent(m.teamB)}.png`;
+
+      const matchBlock = document.createElement("div");
+      matchBlock.className = "border-bottom";
+      matchBlock.innerHTML = `
+        <div class="row align-items-center py-2 px-3">
+          <div class="col-5 d-flex align-items-center justify-content-end">
+            <span
+              class="me-2 text-end team-link ${colorA}"
+              onclick="showTeamModal('${m.teamA.replace(/'/g, "\\'")}')"
+            >
+              ${m.teamA}
+            </span>
+            <img
+              src="${logoA}"
+              alt="โลโก้ ${m.teamA}"
+              class="team-logo"
+              onerror="this.onerror=null;this.src='logos/default.png';"
+            />
+          </div>
+          <div class="col-2 text-center">
+            <a
+              class="match-score fw-bold"
+              href="javascript:void(0);"
+              data-url="${m.url || ''}"
+              onclick="showVideoModal('${m.url || ''}')"
+              style="text-decoration: none;"
+            >
+              <span class="${colorA}">${scoreA}</span>
+              <span class="mx-1">-</span>
+              <span class="${colorB}">${scoreB}</span>
+            </a>
+          </div>
+          <div class="col-5 d-flex align-items-center justify-content-start">
+            <img
+              src="${logoB}"
+              alt="โลโก้ ${m.teamB}"
+              class="team-logo"
+              onerror="this.onerror=null;this.src='logos/default.png';"
+            />
+            <span
+              class="ms-2 team-link ${colorB}"
+              onclick="showTeamModal('${m.teamB.replace(/'/g, "\\'")}')"
+            >
+              ${m.teamB}
+            </span>
+          </div>
+        </div>
+        ${clipButton}
+      `;
+      body.appendChild(matchBlock);
+    });
+
+    container.appendChild(weekCard);
+  });
+});
+
+
+
+    window.showTeamModal = function(teamName) {
+      const modalTitle = document.getElementById("teamModalLabel");
+      const modalBody = document.querySelector("#teamModal .modal-body");
+      modalTitle.textContent = `ผลการแข่งขันของ ${teamName}`;
+
+      const matches = allMatches.filter(
+        m => m.teamA === teamName || m.teamB === teamName
+      );
+
+      if (!matches.length) {
+        modalBody.innerHTML = `<p class="text-center text-secondary">ไม่มีข้อมูลสำหรับทีมนี้</p>`;
+      } else {
+        const rows = matches.map(m => {
+          const date = m.date || "-";
+          const opponent = m.teamA === teamName ? m.teamB : m.teamA;
+          const scoreSelf = m.teamA === teamName ? Number(m.scoreA) : Number(m.scoreB);
+          const scoreOpp = m.teamA === teamName ? Number(m.scoreB) : Number(m.scoreA);
+          let resultClass, resultText;
+
+          if (scoreSelf > scoreOpp) {
+            resultClass = "text-success";
+            resultText = "ชนะ";
+          } else if (scoreSelf < scoreOpp) {
+            resultClass = "text-danger";
+            resultText = "แพ้";
+          } else {
+            resultClass = "text-dark";
+            resultText = "เสมอ";
+          }
+
+          return `
+            <tr>
+              <td>${date}</td>
+              <td>${opponent}</td>
+              <td class="text-center">${scoreSelf}-${scoreOpp}</td>
+              <td class="text-center ${resultClass}">${resultText}</td>
+            </tr>
+          `;
+        }).join("");
+
+        modalBody.innerHTML = `
+          <div class="table-responsive">
+            <table class="table table-striped mb-0 fw-bold">
+              <thead>
+                <tr>
+                  <th>วันที่</th>
+                  <th>คู่แข่ง</th>
+                  <th class="text-center">สกอร์</th>
+                  <th class="text-center">ผล</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rows}
+              </tbody>
+            </table>
+          </div>
+        `;
+      }
+
+      const modalEl = document.getElementById("teamModal");
+      const bsModal = new bootstrap.Modal(modalEl);
+      bsModal.show();
+    };
+
+    // Modal for Facebook video
+window.showVideoModal = function(url) {
+  const modalBody = document.getElementById("videoModalBody");
+  if (!url) {
+    modalBody.innerHTML = `<div class="text-center py-5 text-secondary">ไม่มีคลิปสำหรับแมตช์นี้</div>`;
+  } else {
+    // Extract Facebook video ID or use the URL directly
+    // Facebook embed: https://www.facebook.com/plugins/video.php?href=URL
+    const embedUrl = `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(url)}&show_text=false&width=800`;
+    modalBody.innerHTML = `
+      <iframe
+        src="${embedUrl}"
+        width="100%"
+        height="450"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+    `;
+  }
+  const modalEl = document.getElementById("videoModal");
+  const bsModal = new bootstrap.Modal(modalEl);
+  bsModal.show();
+};
+
+// เคลียร์ iframe เมื่อ modal ถูกปิด (ทั้งปุ่ม close และคลิกด้านนอก)
+document.getElementById("videoModal").addEventListener("hidden.bs.modal", function() {
+  document.getElementById("videoModalBody").innerHTML = "";
+});
+
+// แสดง modal วิธีการใช้งาน เมื่อเข้าเว็บ
+window.addEventListener("DOMContentLoaded", function() {
+  const usageModalEl = document.getElementById("usageModal");
+  const usageModal = new bootstrap.Modal(usageModalEl);
+  usageModal.show();
+});
+  </script>
+</body>
+</html>

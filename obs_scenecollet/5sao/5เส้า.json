@@ -5297,7 +5297,7 @@
                     {
                         "name": "livescore_",
                         "source_uuid": "6503c9e2-5895-46f6-aa1a-ccb7a49b7af6",
-                        "visible": true,
+                        "visible": false,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6302,7 +6302,7 @@
                     {
                         "name": "Group",
                         "source_uuid": "654c5ef4-08f0-4f1d-87d7-a57f91e3d0d4",
-                        "visible": true,
+                        "visible": false,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {

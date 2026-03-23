@@ -1578,7 +1578,7 @@
                     {
                         "name": "time_counter",
                         "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -4171,7 +4171,7 @@
             "id": "wasapi_input_capture",
             "versioned_id": "wasapi_input_capture",
             "settings": {
-                "device_id": "{0.0.1.00000000}.{476af322-652e-4347-be09-eaa2d7cf511b}",
+                "device_id": "{0.0.1.00000000}.{95f2b27d-595c-4bfd-b66b-76a45dd0e61d}",
                 "use_device_timing": false
             },
             "mixers": 255,
@@ -4194,7 +4194,35 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {}
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "Gain",
+                    "uuid": "6989b943-e178-4546-879f-a0379f9847f4",
+                    "id": "gain_filter",
+                    "versioned_id": "gain_filter",
+                    "settings": {
+                        "db": 10.1
+                    },
+                    "mixers": 255,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 536870916,
@@ -4724,7 +4752,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "คู่ที่ 9",
+                "text": "คู่ที่ 10",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -4989,7 +5017,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/D45.png"
+                "file": "D:\\scoreboard\\logoteam/x2.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -5015,7 +5043,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/D43.png"
+                "file": "D:\\scoreboard\\logoteam/x1.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -5269,7 +5297,7 @@
                     {
                         "name": "livescore_",
                         "source_uuid": "6503c9e2-5895-46f6-aa1a-ccb7a49b7af6",
-                        "visible": false,
+                        "visible": true,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5889,7 +5917,7 @@
                     {
                         "name": "time_counter",
                         "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -8835,7 +8863,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "เด็กห้าง TWD",
+                "text": "ลาดโพธิ์ FC",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8869,7 +8897,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "ทนงทรวยคงควรคอย",
+                "text": "แก๊ง 4 พ่อบ้าน",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -9703,7 +9731,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "3",
+                "text": "4",
                 "font": {
                     "face": "Impact",
                     "style": "Regular",
@@ -9825,7 +9853,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/obs/Replay 2026-02-19 22-34-17.mkv",
+                "local_file": "D:/obs/Replay 2026-03-23 11-47-31.mkv",
                 "is_local_file": true,
                 "looping": false,
                 "restart_on_activate": true,

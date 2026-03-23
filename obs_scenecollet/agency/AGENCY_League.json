@@ -1246,7 +1246,7 @@
                     {
                         "name": "label_2",
                         "source_uuid": "cb74226a-7081-4739-9fd2-e05411450838",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -1301,7 +1301,7 @@
                     {
                         "name": "time_counter",
                         "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -1576,7 +1576,7 @@
                     {
                         "name": "label_3",
                         "source_uuid": "4b0f3d6e-d801-49a4-b57a-b9dc0d60999d",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3882,7 +3882,7 @@
             "id": "wasapi_input_capture",
             "versioned_id": "wasapi_input_capture",
             "settings": {
-                "device_id": "{0.0.1.00000000}.{5aed32a7-1af8-4ffc-8696-2ff139069a3d}",
+                "device_id": "{0.0.1.00000000}.{714e6185-eed5-4084-89b5-c9f118185df3}",
                 "use_device_timing": false
             },
             "mixers": 255,
@@ -3905,7 +3905,35 @@
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
             "monitoring_type": 0,
-            "private_settings": {}
+            "private_settings": {},
+            "filters": [
+                {
+                    "prev_ver": 536870916,
+                    "name": "Gain",
+                    "uuid": "ab64411a-6c40-4e7b-b014-8e48c94a9911",
+                    "id": "gain_filter",
+                    "versioned_id": "gain_filter",
+                    "settings": {
+                        "db": 12.4
+                    },
+                    "mixers": 255,
+                    "sync": 0,
+                    "flags": 0,
+                    "volume": 1.0,
+                    "balance": 0.5,
+                    "enabled": true,
+                    "muted": false,
+                    "push-to-mute": false,
+                    "push-to-mute-delay": 0,
+                    "push-to-talk": false,
+                    "push-to-talk-delay": 0,
+                    "hotkeys": {},
+                    "deinterlace_mode": 0,
+                    "deinterlace_field_order": 0,
+                    "monitoring_type": 0,
+                    "private_settings": {}
+                }
+            ]
         },
         {
             "prev_ver": 536870916,
@@ -3970,7 +3998,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4278221823
+                "color": 4285530125
             },
             "mixers": 0,
             "sync": 0,
@@ -3996,7 +4024,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4278190080
+                "color": 4291035386
             },
             "mixers": 0,
             "sync": 0,
@@ -4022,7 +4050,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4279369472
+                "color": 4278221823
             },
             "mixers": 0,
             "sync": 0,
@@ -4048,7 +4076,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4278255488
+                "color": 4278190080
             },
             "mixers": 0,
             "sync": 0,
@@ -4238,7 +4266,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "คู่ที่ 5",
+                "text": "https://www.youtube.com/live/tLc3nE3AFJw",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -4270,7 +4298,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "นัดที่ 4",
+                "text": "นัดที่ 6",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -4509,7 +4537,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B20.png"
+                "file": "D:\\scoreboard\\logoteam/B11.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -4535,7 +4563,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B19.png"
+                "file": "D:\\scoreboard\\logoteam/B20.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -6086,7 +6114,7 @@
                     {
                         "name": "label_2",
                         "source_uuid": "cb74226a-7081-4739-9fd2-e05411450838",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6141,7 +6169,7 @@
                     {
                         "name": "time_counter",
                         "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6416,7 +6444,7 @@
                     {
                         "name": "label_3",
                         "source_uuid": "4b0f3d6e-d801-49a4-b57a-b9dc0d60999d",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -8121,7 +8149,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "โฮมโปรเพชรบุรี",
+                "text": "PB ALLSTAR",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8154,7 +8182,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "เด็กห้าง Twd.",
+                "text": "โฮมโปรเพชรบุรี",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8840,7 +8868,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "2",
+                "text": "6",
                 "undo_suuid": "b0275b49-e703-4271-8fe2-126795607f31",
                 "font": {
                     "face": "Srinakharinwirot",
@@ -8874,7 +8902,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "1",
+                "text": "2",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8940,7 +8968,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/obs/Replay 2026-02-19 22-34-17.mkv",
+                "local_file": "D:/obs/Replay 2026-03-23 11-47-31.mkv",
                 "is_local_file": true,
                 "looping": false,
                 "restart_on_activate": true,

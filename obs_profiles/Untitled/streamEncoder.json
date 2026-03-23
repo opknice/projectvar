@@ -1,1 +1,1 @@
-{"rate_control":"CBR","bitrate":9000,"keyint_sec":2,"preset":"p6","multipass":"disabled","lookahead":false,"tune":"ll"}
+{"rate_control":"CBR","bitrate":5000,"keyint_sec":2,"preset":"p7","multipass":"disabled","lookahead":false,"tune":"hq"}

@@ -356,7 +356,7 @@
                     {
                         "name": "time_counter",
                         "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -3138,8 +3138,8 @@
     "transition_duration": 400,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -13,
-    "scaling_off_x": -9.037407875061035,
+    "scaling_level": -10,
+    "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "virtual-camera": {
         "type2": 3
@@ -3993,7 +3993,7 @@
             "id": "wasapi_input_capture",
             "versioned_id": "wasapi_input_capture",
             "settings": {
-                "device_id": "{0.0.1.00000000}.{95f2b27d-595c-4bfd-b66b-76a45dd0e61d}",
+                "device_id": "{0.0.1.00000000}.{5aed32a7-1af8-4ffc-8696-2ff139069a3d}",
                 "use_device_timing": false
             },
             "mixers": 255,
@@ -4002,7 +4002,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": true,
+            "muted": false,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -4025,7 +4025,7 @@
                     "id": "gain_filter",
                     "versioned_id": "gain_filter",
                     "settings": {
-                        "db": 15.0
+                        "db": 10.0
                     },
                     "mixers": 255,
                     "sync": 0,
@@ -4495,7 +4495,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "นัดที่ 6",
+                "text": "นัดที่ 5",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -4836,7 +4836,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/C17.png"
+                "file": "D:\\scoreboard\\logoteam/C19.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -4862,7 +4862,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/C16.png"
+                "file": "D:\\scoreboard\\logoteam/C17.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -4945,7 +4945,7 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 288,
+                "id_counter": 287,
                 "custom_size": false,
                 "items": [
                     {
@@ -5116,7 +5116,7 @@
                     {
                         "name": "livescore_",
                         "source_uuid": "6503c9e2-5895-46f6-aa1a-ccb7a49b7af6",
-                        "visible": false,
+                        "visible": true,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5186,7 +5186,7 @@
                     {
                         "name": "logoallteam",
                         "source_uuid": "ac67b03c-5527-4fab-8b92-a21a0b38e35d",
-                        "visible": true,
+                        "visible": false,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6257,7 +6257,7 @@
                             "duration": 1000
                         },
                         "private_settings": {
-                            "collapsed": false
+                            "collapsed": true
                         }
                     },
                     {
@@ -6593,7 +6593,7 @@
                     {
                         "name": "time_counter",
                         "source_uuid": "8b103d38-97e4-4ecf-990c-d4d31f138998",
-                        "visible": false,
+                        "visible": true,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -8619,7 +8619,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "คนละร้อยเอฟซี x สามแม่ครัว",
+                "text": "บ้านแสนสุข x น้องไปเปอร์",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8652,7 +8652,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "ทนงทรวยคงควรคอย x อย่าบิดนะ",
+                "text": "คนละร้อยเอฟซี x สามแม่ครัว",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -9339,7 +9339,7 @@
             "versioned_id": "text_gdiplus_v3",
             "settings": {
                 "undo_suuid": "b0275b49-e703-4271-8fe2-126795607f31",
-                "text": "3",
+                "text": "0",
                 "font": {
                     "face": "Impact",
                     "style": "Regular",
@@ -9372,7 +9372,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "1",
+                "text": "5",
                 "font": {
                     "face": "Impact",
                     "style": "Regular",
@@ -9490,7 +9490,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/obs/Replay 2026-03-23 11-47-31.mkv",
+                "local_file": "D:/obs/Replay 2026-02-19 22-34-17.mkv",
                 "is_local_file": true,
                 "looping": false,
                 "restart_on_activate": true,
@@ -9561,7 +9561,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "",
+                "text": "32:06",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",

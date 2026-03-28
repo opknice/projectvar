@@ -908,7 +908,7 @@
             "settings": {
                 "id_counter": 0,
                 "custom_size": true,
-                "cx": 1913,
+                "cx": 1773,
                 "cy": 212,
                 "items": [
                     {
@@ -3138,8 +3138,8 @@
     "transition_duration": 400,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -13,
-    "scaling_off_x": -9.037407875061035,
+    "scaling_level": -10,
+    "scaling_off_x": -11.013786315917969,
     "scaling_off_y": 0.0,
     "virtual-camera": {
         "type2": 3
@@ -3993,7 +3993,7 @@
             "id": "wasapi_input_capture",
             "versioned_id": "wasapi_input_capture",
             "settings": {
-                "device_id": "{0.0.1.00000000}.{95f2b27d-595c-4bfd-b66b-76a45dd0e61d}",
+                "device_id": "{0.0.1.00000000}.{714e6185-eed5-4084-89b5-c9f118185df3}",
                 "use_device_timing": false
             },
             "mixers": 255,
@@ -4002,7 +4002,7 @@
             "volume": 1.0,
             "balance": 0.5,
             "enabled": true,
-            "muted": true,
+            "muted": false,
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
@@ -4135,7 +4135,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4278190080
+                "color": 4278190335
             },
             "mixers": 0,
             "sync": 0,
@@ -4463,7 +4463,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "คู่ที่ 5",
+                "text": "https://shorturl.at/8tGST",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -4836,7 +4836,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/C17.png"
+                "file": "D:\\scoreboard\\logoteam/B18.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -4862,7 +4862,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/C16.png"
+                "file": "D:\\scoreboard\\logoteam/B15.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -5186,7 +5186,7 @@
                     {
                         "name": "logoallteam",
                         "source_uuid": "ac67b03c-5527-4fab-8b92-a21a0b38e35d",
-                        "visible": true,
+                        "visible": false,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6191,7 +6191,7 @@
                     {
                         "name": "Group",
                         "source_uuid": "654c5ef4-08f0-4f1d-87d7-a57f91e3d0d4",
-                        "visible": true,
+                        "visible": false,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6257,7 +6257,7 @@
                             "duration": 1000
                         },
                         "private_settings": {
-                            "collapsed": false
+                            "collapsed": true
                         }
                     },
                     {
@@ -8619,7 +8619,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "คนละร้อยเอฟซี x สามแม่ครัว",
+                "text": "สว่างสรรเพชร",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8652,7 +8652,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "ทนงทรวยคงควรคอย x อย่าบิดนะ",
+                "text": "ปกครองเพชรบุรี",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -9339,7 +9339,7 @@
             "versioned_id": "text_gdiplus_v3",
             "settings": {
                 "undo_suuid": "b0275b49-e703-4271-8fe2-126795607f31",
-                "text": "3",
+                "text": "0",
                 "font": {
                     "face": "Impact",
                     "style": "Regular",
@@ -9372,7 +9372,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "1",
+                "text": "0",
                 "font": {
                     "face": "Impact",
                     "style": "Regular",
@@ -9490,7 +9490,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/obs/Replay 2026-03-23 11-47-31.mkv",
+                "local_file": "D:/obs/Replay 2026-03-27 23-00-03.mkv",
                 "is_local_file": true,
                 "looping": false,
                 "restart_on_activate": true,
@@ -9561,7 +9561,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "",
+                "text": "00:00",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",

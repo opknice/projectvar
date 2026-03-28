@@ -301,7 +301,7 @@
                     {
                         "name": "label_2",
                         "source_uuid": "cb74226a-7081-4739-9fd2-e05411450838",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -375,11 +375,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 954.5831298828125,
-                            "y": 90.9293212890625
+                            "y": 75.0697021484375
                         },
                         "pos_rel": {
                             "x": -0.010031240992248058,
-                            "y": -0.8316123485565186
+                            "y": -0.8609820604324341
                         },
                         "scale": {
                             "x": 0.1338123083114624,
@@ -2024,7 +2024,7 @@
             "settings": {
                 "id_counter": 0,
                 "custom_size": true,
-                "cx": 1605,
+                "cx": 1582,
                 "cy": 739,
                 "items": [
                     {
@@ -2048,11 +2048,11 @@
                         "id": 272,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 144.9998779296875,
+                            "x": 151.9998779296875,
                             "y": 0.0
                         },
                         "pos_rel": {
-                            "x": -1.5092594623565674,
+                            "x": -1.4962965250015259,
                             "y": -1.0
                         },
                         "scale": {
@@ -2103,11 +2103,11 @@
                         "id": 273,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1492.99951171875,
+                            "x": 1499.99951171875,
                             "y": 404.77252197265625
                         },
                         "pos_rel": {
-                            "x": 0.9870361089706421,
+                            "x": 0.9999991655349731,
                             "y": -0.2504212260246277
                         },
                         "scale": {
@@ -2158,11 +2158,11 @@
                         "id": 274,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 111.0,
+                            "x": 118.0,
                             "y": 404.77252197265625
                         },
                         "pos_rel": {
-                            "x": -1.5722222328186035,
+                            "x": -1.559259295463562,
                             "y": -0.2504212260246277
                         },
                         "scale": {
@@ -2213,11 +2213,11 @@
                         "id": 275,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 850.9998168945312,
+                            "x": 857.9998779296875,
                             "y": 419.77203369140625
                         },
                         "pos_rel": {
-                            "x": -0.2018522024154663,
+                            "x": -0.1888890564441681,
                             "y": -0.2226443886756897
                         },
                         "scale": {
@@ -2268,11 +2268,11 @@
                         "id": 276,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 751.9995727539062,
+                            "x": 758.9996337890625,
                             "y": 419.77203369140625
                         },
                         "pos_rel": {
-                            "x": -0.38518595695495605,
+                            "x": -0.372222900390625,
                             "y": -0.2226443886756897
                         },
                         "scale": {
@@ -2323,11 +2323,11 @@
                         "id": 277,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1174.999267578125,
+                            "x": 1181.999267578125,
                             "y": 420.77215576171875
                         },
                         "pos_rel": {
-                            "x": 0.39814677834510803,
+                            "x": 0.4111098647117615,
                             "y": -0.22079229354858398
                         },
                         "scale": {
@@ -2378,11 +2378,11 @@
                         "id": 278,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 445.99957275390625,
+                            "x": 452.9996032714844,
                             "y": 420.77215576171875
                         },
                         "pos_rel": {
-                            "x": -0.9518526792526245,
+                            "x": -0.9388896226882935,
                             "y": -0.22079229354858398
                         },
                         "scale": {
@@ -4752,7 +4752,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "คู่ที่ 10",
+                "text": "https://shorturl.at/oGcee",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -4784,7 +4784,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "รอบที่ 1",
+                "text": "คู่ที่ 1",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -5017,7 +5017,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/x2.png"
+                "file": "D:\\scoreboard\\logoteam/x11.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -5043,7 +5043,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/x1.png"
+                "file": "D:\\scoreboard\\logoteam/x12.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -6302,7 +6302,7 @@
                     {
                         "name": "Group",
                         "source_uuid": "654c5ef4-08f0-4f1d-87d7-a57f91e3d0d4",
-                        "visible": false,
+                        "visible": true,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6649,7 +6649,7 @@
                     {
                         "name": "label_2",
                         "source_uuid": "cb74226a-7081-4739-9fd2-e05411450838",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6723,11 +6723,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 957.03515625,
-                            "y": 84.73443603515625
+                            "y": 68.734375
                         },
                         "pos_rel": {
                             "x": -0.005490451585501432,
-                            "y": -0.8430843949317932
+                            "y": -0.872714102268219
                         },
                         "scale": {
                             "x": 0.1338123083114624,
@@ -7310,7 +7310,7 @@
                         "name": "Group 3",
                         "source_uuid": "ca049a64-c667-489e-b7c6-ed560bdf81d1",
                         "visible": false,
-                        "locked": true,
+                        "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
                             "x": 1920.0,
@@ -7375,7 +7375,7 @@
                             "duration": 400
                         },
                         "private_settings": {
-                            "collapsed": true
+                            "collapsed": false
                         }
                     },
                     {
@@ -7564,11 +7564,11 @@
                         "id": 275,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 1001.1396484375,
+                            "x": 1001.1397094726562,
                             "y": 1134.51806640625
                         },
                         "pos_rel": {
-                            "x": 0.07618453353643417,
+                            "x": 0.07618464529514313,
                             "y": 1.100959300994873
                         },
                         "scale": {
@@ -7619,11 +7619,11 @@
                         "id": 276,
                         "group_item_backup": true,
                         "pos": {
-                            "x": 916.0179443359375,
+                            "x": 916.0180053710938,
                             "y": 1134.51806640625
                         },
                         "pos_rel": {
-                            "x": -0.08144824951887131,
+                            "x": -0.08144813776016235,
                             "y": 1.100959300994873
                         },
                         "scale": {
@@ -7784,11 +7784,11 @@
                         "id": 279,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 269.4388427734375,
+                            "x": 263.420166015625,
                             "y": 773.0001220703125
                         },
                         "pos_rel": {
-                            "x": -1.2788169384002686,
+                            "x": -1.289962649345398,
                             "y": 0.4314817190170288
                         },
                         "scale": {
@@ -8863,7 +8863,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "ลาดโพธิ์ FC",
+                "text": "เจดีย์กำแพงแสน",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8897,7 +8897,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "แก๊ง 4 พ่อบ้าน",
+                "text": "ผู้ใหญ่น้อง x อำพรฟาร์ม",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -9731,7 +9731,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "4",
+                "text": "0",
                 "font": {
                     "face": "Impact",
                     "style": "Regular",
@@ -9853,7 +9853,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/obs/Replay 2026-03-23 11-47-31.mkv",
+                "local_file": "D:/obs/Replay 2026-03-27 23-00-03.mkv",
                 "is_local_file": true,
                 "looping": false,
                 "restart_on_activate": true,

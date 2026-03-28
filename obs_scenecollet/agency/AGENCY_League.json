@@ -20,7 +20,7 @@
             "settings": {
                 "id_counter": 0,
                 "custom_size": true,
-                "cx": 1870,
+                "cx": 2023,
                 "cy": 241,
                 "items": [
                     {
@@ -3882,7 +3882,7 @@
             "id": "wasapi_input_capture",
             "versioned_id": "wasapi_input_capture",
             "settings": {
-                "device_id": "{0.0.1.00000000}.{714e6185-eed5-4084-89b5-c9f118185df3}",
+                "device_id": "{0.0.1.00000000}.{95f2b27d-595c-4bfd-b66b-76a45dd0e61d}",
                 "use_device_timing": false
             },
             "mixers": 255,
@@ -3998,7 +3998,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4285530125
+                "color": 4294967295
             },
             "mixers": 0,
             "sync": 0,
@@ -4024,7 +4024,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4291035386
+                "color": 4278190080
             },
             "mixers": 0,
             "sync": 0,
@@ -4050,7 +4050,7 @@
             "id": "color_source",
             "versioned_id": "color_source_v3",
             "settings": {
-                "color": 4278221823
+                "color": 4294967295
             },
             "mixers": 0,
             "sync": 0,
@@ -4266,7 +4266,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "https://www.youtube.com/live/tLc3nE3AFJw",
+                "text": "คู่ที่ 1",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -4298,7 +4298,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "นัดที่ 6",
+                "text": "รอบที่ 1",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -4537,7 +4537,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B11.png"
+                "file": "D:\\scoreboard\\logoteam/x1.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -4563,7 +4563,7 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "D:\\scoreboard\\logoteam/B20.png"
+                "file": "D:\\scoreboard\\logoteam/x2.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -4817,7 +4817,7 @@
                     {
                         "name": "livescore_",
                         "source_uuid": "6503c9e2-5895-46f6-aa1a-ccb7a49b7af6",
-                        "visible": true,
+                        "visible": false,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -5767,7 +5767,7 @@
                     {
                         "name": "Group",
                         "source_uuid": "08533d92-94ca-431a-a209-51af29213e96",
-                        "visible": false,
+                        "visible": true,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -6609,7 +6609,7 @@
                     {
                         "name": "Group 3",
                         "source_uuid": "ca049a64-c667-489e-b7c6-ed560bdf81d1",
-                        "visible": true,
+                        "visible": false,
                         "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
@@ -8149,7 +8149,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "PB ALLSTAR",
+                "text": "เจย์ดีกำแพงแสน",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8182,7 +8182,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "โฮมโปรเพชรบุรี",
+                "text": "ผู้ใหญ่น้อง x อำพรฟาร์ม",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8868,7 +8868,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "6",
+                "text": "0",
                 "undo_suuid": "b0275b49-e703-4271-8fe2-126795607f31",
                 "font": {
                     "face": "Srinakharinwirot",
@@ -8902,7 +8902,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "2",
+                "text": "0",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",
@@ -8968,7 +8968,7 @@
             "id": "ffmpeg_source",
             "versioned_id": "ffmpeg_source",
             "settings": {
-                "local_file": "D:/obs/Replay 2026-03-23 11-47-31.mkv",
+                "local_file": "D:/obs/Replay 2026-03-27 23-00-03.mkv",
                 "is_local_file": true,
                 "looping": false,
                 "restart_on_activate": true,
@@ -9039,7 +9039,7 @@
             "id": "text_gdiplus",
             "versioned_id": "text_gdiplus_v3",
             "settings": {
-                "text": "FT",
+                "text": "00:00",
                 "font": {
                     "face": "Srinakharinwirot",
                     "style": "Regular",

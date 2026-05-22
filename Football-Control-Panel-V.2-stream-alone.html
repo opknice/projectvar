@@ -373,6 +373,8 @@
                         </label>
 
                         <button id="linktohtml" class="btn btn-primary" onclick="(function(){var w=600,h=400,left=(screen.width-w)/2,top=(screen.height-h)/2; window.open('Penalty-Shootout.html','penalty','width='+w+',height='+h+',left='+Math.max(0,Math.round(left))+',top='+Math.max(0,Math.round(top))+',toolbar=no,menubar=no,location=no,status=no,resizable=yes,scrollbars=yes');})()">ยิงจุดโทษ<i class=""></i></button>
+                        <button id="adjustTimeBtn" class="btn btn-danger">ปรับเวลา<i class=""></i></button>
+
                     </div>
                 </div>
             </div>
@@ -487,6 +489,22 @@
         </div>
          <div class="row center" style="margin-top: 15px;">
             <button id="closeLogoPathBtn" class="btn-secondary"><i class="fas fa-times"></i> <span data-lang="close"></span></button>
+        </div>
+    </div>
+
+    <div id="presetTimePopup" class="popup-modal">
+        <h3><i class="fas fa-clock"></i> เลือกเวลาครึ่งหลัง</h3>
+        <p>เลือกเวลาที่ต้องการสำหรับครึ่งหลัง</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 15px 0;">
+            <button class="btn btn-primary preset-time-btn" data-seconds="900">15 นาที</button>
+            <button class="btn btn-primary preset-time-btn" data-seconds="1200">20 นาที</button>
+            <button class="btn btn-primary preset-time-btn" data-seconds="1500">25 นาที</button>
+            <button class="btn btn-primary preset-time-btn" data-seconds="1800">30 นาที</button>
+            <button class="btn btn-primary preset-time-btn" data-seconds="2700">45 นาที</button>
+            <button class="btn btn-primary preset-time-btn" data-seconds="3600">60 นาที</button>
+        </div>
+        <div class="row center" style="margin-top: 15px;">
+            <button id="closePresetTimeBtn" class="btn-secondary"><i class="fas fa-times"></i> ปิด</button>
         </div>
     </div>
 

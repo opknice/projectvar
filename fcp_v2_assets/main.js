@@ -85,7 +85,8 @@ const elements = [
     "startTimeMinutes", "startTimeSeconds", "saveTimeSettingsBtn", "saveAndUpdateTimeBtn", "closeTimeSettingsBtn",
     "timeSettingsError", "changelogBtn", "changelogPopup", "closeChangelogBtn",
     "logoPathBtn", "logoPathPopup", "currentLogoPath", "logoPathInput", "editLogoPathBtn", "closeLogoPathBtn",
-    "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_", "MatchSave__", "MatchSave___", "hidetimer"
+    "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_", "MatchSave__", "MatchSave___", "hidetimer",
+    "adjustTimeBtn", "presetTimePopup", "closePresetTimeBtn"
 ].reduce((acc, id) => {
     acc[id.replace(/-(\w)/g, (m, p1) => p1.toUpperCase())] = $(id);
     return acc;
@@ -148,6 +149,7 @@ const closeAllPopups = () => {
     elements.timeSettingsPopup.style.display = 'none';
     elements.changelogPopup.style.display = 'none';
     elements.logoPathPopup.style.display = 'none';
+    elements.presetTimePopup.style.display = 'none';
     elements.timeSettingsError.style.display = 'none';
 };
 
@@ -379,11 +381,12 @@ const startTimer1 = () => {
     }, 1000);
 };
 
+
 const startTimer2 = () => {
     half = '2nd';
     elements.halfText.textContent = half;
     setText('half_text', half);
-    timer = 900;
+    timer = countdownStartTime;
     if (interval) return;
     interval = setInterval(() => {
         if (isCountdown) {
@@ -395,6 +398,7 @@ const startTimer2 = () => {
         updateTimerDisplay();
     }, 1000);
 };
+
 
 const stopTimer = () => { 
     clearInterval(interval);
@@ -692,6 +696,7 @@ const exitEditMode = (team, applyChanges) => {
     okBtn.style.display = 'none';
 };
 
+
 const setupEventListeners = () => {
     elements.languageSelector.addEventListener('change', (e) => setLanguage(e.target.value));
     elements.excelBtn.addEventListener('click', handleExcel);
@@ -747,6 +752,7 @@ const setupEventListeners = () => {
     elements.resetToStartBtn.addEventListener('click', resetToStartTime); 
     // elements.resetToZeroBtn.addEventListener('click', resetToZero);     
     elements.editTimeBtn.addEventListener('click', openTimeSettings);
+    elements.adjustTimeBtn.addEventListener('click', () => openPopup(elements.presetTimePopup));
     elements.countdownCheck.addEventListener('change', () => { isCountdown = elements.countdownCheck.checked; });
     elements.settingsBtn.addEventListener('click', () => { elements.detailsText.value = localStorage.getItem('detailsText') || ''; openPopup(elements.detailsPopup); });
     elements.copyBtn.addEventListener('click', copyDetails);
@@ -765,8 +771,19 @@ const setupEventListeners = () => {
     elements.closeChangelogBtn.addEventListener('click', closeAllPopups);
     elements.closeTimeSettingsBtn.addEventListener('click', closeAllPopups);
     elements.closeLogoPathBtn.addEventListener('click', closeAllPopups);
+    elements.closePresetTimeBtn.addEventListener('click', closeAllPopups);
     
-    // Time Settings
+    // Preset Time Buttons
+    document.querySelectorAll('.preset-time-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const seconds = parseInt(btn.getAttribute('data-seconds'), 10);
+            countdownStartTime = seconds;
+            localStorage.setItem('countdownStartTime', countdownStartTime);
+            closeAllPopups();
+            showToast(`เวลาตั้งค่าเป็น ${Math.floor(seconds/60)} นาที`, 'success');
+        });
+    });
+    
     elements.saveTimeSettingsBtn.addEventListener('click', saveTimeSettings);
     elements.saveAndUpdateTimeBtn.addEventListener('click', saveAndUpdateTime);
 

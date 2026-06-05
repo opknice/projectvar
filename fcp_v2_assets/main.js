@@ -85,7 +85,8 @@ const elements = [
     "timeSettingsError", "changelogBtn", "changelogPopup", "closeChangelogBtn",
     "logoPathBtn", "logoPathPopup", "currentLogoPath", "logoPathInput", "editLogoPathBtn", "closeLogoPathBtn",
     "halfpauseBtn", "fullEndBtn", "MatchSave", "MatchSave_", "MatchSave__", "MatchSave___", "hidetimer",
-    "adjustTimeBtn", "presetTimePopup", "closePresetTimeBtn"
+    "adjustTimeBtn", "presetTimePopup", "closePresetTimeBtn",
+    "teamSelectPopup", "teamSelectTitle", "teamSelectSearch", "teamSelectList", "closeTeamSelectBtn"
 ].reduce((acc, id) => {
     acc[id.replace(/-(\w)/g, (m, p1) => p1.toUpperCase())] = $(id);
     return acc;
@@ -102,6 +103,7 @@ let timer = 0, interval = null, half = '1st';
 let countdownStartTime = 2700; // 45 minutes default
 let currentLang = 'th';
 let logoFolderPath = 'C:/OBSAssets/logos';
+let teamSelectTarget = 'A';
 
 // --- OBS ---
 const obs = new OBSWebSocket();
@@ -149,6 +151,7 @@ const closeAllPopups = () => {
     elements.changelogPopup.style.display = 'none';
     elements.logoPathPopup.style.display = 'none';
     elements.presetTimePopup.style.display = 'none';
+    if (elements.teamSelectPopup) elements.teamSelectPopup.style.display = 'none';
     elements.timeSettingsError.style.display = 'none';
 };
 
@@ -291,6 +294,127 @@ const applyMatch = () => {
 
 
 
+};
+
+const getSheetValue = (row, header, key) => {
+    const index = header.findIndex(item => item.toLocaleLowerCase() === key.toLocaleLowerCase());
+    return index >= 0 ? row[index] || '' : '';
+};
+
+const getTeamsFromExcel = () => {
+    if (!sheetData.length) return [];
+
+    const header = sheetData[0].map(cell => String(cell || '').trim());
+    const teams = new Map();
+
+    const addTeam = (row, side) => {
+        const name = String(getSheetValue(row, header, `Team${side}`)).trim();
+        if (!name) return;
+
+        const key = name.toLocaleLowerCase();
+        const current = teams.get(key) || { name, logo: '', color1: '', color2: '' };
+        const logo = String(getSheetValue(row, header, `Logo${side}`)).trim();
+        const color1 = String(getSheetValue(row, header, `Color${side}`)).trim();
+        const color2 = String(getSheetValue(row, header, `Color${side}2`)).trim();
+
+        teams.set(key, {
+            name: current.name,
+            logo: current.logo || logo,
+            color1: current.color1 || color1,
+            color2: current.color2 || color2
+        });
+    };
+
+    sheetData.slice(1).forEach(row => {
+        addTeam(row, 'A');
+        addTeam(row, 'B');
+    });
+
+    return Array.from(teams.values()).sort((a, b) => a.name.localeCompare(b.name, 'th'));
+};
+
+const applyTeamSelection = (target, teamInfo) => {
+    const previousLogo = target === 'A' ? currentLogoA : currentLogoB;
+    const logoFile = teamInfo.logo || previousLogo;
+
+    if (target === 'A') {
+        currentLogoA = logoFile;
+    } else {
+        currentLogoB = logoFile;
+    }
+
+    updateTeamUI(
+        target,
+        teamInfo.name,
+        logoFile,
+        teamInfo.color1 || '#ffffff',
+        teamInfo.color2 || '#000000'
+    );
+    closeAllPopups();
+    showToast(`เลือกทีม ${teamInfo.name} แล้ว`, 'success');
+};
+
+const renderTeamSelectList = () => {
+    const query = elements.teamSelectSearch.value.trim().toLocaleLowerCase();
+    const teams = getTeamsFromExcel().filter(team => team.name.toLocaleLowerCase().includes(query));
+    elements.teamSelectList.innerHTML = '';
+
+    if (!teams.length) {
+        const empty = document.createElement('div');
+        empty.className = 'team-select-empty';
+        empty.textContent = query ? 'ไม่พบทีมที่ค้นหา' : 'ไม่พบรายชื่อทีมในไฟล์ Excel';
+        elements.teamSelectList.appendChild(empty);
+        return;
+    }
+
+    teams.forEach(teamInfo => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'team-select-item';
+
+        const logo = document.createElement('span');
+        logo.className = 'team-select-logo';
+        logo.textContent = getTeamInitials(teamInfo.name);
+        if (teamInfo.logo) {
+            const hasExt = /\.(png|jpe?g|gif|webp)$/i.test(teamInfo.logo);
+            const img = document.createElement('img');
+            img.src = `file:///${logoFolderPath}/${teamInfo.logo}${hasExt ? '' : '.png'}`;
+            img.alt = '';
+            img.addEventListener('error', () => {
+                img.remove();
+                logo.textContent = getTeamInitials(teamInfo.name);
+            });
+            logo.textContent = '';
+            logo.appendChild(img);
+        }
+
+        const name = document.createElement('span');
+        name.className = 'team-select-name';
+        name.textContent = teamInfo.name;
+
+        btn.append(logo, name);
+        btn.addEventListener('click', () => applyTeamSelection(teamSelectTarget, teamInfo));
+        elements.teamSelectList.appendChild(btn);
+    });
+};
+
+const openTeamSelector = (target) => {
+    if (!elements.teamSelectPopup) {
+        enterEditMode(target);
+        return;
+    }
+
+    if (!sheetData.length) {
+        showToast(translations[currentLang].toastLoadFileFirst, 'error');
+        return;
+    }
+
+    teamSelectTarget = target;
+    elements.teamSelectTitle.textContent = target === 'A' ? 'เลือกทีม A' : 'เลือกทีม B';
+    elements.teamSelectSearch.value = '';
+    renderTeamSelectList();
+    openPopup(elements.teamSelectPopup);
+    setTimeout(() => elements.teamSelectSearch.focus(), 0);
 };
 
 const swapTeams = () => {
@@ -797,6 +921,8 @@ const setupEventListeners = () => {
     elements.closeTimeSettingsBtn.addEventListener('click', closeAllPopups);
     elements.closeLogoPathBtn.addEventListener('click', closeAllPopups);
     elements.closePresetTimeBtn.addEventListener('click', closeAllPopups);
+    if (elements.closeTeamSelectBtn) elements.closeTeamSelectBtn.addEventListener('click', closeAllPopups);
+    if (elements.teamSelectSearch) elements.teamSelectSearch.addEventListener('input', renderTeamSelectList);
     
     // Preset Time Buttons
     document.querySelectorAll('.preset-time-btn').forEach(btn => {
@@ -812,10 +938,10 @@ const setupEventListeners = () => {
     elements.saveTimeSettingsBtn.addEventListener('click', saveTimeSettings);
     elements.saveAndUpdateTimeBtn.addEventListener('click', saveAndUpdateTime);
 
-    // Edit Name
-    elements.editBtnA.addEventListener('click', () => enterEditMode('A'));
+    // Select team from imported Excel
+    elements.editBtnA.addEventListener('click', () => openTeamSelector('A'));
     elements.okBtnA.addEventListener('click', () => exitEditMode('A', true));
-    elements.editBtnB.addEventListener('click', () => enterEditMode('B'));
+    elements.editBtnB.addEventListener('click', () => openTeamSelector('B'));
     elements.okBtnB.addEventListener('click', () => exitEditMode('B', true));
     
     // Colors

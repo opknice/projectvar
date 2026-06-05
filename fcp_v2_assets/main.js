@@ -75,13 +75,12 @@ const elements = [
     "nameA", "nameB", "label1", "label2", "label3", "logoA", "logoB", "initialsA", "initialsB",
     "scoreA", "scoreB", "timerText", "halfText", "announcement-text", "matchID", 
     "colorA", "colorB", "colorA2", "colorB2",
-    "countdownCheck", "languageSelector", "nameA-input", "nameB-input", "excelBtn", "loadBtn",
+    "languageSelector", "nameA-input", "nameB-input", "excelBtn", "loadBtn",
     "editBtnA", "okBtnA", "editBtnB", "okBtnB", "swapBtn", "scoreAPlusBtn", "scoreAMinusBtn",
     "scoreBPlusBtn", "scoreBMinusBtn", "resetScoreBtn", "halfBtn", "play1Btn", "play2Btn", "pauseBtn",
-    "resetToStartBtn", "editTimeBtn", "settingsBtn", "copyBtn", "helpBtn", "donateBtn",
+    "settingsBtn", "copyBtn", "helpBtn", "donateBtn",
     "toast-container", "popupOverlay", "detailsPopup", "helpPopup", "donatePopup", "detailsText",
-    "saveDetailsBtn", "closeDetailsBtn", "closeHelpBtn", "closeDonateBtn", "injuryTimeDisplay",
-    "injuryTimePlusBtn", "injuryTimeMinusBtn", "resetToZeroBtn", "timeSettingsPopup",
+    "saveDetailsBtn", "closeDetailsBtn", "closeHelpBtn", "closeDonateBtn", "resetToZeroBtn", "timeSettingsPopup",
     "startTimeMinutes", "startTimeSeconds", "saveTimeSettingsBtn", "saveAndUpdateTimeBtn", "closeTimeSettingsBtn",
     "timeSettingsError", "changelogBtn", "changelogPopup", "closeChangelogBtn",
     "logoPathBtn", "logoPathPopup", "currentLogoPath", "logoPathInput", "editLogoPathBtn", "closeLogoPathBtn",
@@ -95,11 +94,11 @@ const elements = [
 
 // --- STATE VARIABLES ---
 let sheetData = [];
+let selectedExcelFile = null;
+let selectedExcelHandle = null;
 let currentLogoA = '', currentLogoB = '';
 let scoreA = 0, scoreB = 0;
 let timer = 0, interval = null, half = '1st';
-let injuryTime = 0;
-let isCountdown = false;
 let countdownStartTime = 2700; // 45 minutes default
 let currentLang = 'th';
 let logoFolderPath = 'C:/OBSAssets/logos';
@@ -371,12 +370,7 @@ const startTimer1 = () => {
     timer = 0;
     if (interval) return;
     interval = setInterval(() => {
-        if (isCountdown) {
-            if (timer > 0) timer--;
-            else stopTimer();
-        } else {
-            timer++;
-        }
+        timer++;
         updateTimerDisplay();
     }, 1000);
 };
@@ -389,12 +383,7 @@ const startTimer2 = () => {
     timer = countdownStartTime;
     if (interval) return;
     interval = setInterval(() => {
-        if (isCountdown) {
-            if (timer > 0) timer--;
-            else stopTimer();
-        } else {
-            timer++;
-        }
+        timer++;
         updateTimerDisplay();
     }, 1000);
 };
@@ -424,20 +413,10 @@ const fulltime = () => {
 };
 
 
-const resetToStartTime = () => {
-    stopTimer();
-    timer = countdownStartTime; 
-    injuryTime = 0;
-    updateTimerDisplay();
-    updateInjuryTimeDisplay();
-};
-
 const resetToZero = () => {
     stopTimer();
     timer = 0;
-    injuryTime = 0;
     updateTimerDisplay();
-    updateInjuryTimeDisplay();
     const timeString = "00:00";
     elements.timerText.textContent = timeString;
     setText('time_counter', timeString);
@@ -576,24 +555,8 @@ const toggleHalf = () => {
     setText('half_text', half);
 };
 
-const updateInjuryTimeDisplay = () => {
-    const displayString = injuryTime > 0 ? `+${injuryTime}` : '+0';
-    elements.injuryTimeDisplay.textContent = displayString;
-    setText('injury_time_text', displayString);
-};
-
-const changeInjuryTime = (delta) => {
-    injuryTime = Math.max(0, injuryTime + delta);
-    updateInjuryTimeDisplay();
-};
-
-const handleExcel = () => {
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.xlsx, .xls';
-    input.onchange = e => {
-        const file = e.target.files[0];
-        if (!file) return;
+const readExcelFile = (file, showSuccessToast = true) => {
+    return new Promise((resolve) => {
         const reader = new FileReader();
         reader.onload = event => {
             try {
@@ -601,12 +564,77 @@ const handleExcel = () => {
                 const workbook = XLSX.read(data, { type: 'array' });
                 const sheetName = workbook.SheetNames[0];
                 sheetData = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1 });
-                showToast(translations[currentLang].toastSuccess, 'success');
+                if (showSuccessToast) showToast(translations[currentLang].toastSuccess, 'success');
+                resolve(true);
             } catch (err) {
                 showToast(err.message, 'error');
+                resolve(false);
             }
         };
+        reader.onerror = () => {
+            showToast(reader.error?.message || 'อ่านไฟล์ Excel ไม่สำเร็จ', 'error');
+            resolve(false);
+        };
         reader.readAsArrayBuffer(file);
+    });
+};
+
+const refreshExcelData = async () => {
+    try {
+        if (selectedExcelHandle) {
+            selectedExcelFile = await selectedExcelHandle.getFile();
+            return readExcelFile(selectedExcelFile, false);
+        }
+        if (selectedExcelFile) {
+            return readExcelFile(selectedExcelFile, false);
+        }
+    } catch (err) {
+        showToast(err.message, 'error');
+        return false;
+    }
+
+    showToast(translations[currentLang].toastLoadFileFirst, 'error');
+    return false;
+};
+
+const loadCurrentMatch = async () => {
+    const refreshed = await refreshExcelData();
+    if (!refreshed) return;
+    applyMatch();
+};
+
+const handleExcel = async () => {
+    if (window.showOpenFilePicker) {
+        try {
+            const [handle] = await window.showOpenFilePicker({
+                types: [{
+                    description: 'Excel files',
+                    accept: {
+                        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': ['.xlsx'],
+                        'application/vnd.ms-excel': ['.xls']
+                    }
+                }],
+                excludeAcceptAllOption: false,
+                multiple: false
+            });
+            selectedExcelHandle = handle;
+            selectedExcelFile = await handle.getFile();
+            await readExcelFile(selectedExcelFile);
+        } catch (err) {
+            if (err.name !== 'AbortError') showToast(err.message, 'error');
+        }
+        return;
+    }
+
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.xlsx, .xls';
+    input.onchange = async e => {
+        const file = e.target.files[0];
+        if (!file) return;
+        selectedExcelHandle = null;
+        selectedExcelFile = file;
+        await readExcelFile(selectedExcelFile);
     };
     input.click();
 };
@@ -700,7 +728,7 @@ const exitEditMode = (team, applyChanges) => {
 const setupEventListeners = () => {
     elements.languageSelector.addEventListener('change', (e) => setLanguage(e.target.value));
     elements.excelBtn.addEventListener('click', handleExcel);
-    elements.loadBtn.addEventListener('click', applyMatch);
+    elements.loadBtn.addEventListener('click', loadCurrentMatch);
     // Previous/Next Match Buttons
     if (!elements.prevMatchBtn) {
         const prevBtn = document.createElement('button');
@@ -719,17 +747,17 @@ const setupEventListeners = () => {
         elements.nextMatchBtn = nextBtn;
     }
 
-    elements.prevMatchBtn.addEventListener('click', () => {
+    elements.prevMatchBtn.addEventListener('click', async () => {
         let id = parseInt(elements.matchID.value, 10) || 0;
         if (id > 1) {
             elements.matchID.value = id - 1;
-            applyMatch();
         }
+        await loadCurrentMatch();
     });
-    elements.nextMatchBtn.addEventListener('click', () => {
+    elements.nextMatchBtn.addEventListener('click', async () => {
         let id = parseInt(elements.matchID.value, 10) || 0;
         elements.matchID.value = id + 1;
-        applyMatch();
+        await loadCurrentMatch();
     });
     
     elements.swapBtn.addEventListener('click', swapTeams);
@@ -749,11 +777,8 @@ const setupEventListeners = () => {
     elements.MatchSave__.addEventListener('click', saveinfo__);
     elements.MatchSave___.addEventListener('click', saveinfo___);
     // elements.pauseBtn.addEventListener('click', stopTimer);
-    elements.resetToStartBtn.addEventListener('click', resetToStartTime); 
     // elements.resetToZeroBtn.addEventListener('click', resetToZero);     
-    elements.editTimeBtn.addEventListener('click', openTimeSettings);
     elements.adjustTimeBtn.addEventListener('click', () => openPopup(elements.presetTimePopup));
-    elements.countdownCheck.addEventListener('change', () => { isCountdown = elements.countdownCheck.checked; });
     elements.settingsBtn.addEventListener('click', () => { elements.detailsText.value = localStorage.getItem('detailsText') || ''; openPopup(elements.detailsPopup); });
     elements.copyBtn.addEventListener('click', copyDetails);
     elements.helpBtn.addEventListener('click', () => openPopup(elements.helpPopup));
@@ -845,10 +870,6 @@ const setupEventListeners = () => {
         showToast(translations[currentLang]?.toastSaved || 'Saved', 'success');
     });
     
-    // Injury Time
-    elements.injuryTimePlusBtn.addEventListener('click', () => changeInjuryTime(1));
-    elements.injuryTimeMinusBtn.addEventListener('click', () => changeInjuryTime(-1));
-    
     // Logo Path Settings
     elements.logoPathBtn.addEventListener('click', () => openPopup(elements.logoPathPopup));
     elements.editLogoPathBtn.addEventListener('click', () => {
@@ -891,7 +912,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setLanguage(savedLang);
     resetToZero(); 
     resetScore();
-    updateInjuryTimeDisplay();
     obs.connect('ws://localhost:4455').catch(err => showToast(translations[currentLang].toastObsError, 'error'));
 });
 
@@ -928,4 +948,3 @@ document.querySelectorAll('.quick-color_B').forEach(el => {
 
 
 // function realtime scoreboard update --------------------------------------------------
-

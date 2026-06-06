@@ -138,7 +138,18 @@
       }
 
       const label = '<span class="supporter-label">🙏 ขอบคุณผู้สนับสนุน</span>';
-      const names = supporters.map(escapeHtml).join('&nbsp;'.repeat(20));
+      const spacing = '&nbsp;'.repeat(20);
+      const parts = [];
+
+      supporters.forEach((name, index) => {
+        if (index > 0 && index % 5 === 0) {
+          parts.push(label);
+        }
+
+        parts.push(escapeHtml(name));
+      });
+
+      const names = parts.join(spacing);
       contentEl.innerHTML = `${label}&nbsp;&nbsp;${names}`;
       showMarquee();
     }
